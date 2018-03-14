@@ -24,7 +24,7 @@ protected:
 private:
 	static Transition_Table_Builder* t_builder = 0;
 	int sz = 0;
-	map<string, int> definations_names ;
+	map<string, int> definations_names;
 	vector<Machine*> definations_NFAs;
 };
 
