@@ -1,5 +1,6 @@
 /*
  * Node.cpp
+ * Class implementaion to define a node of a graph 
  *
  *  Created on: Mar 14, 2018
  *      Author: muhammed
