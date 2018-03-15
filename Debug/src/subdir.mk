@@ -4,16 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Compiler.cpp \
-../src/Parser.cpp 
+../src/RulesParser.cpp \
+../src/Test.cpp 
 
 OBJS += \
-./src/Compiler.o \
-./src/Parser.o 
+./src/RulesParser.o \
+./src/Test.o 
 
 CPP_DEPS += \
-./src/Compiler.d \
-./src/Parser.d 
+./src/RulesParser.d \
+./src/Test.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
