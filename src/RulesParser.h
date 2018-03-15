@@ -1,5 +1,5 @@
 /*
- * Parser.h
+ * RulesParser.h
  *      Author: Murad
  */
 
@@ -7,21 +7,66 @@
 #define RULESPARSER_H_
 
 #include <vector>
+#include <string>
 
-class Parser{
+#include "Rules.h"
 
-private:
-	void extract_name(char stmt[]);
-	void extract_type(char stmt[]);
-	void extract_tokens(char stmt[]);
-
+class RulesParser {
 
 public:
-	/* parse will return a vector of name, type of rule and the rest of tokens */
-	std::vector<char*> parse(char stmt[]);
+	/**
+	 * parse the whole rules lines and return a Rule object which contain tokens of parsed rules on the specified vector.
+	 */
+	Rules parse_lines(std::vector<std::string> lines);
+
+	/**
+	 * Rules rules is parsed so as to enter the result parsed rule to
+	 * the appropriate vector of the class rule.
+	 * priorities is determeine which vector of rules this lines' tokens inserted to it.
+	 * 	  0 > keywords
+	 * 	  1 > puctuation
+	 * 	  2 > Definitions
+	 * 	  3 > expressions
+	 */
+
+protected:
+	void parse(Rules rules, std::string line, int priorities);
+
+	/**
+	 * parse the line rule of keywords line
+	 */
+	void keywords_parser(Rules rules, std::string line);
+
+	/**
+	 * parse the line rule of Punctuation line
+	 */
+	void Punctuation_parser(Rules rules, std::string line);
+
+	/**
+	 * parse the line rule of definitions line
+	 */
+	void definitions_parser(Rules rules, std::string line);
+
+	/**
+	 * parse the line rule of expressions line
+	 */
+	void expressions_parser(Rules rules, std::string line);
+
+private:
+	/**
+	 * helper function which used inside both definitions_parser and expressions_parser
+	 */
+	std::vector<std::string> expr_def_parser(std::string line);
+
+//private:
+//	void extract_name(char stmt[]);
+//	void extract_type(char stmt[]);
+//	void extract_tokens(char stmt[]);
+//
+//
+//public:
+//	/* parse will return a vector of name, type of rule and the rest of tokens */
+//	std::vector<char*> parse(std::vector<std::string> lines);
 };
-
-
-
 
 #endif /* RULESPARSER_H_ */
