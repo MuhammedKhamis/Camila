@@ -60,7 +60,7 @@ string to_postfix(string exp)
 	 //make the token bigger than all the values in stack
 	 else if(is_operator(c))
 	 {
-		 while(st.top() != '@' && st.top() != '(' &&(priority(c) <= priority(c)))
+		 while(st.top() != '@' && st.top() != '(' &&(priority(c) <= priority(st.top())))
 			{
 				char temp = st.top();
 			 	st.pop();
@@ -98,7 +98,7 @@ string to_postfix(string exp)
           char c = st.top();
           st.pop();
           output += c;
+          output += ' ';
       }
  return output;
 }
-
