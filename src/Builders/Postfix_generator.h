@@ -7,11 +7,21 @@
 
 #ifndef POSTFIX_GENERATOR_H_
 #define POSTFIX_GENERATOR_H_
-
 #include <bits/stdc++.h>
 
+/*
+ * Check whether the operand is Letter or number
+ * Hint:
+ * Will be edited to accept regular definitions later
+*/
+bool is_operand(char c);
 
-using namespace std;
+/*
+ * Returns the priority of each operation
+ */
+int priority(char c);
+
+
 
 
 
