@@ -9,6 +9,9 @@
 
 #include "Node.h"
 
+
+int Node::node_counter = 0;
+
 Node::Node(){
 	this->p = in_valid;
 }
@@ -32,6 +35,13 @@ void Node::add_edge(Node* end, string value){
 	this->edges.push_back(e);
 }
 
+void Node::set_node_number(){
+	node_number = node_counter++;
+}
+
+int Node::get_node_number(){
+	return node_number;
+}
 
 
 

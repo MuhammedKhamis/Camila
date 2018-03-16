@@ -9,31 +9,21 @@
 #define DEF_BUILDER_H_
 
 #include <bits/stdc++.h>
-#include "../Machines/Machine.h"
-#include "Transition_Table_Builder.h"
-
 using namespace std;
 
 
-class Def_Builder{
+class Def_Builder: Builder{
 
 public:
 
-	static Def_Builder* get_Instance();
-	Machine* evaluate_def(vector<string> defination);
-	Machine* get_defination_machine(string name);
+	void evaluate_def(vector<string> defination);
+	vector<string> get_def_value(string def);
 
 protected:
 
 
 private:
-	Def_Builder();
-	~Def_Builder();
-	Graph* generate_graph(string line);
-
-	static Def_Builder* instance = 0;
-	Transition_Table_Builder* t_builder;
-	static const int defination_index = 3;
+	static const int defination_index = 1;
 
 
 };

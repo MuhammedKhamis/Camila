@@ -6,7 +6,6 @@
  */
 
 
-
 Graph::Graph(Node* start_node){
 	this->start_node = start_node;
 	this->end_node = 0;
@@ -42,3 +41,4 @@ void Graph::set_start_node(Node* start_node){
 void Graph::set_graph_size(int sz){
 	this->sz = sz;
 }
+
