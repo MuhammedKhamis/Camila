@@ -57,7 +57,7 @@ Graph* Thomson_Builder::or_operation(Graph* g1 , Graph* g2){
 	g1->get_end_node()->set_priority(in_valid);
 
 	g2->get_end_node()->add_edge(end,lambda);
-	g1->get_end_node()->set_priority(in_valid);
+	g2->get_end_node()->set_priority(in_valid);
 
 	int sz = g1->get_graph_size() + g2->get_graph_size() + 2;
 
