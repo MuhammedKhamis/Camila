@@ -9,7 +9,6 @@
 
 #include "Node.h"
 
-
 int Node::node_counter = 0;
 
 Node::Node(){
@@ -43,6 +42,12 @@ int Node::get_node_number(){
 	return node_number;
 }
 
+void Node::set_token(string token){
+	this->token = token;
+}
 
+string Node::get_token(){
+	return token;
+}
 
 

@@ -9,8 +9,12 @@
 #define EDGE_H_
 
 #include <bits/stdc++.h>
+#include "Node.h"
+
+
 using namespace std;
 
+class Node;
 
 class Edge{
 
@@ -22,8 +26,8 @@ public:
 	string get_value();
 
 private:
-	Node* to_node;
-	Node* from_node;
+	Node *to_node;
+	Node *from_node;
 	string value;
 };
 

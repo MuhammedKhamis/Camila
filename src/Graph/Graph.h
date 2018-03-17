@@ -9,8 +9,10 @@
 #define GRAPH_H_
 
 #include <bits/stdc++.h>
+#include "Node.h"
 
 using namespace std;
+
 
 class Graph{
 

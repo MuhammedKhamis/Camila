@@ -10,23 +10,29 @@
 
 #include <bits/stdc++.h>
 #include "../Enums.h"
+#include "Edge.h"
 
 using namespace std;
 
+class Edge;
 
 class Node{
 public:
+	Node();
 	vector<Edge>* get_edges();
 	priority get_priority();
 	void set_priority(priority p);
 	void add_edge(Node* end, string value);
 	void set_node_number();
 	int get_node_number();
+	void set_token(string token);
+	string get_token();
 	static int node_counter;
 private:
 	vector<Edge> edges;
 	priority p;
 	int node_number;
+	string token;
 };
 
 

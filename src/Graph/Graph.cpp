@@ -6,6 +6,10 @@
  */
 
 
+#include "Graph.h"
+
+
+
 Graph::Graph(Node* start_node){
 	this->start_node = start_node;
 	this->end_node = 0;

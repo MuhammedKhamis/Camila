@@ -32,6 +32,7 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.753621493" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.776530657" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1724389185" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.292267662" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1824834901" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
@@ -128,7 +129,13 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.513420538;cdt.managedbuild.config.gnu.cross.exe.debug.513420538.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.2105318398;cdt.managedbuild.tool.gnu.cpp.compiler.input.1759726537">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.513420538;cdt.managedbuild.config.gnu.cross.exe.debug.513420538.;cdt.managedbuild.tool.gnu.cross.c.compiler.302971316;cdt.managedbuild.tool.gnu.c.compiler.input.1515010089">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.release.787933414;cdt.managedbuild.config.gnu.cross.exe.release.787933414.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.505998188;cdt.managedbuild.tool.gnu.cpp.compiler.input.1966454358">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.513420538;cdt.managedbuild.config.gnu.cross.exe.debug.513420538.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.706168362;cdt.managedbuild.tool.gnu.cpp.compiler.input.292267662">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
