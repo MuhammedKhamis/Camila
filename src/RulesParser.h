@@ -30,27 +30,27 @@ public:
 	 */
 
 protected:
-	void parse(Rules rules, std::string line, int priorities);
+	std::vector<std::string> parse(std::string line, int priorities);
 
 	/**
 	 * parse the line rule of keywords line
 	 */
-	void keywords_parser(Rules rules, std::string line);
+	std::vector<std::string> keywords_parser(std::string line);
 
 	/**
 	 * parse the line rule of Punctuation line
 	 */
-	void Punctuation_parser(Rules rules, std::string line);
+	std::vector<std::string> Punctuation_parser(std::string line);
 
 	/**
 	 * parse the line rule of definitions line
 	 */
-	void definitions_parser(Rules rules, std::string line);
+	std::vector<std::string> definitions_parser(std::string line);
 
 	/**
 	 * parse the line rule of expressions line
 	 */
-	void expressions_parser(Rules rules, std::string line);
+	std::vector<std::string> expressions_parser(std::string line);
 
 private:
 	/**

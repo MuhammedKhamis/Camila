@@ -12,28 +12,52 @@
 #include "FileRulesReader.h"
 
 #include "RulesParser.h"
+#include "Rules.h"
 
 using namespace std;
 
 int main() {
-//	char str[] = "letter = 0-9 | 4545-Z | a-z";
-//
-//	Parser p;
-//	p.parse(str);
-//	Parser p;
-//	char* str2 = "letter = 0-9 | A-Z | a-z";
-//	p.parse(str2);
-//	char str2[] = "relop: == | != | > | >= | < | <=";
-//	p.parse(str2);
 
-//	for (std::vector<char*>::iterator it = result.begin();
-//			it != result.end(); ++it)
+//	RulesParser rp;
+//	FileRulesReader frr;
+//	string path("files/rules.txt");
+//	vector<string> lines = frr.read(path);
+//	for (std::vector<string>::iterator it = lines.begin(); it != lines.end();
+//			++it)
 //		std::cout << *it << '\n';
-	FileRulesReader frr;
-	string path ("files/rules.txt");
-	vector<string> lines = frr.read(path);
-	for (std::vector<string>::iterator it = lines.begin(); it != lines.end();
-			++it)
-		std::cout << *it << '\n';
+//	Rules r = rp.parse_lines(lines);
+//	cout << "============== [1] keywords ===================" << '\n';
+//	for (unsigned int i = 0; i < r.keywords.size(); ++i) {
+//		vector<string> val = r.keywords[i];
+//		for (vector<string>::iterator it = val.begin();
+//				it != val.end(); ++it)
+//			cout << *it << '\n';
+//		cout << "====================================================" << '\n';
+//	}
+//	cout << "============== [2] punctuations ===================" << '\n';
+//	for (unsigned int i = 0; i < r.punctuations.size(); ++i) {
+//		vector<string> val = r.punctuations[i];
+//		for (vector<string>::iterator it = val.begin();
+//				it != val.end(); ++it)
+//			cout << *it << '\n';
+//		cout << "====================================================" << '\n';
+//	}
+//	cout << "============== [3] definitions ===================" << '\n';
+//	for (unsigned int i = 0; i < r.definitions.size(); ++i) {
+//		vector<string> val = r.definitions[i];
+//		for (vector<string>::iterator it = val.begin();
+//				it != val.end(); ++it)
+//			cout << *it << '\n';
+//		cout << "====================================================" << '\n';
+//	}
+//	cout << "============== [4] expressions ===================" << '\n';
+//	for (unsigned int i = 0; i < r.expressions.size(); ++i) {
+//		vector<string> val = r.expressions[i];
+//		for (vector<string>::iterator it = val.begin();
+//				it != val.end(); ++it)
+//			cout << *it << '\n';
+//		cout << "====================================================" << '\n';
+//	}
+
 	return 0;
 }

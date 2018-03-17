@@ -22,6 +22,7 @@ vector<string> FileRulesReader::read(string path) {
 		while (getline(file, line)) {
 			lines.push_back(line);
 		}
+		file.close();
 		return lines;
 }
 
