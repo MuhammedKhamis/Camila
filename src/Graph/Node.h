@@ -9,7 +9,7 @@
 #define NODE_H_
 
 #include <bits/stdc++.h>
-#include "../Enums.h"
+#include "../General/Enums.h"
 #include "Edge.h"
 
 using namespace std;

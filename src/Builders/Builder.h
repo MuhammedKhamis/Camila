@@ -66,7 +66,9 @@ private:
 		  * used to simplify the vector given by check the map if that string
 		  * is saved before in the map or not
 		  * */
-		vector<string> simplify_vector(vector<string> vec);
+		vector<char> simplify_vector(vector<string> vec);
+
+		bool is_operation(char inp);
 
 		/*
 		 *  Singleton handling
@@ -79,7 +81,7 @@ private:
         /*
          *  helping data structure to save the definitions
          * */
-		unordered_map<string,vector<string>> to_val;
+		unordered_map<string,vector<char>> to_val;
 
 		/*
 		 *  const number to tell us where the = or the : will be put in
@@ -90,10 +92,11 @@ private:
 		/*
 		 *  general operations' symbols
 		 * */
-		 const string concat_symbol = "#";
-		 const string or_symbol = "|";
-		 const string star_symbol = "*";
-		 const string plus_symbol = "+";
+		 const char concat_symbol = '#';
+		 const char or_symbol = '|';
+		 const char star_symbol = '*';
+		 const char plus_symbol = '+';
+		 const char dash_symbol = '-';
 
 
 };

@@ -7,19 +7,23 @@
 //============================================================================
 
 #include <bits/stdc++.h>
+#include "Builders/Builder.h"
+
 using namespace std;
 
 int main() {
 
-	vector<int> init;
+	Builder& b = Builder::get_Instance();
 
-	vector<vector<int>> h;
+	vector<string> d1 = {"letter","=","A","-","Z","|","a","-","z"};
+	vector<string> d2 = {"digit", "=", "0", "-", "9"};
 
-	init.assign(5,0);
+	b.evaluate_definition(d1);
+	b.evaluate_definition(d2);
 
-	for(int i = 0 ; i < 5 ; i++){
-		cout << init[i] << endl;
-	}
+	vector<string> ex1 = {"id", ":", "letter" , "digit","(" , "(" , "letter" , ")","|" , "(","digit", ")", ")" , "*" };
+	b.evaluate_expression(ex1);
+
 
 	return 0;
 }

@@ -11,7 +11,7 @@
 #include <bits/stdc++.h>
 #include "../Graph/Graph.h"
 #include "../Graph/Node.h"
-#include "../Enums.h"
+#include "../General/Enums.h"
 
 using namespace std;
 
