@@ -15,8 +15,8 @@ Node::Node(){
 	this->p = in_valid;
 }
 
-vector<Edge>* Node::get_edges(){
-	return &this->edges;
+vector<Edge> Node::get_edges(){
+	return this->edges;
 }
 
 void Node::set_priority(priority p){

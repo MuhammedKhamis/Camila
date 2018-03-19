@@ -19,10 +19,13 @@ public:
 	State(priority p);
 	priority get_priority();
 	void set_priority(priority p);
+	void set_token(string token);
+	string get_token(string token);
 
 protected:
 
 private:
+	string token;
 	priority p;
 
 };

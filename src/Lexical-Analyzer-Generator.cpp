@@ -13,16 +13,9 @@ using namespace std;
 
 int main() {
 
-	Builder& b = Builder::get_Instance();
-
-	vector<string> d1 = {"letter","=","A","-","Z","|","a","-","z"};
-	vector<string> d2 = {"digit", "=", "0", "-", "9"};
-
-	b.evaluate_definition(d1);
-	b.evaluate_definition(d2);
-
-	vector<string> ex1 = {"id", ":", "letter" , "digit","(" , "(" , "letter" , ")","|" , "(","digit", ")", ")" , "*" };
-	b.evaluate_expression(ex1);
+	set<int> x , y ;
+	x.insert(1);
+	y.insert(1);
 
 
 	return 0;

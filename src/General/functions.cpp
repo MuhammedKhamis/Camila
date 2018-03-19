@@ -13,3 +13,7 @@
 string char_to_string(char c){
 	return string(1,c);
 }
+
+char string_to_char(string s){
+	return *(s.begin());
+}
