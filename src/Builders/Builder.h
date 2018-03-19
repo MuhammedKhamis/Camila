@@ -71,6 +71,11 @@ private:
 		bool is_operation(char inp);
 
 		/*
+		 converts each range sign to group of (or)s
+		*/
+		vector<string> Builder::convert_range(vector<string> str);
+
+		/*
 		 *  Singleton handling
 		 * */
         Builder(){};
