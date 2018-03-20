@@ -7,6 +7,8 @@
 
 #include "Builder.h"
 
+#include "Postfix_handler.h"
+
 
 
 void Builder::evaluate_definition(vector<string> definition){
@@ -23,8 +25,10 @@ void Builder::evaluate_expression(vector<string> expression){
 	vector<char> new_exp = simplify_vector(expression);
 	//TODO
 	// call postfix generator for that new vector
+	string postfix_exp = to_postfix(new_exp);
 	// get the postfix and evaluate it
 	// build the thomson graph while evaluating
+
 }
 void Builder::evaluate_keyword(vector<string> keywords){
 

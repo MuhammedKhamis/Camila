@@ -7,9 +7,13 @@
  * Created on: Mar 16, 2018
  *      Author: Mohamed Raafat
  */
-#include "Postfix_generator.h"
 #include<bits/stdc++.h>
+
+#include "Postfix_handler.h"
+#include "Thomson_Builder.h"
 using namespace std;
+
+
 
 /*
  * Check whether the operand is Letter or number
@@ -41,11 +45,14 @@ int priority(char c){
 	else return -1;
 }
 
-string to_postfix(string exp)
+/*
+ * convert infix expression to postfix expression
+ * */
+string to_postfix(vector<char> exp)
 {
   stack<char> st;
   st.push('@'); //Indicating the start
-  int n = exp.length();
+  int n = exp.size();
   string output;
   for(int i; i<n; i++)
   {
@@ -101,4 +108,64 @@ string to_postfix(string exp)
           output += ' ';
       }
  return output;
+}
+
+/*
+ * Takes postfix expression and evaluate its NFA and return the starting Node of NFA
+ * NOT TESTED
+ * */
+Node* evaluate_postfix(string exp)
+{   //Initialzing stack
+    stack<Graph*> st;
+    //Intitializing Thomson builder
+    Thomson_Builder& T_builder = Thomson_Builder::get_Instance();
+    int n = exp.length();
+    // Scan all characters one by one
+    for (int i = 0; i<n; i++)
+    {   char c = exp[i];
+
+        if (is_operator(c))
+        {
+           if(c == '#'){
+        	   Graph* g1 = st.top(); //Operand 1
+        	   st.pop();
+        	   Graph* g2 = st.top(); //Operand 2
+        	   st.pop();
+        	   Graph* result;
+               result = T_builder.concat_operation(g1,g2);
+               st.push(result);
+           }else if(c == '|'){
+               Graph* g1 = st.top(); //Operand 1
+        	   st.pop();
+        	   Graph* g2 = st.top(); //Operand 2
+        	   st.pop();
+        	   Graph* result;
+               result = T_builder.or_operation(g1,g2);
+               st.push(result);
+           }else if(c == '*'){
+               Graph* g = st.top(); //Operand
+        	   st.pop();
+        	   Graph* result;
+               result = T_builder.star_operation(g);
+               st.push(result);
+           }else if(c == '+'){
+               Graph* g = st.top(); //Operand
+        	   st.pop();
+        	   Graph* result;
+               result = T_builder.plus_operation(g);
+               st.push(result);
+           }
+        }
+        else if(is_operand(c))
+        {
+          string token = "";
+          token += c;
+          Graph* g = T_builder.initialize_graph(token);
+          st.push(g);
+        }
+    }
+    Graph* final_graph = st.top();
+    st.pop();
+    Node* start_node = final_graph->get_start_node();
+    return start_node;
 }

@@ -21,7 +21,10 @@ bool is_operand(char c);
  */
 int priority(char c);
 
-
+/*
+ * convert infix expression to postfix expression
+ * */
+string to_postfix(vector<char> exp);
 
 
 
