@@ -12,6 +12,7 @@
 int Node::node_counter = 0;
 
 Node::Node(){
+	this->token = "";
 	this->p = in_valid;
 }
 

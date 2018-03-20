@@ -19,6 +19,7 @@ void Builder::evaluate_definition(vector<string> definition){
 
 void Builder::evaluate_expression(vector<string> expression){
 	vector<char> new_exp = simplify_vector(expression);
+	saver.add_token(*expression.begin());
 	//TODO
 	// call postfix generator for that new vector
 	// get the postfix and evaluate it
@@ -35,6 +36,8 @@ void Builder::evaluate_keyword(vector<string> keywords){
 			}
 			new_keyword.push_back(keywords[i][j]);
 		}
+		saver.add_token(keywords[i]);
+
 		// call postfix for this vector to generate, evaluate, create
 	}
 }

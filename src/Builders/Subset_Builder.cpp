@@ -7,11 +7,20 @@
 
 #include "Subset_Builder.h"
 
+
+Subset_Builder::Subset_Builder(){
+
+}
+
+
+
 void Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
+
 	queue<pair<int,set<int>>> q;
 
 	set<int> closure = eps_closure( {start->get_node_number()} );
+
 
 	int state_number = 0;
 
@@ -25,8 +34,6 @@ void Subset_Builder::convert_to_DFA(Node* start){
 		pair<int,set<int>> front = q.front();
 		set<int> top = front.second;
 		q.pop();
-
-
 
 		unordered_map<char,vector<int>> temp;
 		/*
@@ -47,20 +54,48 @@ void Subset_Builder::convert_to_DFA(Node* start){
 		 *  make the set of states
 		 *
 		 * */
+		if(temp.empty()){
+			table[front.first] = unordered_map<char,int>();
+			continue;
+		}
 		for(auto it = temp.begin(); it != temp.end(); it++){
 
 			set<int> next_closure = eps_closure(it->second);
 			int index = appeared_before(next_closure);
 
 			if(index == -1){
-				index = state_number;
+				index = state_number++;
 				q.push(make_pair(index,next_closure));
-				Dstates[state_number++] = next_closure;
+				Dstates[index] = next_closure;
 			}
-
 			table[front.first][it->first] = index;
 		}
+
 	}
+
+
+	// make state table;
+	Transition_Table *t = new Transition_Table(table);
+
+	for(auto it = Dstates.begin() ; it != Dstates.end() ; it++){
+
+
+		int state_id = it->first;
+		set<int> closure = it->second;
+		string token = "";
+		priority p = in_valid;
+		for(auto it1 = closure.begin(); it1 != closure.end() ; it1++){
+			string temp = token_table[*it1];
+			if(saver.get_token_level(temp) > saver.get_token_level(token)){
+				p = valid;
+				token = temp;
+			}
+		}
+		t->add_state(new State(p,token,state_id));
+	}
+	//t->print_table();
+	// return machine if you want
+
 }
 
 int Subset_Builder::appeared_before(set<int> new_Dstate){
@@ -85,6 +120,8 @@ int Subset_Builder::appeared_before(set<int> new_Dstate){
 void Subset_Builder::bfs(Node* start){
 
 	vector<bool> visited (start->get_node_number()+1 , false);
+
+
 
 	adjList.resize(visited.size());
 
