@@ -14,6 +14,10 @@
 class Rules {
 public:
 	/*
+	 * vector of order to select which vector should be popped from next
+	 */
+	std::vector<int> order;
+	/*
 	 * vector of keywords extracted from rules file.
 	 */
 	std::vector<std::vector<std::string>> keywords;

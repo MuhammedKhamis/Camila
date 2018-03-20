@@ -5,19 +5,16 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/FileRulesReader.cpp \
-../src/Rules.cpp \
 ../src/RulesParser.cpp \
 ../src/Test.cpp 
 
 OBJS += \
 ./src/FileRulesReader.o \
-./src/Rules.o \
 ./src/RulesParser.o \
 ./src/Test.o 
 
 CPP_DEPS += \
 ./src/FileRulesReader.d \
-./src/Rules.d \
 ./src/RulesParser.d \
 ./src/Test.d 
 

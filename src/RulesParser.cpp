@@ -24,16 +24,20 @@ Rules RulesParser::parse_lines(vector<string> lines) {
 		lines.pop_back();
 		if (line[0] == '[') {	//keywords
 			rules.keywords.push_back(parse(line, 0));
+			rules.order.push_back(0);
 		} else if (line[0] == '{') {	//Punctuation
 			rules.punctuations.push_back(parse(line, 1));
+			rules.order.push_back(1);
 		} else {
 			while (line[idx] != ':' && line[idx] != '=') {
 				idx++;
 			}
 			if (line[idx] == '=') {	//definitions
 				rules.definitions.push_back(parse(line, 2));
+				rules.order.push_back(2);
 			} else if (line[idx] == ':') {	//expressions
 				rules.expressions.push_back(parse(line, 3));
+				rules.order.push_back(3);
 			}
 		}
 	}
@@ -118,9 +122,19 @@ vector<string> RulesParser::expr_def_parser(string line) {
 	vector<string> tokens;
 	string token;
 	for (unsigned int i = 0; i < line.length(); i++) {
-		if (line[i] == ' ')
+		if (line[i] == ' '){
+			if (!token.empty()) {
+				tokens.push_back(token);
+				token.clear();
+			}
 			continue;
+		}
 		if (reserved_symbol(line, i) || is_exponent(line, i)) {
+			if(line[i] == '\\'){
+				i++;
+				token.append(line.begin() + i, line.begin() + i + 1);
+				continue;
+			}
 			if (!token.empty()) {
 				tokens.push_back(token);
 				token.clear();
