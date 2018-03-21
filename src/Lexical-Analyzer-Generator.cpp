@@ -7,23 +7,41 @@
 //============================================================================
 
 #include <bits/stdc++.h>
-#include "Builders/Builder.h"
+#include "Builders/Thomson_Builder.h"
+#include "Graph/Graph.h"
+#include "Graph/Node.h"
+#include "Builders/Subset_Builder.h"
+#include "Data_Structure/Token_Saver.h"
 
 using namespace std;
 
 int main() {
 
-	Builder& b = Builder::get_Instance();
+	Thomson_Builder& t = Thomson_Builder::get_Instance();
 
-	vector<string> d1 = {"letter","=","A","-","Z","|","a","-","z"};
-	vector<string> d2 = {"digit", "=", "0", "-", "9"};
+	Graph* g1 = t.initialize_graph("a");
+	t.save_graph(g1,"a");
 
-	b.evaluate_definition(d1);
-	b.evaluate_definition(d2);
+	Graph* g2 = t.initialize_graph("b");
+	t.save_graph(g2,"b");
 
-	vector<string> ex1 = {"id", ":", "letter" , "digit","(" , "(" , "letter" , ")","|" , "(","digit", ")", ")" , "*" };
-	b.evaluate_expression(ex1);
+	Graph* g3 = t.initialize_graph("c");
+	g3 = t.star_operation(g3);
 
+	t.save_graph(g3,"c*");
+
+	Node* start = t.assemble_saved_graphs();
+
+	Subset_Builder *sb = new Subset_Builder();
+
+	Token_Saver& saver = Token_Saver::get_Instance();
+
+	saver.add_token("");
+	saver.add_token("a");
+	saver.add_token("b");
+	saver.add_token("c*");
+
+	sb->convert_to_DFA(start);
 
 	return 0;
 }

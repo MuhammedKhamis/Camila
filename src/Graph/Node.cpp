@@ -12,11 +12,12 @@
 int Node::node_counter = 0;
 
 Node::Node(){
+	this->token = "";
 	this->p = in_valid;
 }
 
-vector<Edge>* Node::get_edges(){
-	return &this->edges;
+vector<Edge> Node::get_edges(){
+	return this->edges;
 }
 
 void Node::set_priority(priority p){

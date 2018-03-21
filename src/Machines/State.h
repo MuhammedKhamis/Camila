@@ -9,21 +9,24 @@
 #define STATE_H_
 
 #include <bits/stdc++.h>
-#include "../Enums.h"
+#include "../General/Enums.h"
 using namespace std;
 
 
 class State{
 
 public:
-	State(priority p);
+	State(priority p,string token,int id);
 	priority get_priority();
-	void set_priority(priority p);
+	string get_token();
+	int get_id();
 
 protected:
 
 private:
+	string token;
 	priority p;
+	int id;
 
 };
 

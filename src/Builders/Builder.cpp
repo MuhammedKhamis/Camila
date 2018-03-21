@@ -23,6 +23,7 @@ void Builder::evaluate_expression(vector<string> expression){
 	//remove all ranges ex:"a-z -> a|b|c...|z"
 	expression = convert_range(expression);
 	vector<char> new_exp = simplify_vector(expression);
+	saver.add_token(*expression.begin());
 	//TODO
 	// call postfix generator for that new vector
 	string token = *expression.begin();
@@ -40,6 +41,8 @@ void Builder::evaluate_keyword(vector<string> keywords){
 			}
 			new_keyword.push_back(keywords[i][j]);
 		}
+		saver.add_token(keywords[i]);
+
 		// call postfix for this vector to generate, evaluate, create
 		postfix_processing(new_keyword,keywords[i]);
 	}

@@ -19,7 +19,7 @@ class Edge;
 class Node{
 public:
 	Node();
-	vector<Edge>* get_edges();
+	vector<Edge> get_edges();
 	priority get_priority();
 	void set_priority(priority p);
 	void add_edge(Node* end, string value);

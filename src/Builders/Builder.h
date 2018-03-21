@@ -9,6 +9,8 @@
 #define BUILDER_H_
 
 #include <bits/stdc++.h>
+#include "../Data_Structure/Token_Saver.h"
+
 using namespace std;
 
 
@@ -87,6 +89,8 @@ private:
          *  helping data structure to save the definitions
          * */
 		unordered_map<string,vector<char>> to_val;
+
+		Token_Saver& saver = Token_Saver::get_Instance();
 
 		void postfix_processing(vector<char> exp , string token);
 
