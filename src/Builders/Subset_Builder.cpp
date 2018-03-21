@@ -17,7 +17,16 @@ Subset_Builder::Subset_Builder(){
 void Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
 
+	for(int i = 0 ; i < adjList.size(); i++){
+		cout << "state: " <<  i << endl;
+		for(int j = 0 ; j < adjList[i].size() ; j++){
+			cout << "input: " << adjList[i][j].first <<  " next: " << adjList[i][j].second;
+		}
+		cout << endl;
+	}
+	cout << endl;
 	queue<pair<int,set<int>>> q;
+
 
 	set<int> closure = eps_closure( {start->get_node_number()} );
 
@@ -35,6 +44,14 @@ void Subset_Builder::convert_to_DFA(Node* start){
 		set<int> top = front.second;
 		q.pop();
 
+		/*
+		cout << front.first << endl;
+		for(auto it = top.begin(); it!= top.end() ; it++){
+			cout << *it << ", ";
+		}
+		cout << endl;
+
+		*/
 		unordered_map<char,vector<int>> temp;
 		/*
 		 *  get all possible inputs
@@ -84,16 +101,19 @@ void Subset_Builder::convert_to_DFA(Node* start){
 		set<int> closure = it->second;
 		string token = "";
 		priority p = in_valid;
+
+
 		for(auto it1 = closure.begin(); it1 != closure.end() ; it1++){
 			string temp = token_table[*it1];
 			if(saver.get_token_level(temp) > saver.get_token_level(token)){
 				p = valid;
+
 				token = temp;
 			}
 		}
 		t->add_state(new State(p,token,state_id));
 	}
-	//t->print_table();
+	t->print_table();
 	// return machine if you want
 
 }
@@ -146,6 +166,7 @@ void Subset_Builder::bfs(Node* start){
 			q.push(edges[i].get_to_Node());
 		}
 	}
+
 }
 
 set<int> Subset_Builder::eps_closure(vector<int> start){

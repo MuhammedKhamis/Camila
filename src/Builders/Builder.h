@@ -94,6 +94,8 @@ private:
 
 		void postfix_processing(vector<char> exp , string token);
 
+		bool add_concat(char look_back, char current);
+
 		/*
 		 *  const number to tell us where the = or the : will be put in
 		 *  the expression or in the definition

@@ -51,7 +51,7 @@ string Postfix_handler::to_postfix(vector<char> exp)
   st.push('@'); //Indicating the start
   int n = exp.size();
   string output;
-  for(int i; i<n; i++)
+  for(int i=0; i<n; i++)
   {
 	 char c = exp[i];
 	 //If token is operand print it to ouput
@@ -129,7 +129,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         	   Graph* g2 = st.top(); //Operand 2
         	   st.pop();
         	   Graph* result;
-               result = T_builder.concat_operation(g1,g2);
+               result = T_builder.concat_operation(g2,g1);
                st.push(result);
            }else if(c == '|'){
                Graph* g1 = st.top(); //Operand 1
@@ -137,7 +137,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         	   Graph* g2 = st.top(); //Operand 2
         	   st.pop();
         	   Graph* result;
-               result = T_builder.or_operation(g1,g2);
+               result = T_builder.or_operation(g2,g1);
                st.push(result);
            }else if(c == '*'){
                Graph* g = st.top(); //Operand

@@ -34,7 +34,7 @@ void Builder::evaluate_keyword(vector<string> keywords){
 
 	for(unsigned int i = 0 ; i < keywords.size() ; i++){
 		vector<char> new_keyword;
-		for(unsigned int j = 0 ; j < keywords[i].size(); i++){
+		for(unsigned int j = 0 ; j < keywords[i].size(); j++){
 			if(j){
 				// to put # before next character
 				new_keyword.push_back(concat_symbol);
@@ -52,6 +52,13 @@ void Builder::evaluate_punctuation(vector<string> punc){
 	evaluate_keyword(punc);
 }
 
+bool Builder::add_concat(char look_back, char current){
+	return (isalnum(look_back) && isalnum(current)) ||
+			(isalnum(look_back) && current == '(') ||
+			(look_back == ')' && isalnum(current)) ||
+			(look_back == ')' && current == '(' ) ||
+			((look_back == '*' || look_back == '+') && ( isalnum(current)|| current == '('));
+}
 
 
 vector<char> Builder::simplify_vector(vector<string> vec){
@@ -73,14 +80,11 @@ vector<char> Builder::simplify_vector(vector<string> vec){
 	vector<char> return_vec;
 	char look_back = 0;
 	for(unsigned int i = 0 ; i < new_vec.size(); i++){
-		if(is_operation(new_vec[i])){
-			look_back = 0;
-			return_vec.push_back(new_vec[i]);
-			continue;
-		}
-		if(isalnum(look_back) && ( isalnum(new_vec[i]) || new_vec[i] == '(') ){
+
+		if(add_concat(look_back,new_vec[i])){
 			return_vec.push_back(concat_symbol);
 		}
+
 		return_vec.push_back(new_vec[i]);
 		look_back = new_vec[i];
 	}
