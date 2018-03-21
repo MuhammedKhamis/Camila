@@ -9,6 +9,7 @@
 #define THOMSON_BUILDER_H_
 
 #include <bits/stdc++.h>
+
 #include "../Graph/Graph.h"
 #include "../Graph/Node.h"
 #include "../General/Enums.h"

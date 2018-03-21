@@ -73,6 +73,11 @@ private:
 		bool is_operation(char inp);
 
 		/*
+		 converts each range sign to group of (or)s
+		*/
+		vector<string> convert_range(vector<string> str);
+
+		/*
 		 *  Singleton handling
 		 * */
         Builder(){};
@@ -86,6 +91,8 @@ private:
 		unordered_map<string,vector<char>> to_val;
 
 		Token_Saver& saver = Token_Saver::get_Instance();
+
+		void postfix_processing(vector<char> exp , string token);
 
 		/*
 		 *  const number to tell us where the = or the : will be put in
