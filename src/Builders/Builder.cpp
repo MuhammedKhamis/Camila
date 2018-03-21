@@ -25,9 +25,8 @@ void Builder::evaluate_expression(vector<string> expression){
 	vector<char> new_exp = simplify_vector(expression);
 	//TODO
 	// call postfix generator for that new vector
-	string postfix_exp = to_postfix(new_exp);
-	// get the postfix and evaluate it
-	// build the thomson graph while evaluating
+	string token = *expression.begin();
+	postfix_processing(new_exp,token);
 
 }
 void Builder::evaluate_keyword(vector<string> keywords){
@@ -42,6 +41,7 @@ void Builder::evaluate_keyword(vector<string> keywords){
 			new_keyword.push_back(keywords[i][j]);
 		}
 		// call postfix for this vector to generate, evaluate, create
+		postfix_processing(new_keyword,keywords[i]);
 	}
 }
 
@@ -113,6 +113,15 @@ vector<string> Builder::convert_range(vector<string> str)
     return str;
 }
 
+void Builder::postfix_processing(vector<char> exp , string token){
+	Postfix_handler& post_handler = Postfix_handler::get_Instance();
+
+	string postfix_exp = post_handler.to_postfix(exp);
+
+	// get the postfix and evaluate it
+	// build the thomson graph while evaluating
+	post_handler.evaluate_postfix(postfix_exp, token);
+}
 
 Builder& Builder::get_Instance(){
 	static Builder instance;

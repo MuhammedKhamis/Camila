@@ -1,32 +1,29 @@
 /*
- * Postfix_generator.cpp
+ * Postfix_handler.cpp
  *
- * This file has the functions that converts the regular expressions from
- * infix form to postfix form to be ready to be converted to NFA directly
- *
- * Created on: Mar 16, 2018
- *      Author: Mohamed Raafat
+ *  Created on: Mar 21, 2018
+ *      Author: muhammed
  */
-#include<bits/stdc++.h>
 
 #include "Postfix_handler.h"
-#include "Thomson_Builder.h"
-using namespace std;
 
-
-
+Postfix_handler& Postfix_handler::get_Instance(){
+	static Postfix_handler instance;
+	return instance;
+}
 /*
  * Check whether the operand is Letter or number
- * Hint:
- * Will be edited to accept regular definitions later
 */
-bool is_operand(char c){
+bool Postfix_handler::is_operand(char c){
 	if((c >= 'a' && c <= 'z')||(c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
 			return true;
 	return false;
 }
 
-bool is_operator(char c){
+/*
+ * Check the operators
+ */
+bool Postfix_handler::is_operator(char c){
 	if(c == '*' || c == '+' || c == '?' || c == '#' || c == '|')
 			return true;
 	return false;
@@ -35,7 +32,7 @@ bool is_operator(char c){
 /*
  * Returns the priority of each operation
  */
-int priority(char c){
+int Postfix_handler::priority(char c){
 	if(c == '*' || c == '+' || c == '?')
 		return 3;
 	else if(c == '#')//concatenation --> must be added before converting to Postfix
@@ -48,7 +45,7 @@ int priority(char c){
 /*
  * convert infix expression to postfix expression
  * */
-string to_postfix(vector<char> exp)
+string Postfix_handler::to_postfix(vector<char> exp)
 {
   stack<char> st;
   st.push('@'); //Indicating the start
@@ -114,7 +111,7 @@ string to_postfix(vector<char> exp)
  * Takes postfix expression and evaluate its NFA and return the starting Node of NFA
  * NOT TESTED
  * */
-Node* evaluate_postfix(string exp)
+Node* Postfix_handler::evaluate_postfix(string exp, string token)
 {   //Initialzing stack
     stack<Graph*> st;
     //Intitializing Thomson builder
@@ -167,5 +164,6 @@ Node* evaluate_postfix(string exp)
     Graph* final_graph = st.top();
     st.pop();
     Node* start_node = final_graph->get_start_node();
+    T_builder.save_graph(final_graph,token);
     return start_node;
 }

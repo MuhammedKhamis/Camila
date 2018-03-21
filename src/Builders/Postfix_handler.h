@@ -1,31 +1,58 @@
 /*
- * Postfix_generator.h
+ * Postfixhandler.h
  *
- *  Created on: Mar 16, 2018
- *      Author: Mohamed Raafat
+ *  Created on: Mar 21, 2018
+ *      Author: muhammed
  */
 
-#ifndef POSTFIX_GENERATOR_H_
-#define POSTFIX_GENERATOR_H_
+#ifndef POSTFIXHANDLER_H_
+#define POSTFIXHANDLER_H_
+
 #include <bits/stdc++.h>
+#include "../Graph/Node.h"
+#include "../Graph/Graph.h"
+#include "../Builders/Thomson_Builder.h"
 
-/*
- * Check whether the operand is Letter or number
- * Hint:
- * Will be edited to accept regular definitions later
-*/
-bool is_operand(char c);
+using namespace std;
 
-/*
- * Returns the priority of each operation
- */
-int priority(char c);
+class Postfix_handler {
+public:
+	/*
+	 *  Singleton Class
+	 */
+		static Postfix_handler& get_Instance();
 
-/*
- * convert infix expression to postfix expression
- * */
-string to_postfix(vector<char> exp);
+	/*
+	 * convert infix expression to postfix expression
+	 */
+	string to_postfix(vector<char> exp);
 
+	/*
+	 * Takes postfix expression and evaluate its NFA and return the starting Node of NFA	 *
+	 */
+	Node* evaluate_postfix(string exp,string token);
 
+private:
+	/*
+	 *  Singleton handling
+	 */
+	    Postfix_handler(){};
+	    // Stop the compiler generating methods of copy the object
+	    Postfix_handler(Postfix_handler const& copy);            // Not Implemented
+	    Postfix_handler& operator=(Postfix_handler const& copy); // Not Implemented
 
-#endif /*POSTFIX_GENERATOR_H_*/
+	/*
+	 * Check whether the operand is Letter or number
+	*/
+	bool is_operand(char c);
+
+	/*
+	 * Returns the priority of each operation
+	 */
+	int priority(char c);
+
+	bool is_operator(char c);
+
+};
+
+#endif /* POSTFIXHANDLER_H_ */
