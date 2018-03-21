@@ -13,21 +13,49 @@
 #include "Builders/Subset_Builder.h"
 #include "Data_Structure/Token_Saver.h"
 #include "Builders/Builder.h"
-
+#include "Machines/Machine.h"
+#include "Machines/State.h"
+#include "General/Enums.h"
+#include "Files_Handler/FileReader.h"
 using namespace std;
+
+
+void scan_file(string src_code,Machine* m){
+
+		State* current = m->get_start();
+		State* last_correct_state = current;
+		int last_correct_index = 0;
+
+		for(unsigned int i = 0 ; i < src_code.size();i++){
+			bool res = m->next(current,src_code[i]);
+			if(res){
+				current = m->get_current();
+				// correct transition
+				if(current->get_priority() == valid){
+					last_correct_state = current;
+					last_correct_index = i;
+				}
+			}else{
+				// bad transition
+				if(last_correct_state->get_priority() == valid){
+					cout << last_correct_state->get_token() << endl;
+					i = last_correct_index;
+				}else{
+					i = ++last_correct_index;
+				}
+				current = m->get_start();
+				last_correct_state = current;
+			}
+		}
+}
 
 int main() {
 
+	File_Reader f;
 
 	Builder& b = Builder::get_Instance();
 
-/*
-	b.evaluate_keyword({"a","b"});
-
-	b.evaluate_expression({"c*",":","c","*"});
-*/
-	b.evaluate_expression({"exp",":","(" , "b" , ")" ,"a"});
-
+	b.evaluate_expression({"kamel",":","a","h","m","e","d"});
 
 	Thomson_Builder& t = Thomson_Builder::get_Instance();
 
@@ -35,9 +63,13 @@ int main() {
 
 	Subset_Builder *sb = new Subset_Builder();
 
-	Token_Saver& saver = Token_Saver::get_Instance();
+	Machine* m = sb->convert_to_DFA(start);
 
-	sb->convert_to_DFA(start);
+	if(!f.read_file("a.txt")){
+		cout << "error in reading file";
+		return 0;
+	}
+	scan_file(f.src_code(),m);
 
 	return 0;
 }

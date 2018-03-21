@@ -14,17 +14,9 @@ Subset_Builder::Subset_Builder(){
 
 
 
-void Subset_Builder::convert_to_DFA(Node* start){
+Machine* Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
 
-	for(int i = 0 ; i < adjList.size(); i++){
-		cout << "state: " <<  i << endl;
-		for(int j = 0 ; j < adjList[i].size() ; j++){
-			cout << "input: " << adjList[i][j].first <<  " next: " << adjList[i][j].second;
-		}
-		cout << endl;
-	}
-	cout << endl;
 	queue<pair<int,set<int>>> q;
 
 
@@ -113,9 +105,9 @@ void Subset_Builder::convert_to_DFA(Node* start){
 		}
 		t->add_state(new State(p,token,state_id));
 	}
-	t->print_table();
+	//t->print_table();
 	// return machine if you want
-
+	return new Machine(t);
 }
 
 int Subset_Builder::appeared_before(set<int> new_Dstate){

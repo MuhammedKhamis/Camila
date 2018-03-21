@@ -24,7 +24,7 @@ public:
 	 State* get_start();
 	 /* go to the next state */
 	 bool next(State* current,char input);
-	 virtual ~Machine() = 0;
+
 protected:
 
 private:
