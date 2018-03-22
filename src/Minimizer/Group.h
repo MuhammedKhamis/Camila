@@ -32,7 +32,7 @@ public:
 	 */
 	void print();
 
-private:
+public:
 	/**
 	 * list of nodes belongs to this group
 	 */
