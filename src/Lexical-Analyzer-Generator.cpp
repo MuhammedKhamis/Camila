@@ -17,6 +17,8 @@
 #include "Rules_Parser/Rules.h"
 #include "Rules_Parser/FileRulesReader.h"
 #include "Rules_Parser/RulesParser.h"
+#include "Minimizer/Group.h"
+#include "Minimizer/Groups.h"
 
 using namespace std;
 
@@ -36,6 +38,26 @@ int main() {
 	Subset_Builder *sb = new Subset_Builder();
 
 	Transition_Table* table = sb->convert_to_DFA(start);
+
+	Group accepted_group,non_accepted_group;
+
+	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
+
+	for(auto it = tab.begin() ; it != tab.end();it++){
+
+		int id = it->first;
+
+		if(table->get_state(id)->get_priority() == valid){
+			accepted_group.add(id);
+		}else{
+			non_accepted_group.add(id);
+		}
+	}
+/*
+	Groups g;
+	g.add(accepted_group);
+	g.add(non_accepted_group);
+	*/
 
 	/*
 
