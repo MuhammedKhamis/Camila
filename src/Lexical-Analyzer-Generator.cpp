@@ -24,6 +24,13 @@ using namespace std;
 
 int main() {
 
+	Builder& b = Builder::get_Instance();
+
+	//b.evaluate_expression({"relop",":", "\=\=" ,"|" ,"!\=" ,"|", ">", "|" ,">\=" ,"|" ,"<" ,"|" ,"<\="});
+
+	b.evaluate_expression({"mulop",":" ,"\\*" ,"|" ,"/"});
+
+	/*
 	RulesParser rp;
 	FileRulesReader frr;
 	string path("src/files/rules.txt");
@@ -36,6 +43,8 @@ int main() {
 	Subset_Builder *sb = new Subset_Builder();
 
 	Transition_Table* table = sb->convert_to_DFA(start);
+
+
 
 	/*
 	Group accepted_group,non_accepted_group;

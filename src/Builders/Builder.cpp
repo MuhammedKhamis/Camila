@@ -35,7 +35,7 @@ void Builder::evaluate_keyword(vector<string> keywords){
 	for(unsigned int i = 0 ; i < keywords.size() ; i++){
 		vector<char> new_keyword;
 		for(unsigned int j = 0 ; j < keywords[i].size(); j++){
-			if(j){
+			if(j && keywords[i][j-1] != '\\'){
 				// to put # before next character
 				new_keyword.push_back(concat_symbol);
 			}
@@ -68,7 +68,7 @@ vector<char> Builder::simplify_vector(vector<string> vec){
 		if(to_val.find(vec[i]) == to_val.end()){
 			// not found before
 			for(unsigned int j = 0 ; j < vec[i].size() ; j++){
-				if(j){
+				if(j && vec[i][j-1] != '\\'){
 					new_vec.push_back(concat_symbol);
 				}
 				new_vec.push_back(vec[i][j]);
