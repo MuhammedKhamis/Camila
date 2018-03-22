@@ -26,19 +26,18 @@ int main() {
 
 	RulesParser rp;
 	FileRulesReader frr;
-	string path("files/rules.txt");
+	string path("src/files/rules.txt");
 	vector<string> lines = frr.read(path);
 
-	Builder& b = Builder::get_Instance();
+	Rules r = rp.parse_lines(lines);
 
-	Thomson_Builder& t = Thomson_Builder::get_Instance();
-
-	Node* start = t.assemble_saved_graphs();
+	Node* start = r.parse_nfa();
 
 	Subset_Builder *sb = new Subset_Builder();
 
 	Transition_Table* table = sb->convert_to_DFA(start);
 
+	/*
 	Group accepted_group,non_accepted_group;
 
 	unordered_map<int,unordered_map<char,int>> tab = table->get_table();

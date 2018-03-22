@@ -75,7 +75,7 @@ private:
 		/*
 		 converts each range sign to group of (or)s
 		*/
-		vector<string> convert_range(vector<string> str);
+		vector<char> convert_range(vector<char> str);
 
 		/*
 		 *  Singleton handling

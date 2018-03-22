@@ -23,21 +23,17 @@ Rules RulesParser::parse_lines(vector<string> lines) {
 		string line = lines.back();
 		lines.pop_back();
 		if (line[0] == '[') {	//keywords
-			rules.keywords.push_back(parse(line, 0));
-			rules.order.push_back(0);
+			rules.add_keyword(parse(line,0));
 		} else if (line[0] == '{') {	//Punctuation
-			rules.punctuations.push_back(parse(line, 1));
-			rules.order.push_back(1);
+			rules.add_punctuations(parse(line, 1));
 		} else {
 			while (line[idx] != ':' && line[idx] != '=') {
 				idx++;
 			}
 			if (line[idx] == '=') {	//definitions
-				rules.definitions.push_back(parse(line, 2));
-				rules.order.push_back(2);
+				rules.add_definitions(parse(line,2));
 			} else if (line[idx] == ':') {	//expressions
-				rules.expressions.push_back(parse(line, 3));
-				rules.order.push_back(3);
+				rules.add_expressions(parse(line,3));
 			}
 		}
 	}

@@ -21,8 +21,8 @@ void Builder::evaluate_definition(vector<string> definition){
 
 void Builder::evaluate_expression(vector<string> expression){
 	//remove all ranges ex:"a-z -> a|b|c...|z"
-	expression = convert_range(expression);
 	vector<char> new_exp = simplify_vector(expression);
+	new_exp = convert_range(new_exp);
 	saver.add_token(*expression.begin());
 	//TODO
 	// call postfix generator for that new vector
@@ -67,7 +67,12 @@ vector<char> Builder::simplify_vector(vector<string> vec){
 	for(unsigned int i = type_index+1 ; i < vec.size() ; i++){
 		if(to_val.find(vec[i]) == to_val.end()){
 			// not found before
-			new_vec.push_back(*vec[i].begin());
+			for(unsigned int j = 0 ; j < vec[i].size() ; j++){
+				if(j){
+					new_vec.push_back(concat_symbol);
+				}
+				new_vec.push_back(vec[i][j]);
+			}
 		}else{
 			// we saved that string before
 			vector<char> temp = to_val[vec[i]];
@@ -99,20 +104,20 @@ bool Builder::is_operation(char inp){
 /*
  converts each range sign to group of (or)s
 */
-vector<string> Builder::convert_range(vector<string> str)
+vector<char> Builder::convert_range(vector<char> str)
 {
-    string upper_case[] = {"A","|","B","|","C","|","D","|","E","|","F","|","G","|","H","|","I","|","J","|","K","|","L","|","M","|","N","|","O","|","P","|","Q","|","R","|","S","|","T","|","U","|","V","|","W","|","X","|","Y","|","Z"};
-    string lower_case[] = {"a","|","b","|","c","|","d","|","e","|","f","|","g","|","h","|","i","|","j","|","k","|","l","|","m","|","n","|","o","|","p","|","q","|","r","|","s","|","t","|","u","|","v","|","w","|","x","|","y","|","z"};
-    string digits []    = {"0","|","1","|","2","|","3","|","4","|","5","|","6","|","7","|","8","|","9"};
-    for(int i=0; i<str.size(); i++)
+    char upper_case[] = {'A','|','B','|','C','|','D','|','E','|','F','|','G','|','H','|','I','|','J','|','K','|','L','|','M','|','N','|','O','|','P','|','Q','|','R','|','S','|','T','|','U','|','V','|','W','|','X','|','Y','|','Z'};
+    char lower_case[] = {'a','|','b','|','c','|','d','|','e','|','f','|','g','|','h','|','i','|','j','|','k','|','l','|','m','|','n','|','o','|','p','|','q','|','r','|','s','|','t','|','u','|','v','|','w','|','x','|','y','|','z'};
+    char digits []    = {'0','|','1','|','2','|','3','|','4','|','5','|','6','|','7','|','8','|','9'};
+    for(unsigned int i=0; i<str.size(); i++)
     {
-        if(str[i] == "-" && str[i-1] == "A") //range sign
+        if(str[i] == '-' && str[i-1] == 'A') //range sign
         {   str.insert(str.begin()+i+2, upper_case, upper_case+51);
             str.erase(str.begin()+i-1,str.begin()+i+2);
-        }else if(str[i] == "-" && str[i-1] == "a") //range sign
+        }else if(str[i] == '-' && str[i-1] == 'a') //range sign
         {   str.insert(str.begin()+i+2,lower_case, lower_case+51);
             str.erase(str.begin()+i-1,str.begin()+i+2);
-        }else if(str[i] == "-" && str[i-1] == "0") //range sign
+        }else if(str[i] == '-' && str[i-1] == '0') //range sign
         {   str.insert(str.begin()+i+2,digits, digits+19);
             str.erase(str.begin()+i-1,str.begin()+i+2);
         }
