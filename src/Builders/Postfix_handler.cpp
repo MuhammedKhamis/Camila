@@ -15,16 +15,16 @@ Postfix_handler& Postfix_handler::get_Instance(){
  * Check whether the operand is Letter or number
 */
 bool Postfix_handler::is_operand(char c){
-	if((c >= 'a' && c <= 'z')||(c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-			return true;
-	return false;
+	if((c == '{') || (c == '}') || (c == ',') || (c == ';') || (c == '=') || (c == '!') || (c == '<') || (c == '>') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+				return true;
+		return false;
 }
 
 /*
  * Check the operators
  */
 bool Postfix_handler::is_operator(char c){
-	if(c == '*' || c == '+' || c == '?' || c == '#' || c == '|')
+	if(c == '*' || c == '+' || c == '#' || c == '|')
 			return true;
 	return false;
 }
@@ -33,7 +33,7 @@ bool Postfix_handler::is_operator(char c){
  * Returns the priority of each operation
  */
 int Postfix_handler::priority(char c){
-	if(c == '*' || c == '+' || c == '?')
+	if(c == '*' || c == '+')
 		return 3;
 	else if(c == '#')//concatenation --> must be added before converting to Postfix
 		return 2;
