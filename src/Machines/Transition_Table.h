@@ -22,6 +22,7 @@ public:
 	State* current_state();
 	void add_state(State* s);
 	void print_table();
+	unordered_map<int,unordered_map<char,int>> get_table();
 
 protected:
 
