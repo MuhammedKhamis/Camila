@@ -24,7 +24,7 @@ int main() {
 /*
 	b.evaluate_keyword({"a","b"});
 
-	b.evaluate_expression({"c*",":","c","*"});
+	b asdasd.evaluate_expression({"c*",":","c","*"});
 */
 	b.evaluate_expression({"exp",":","(" , "b" , ")" ,"a"});
 
