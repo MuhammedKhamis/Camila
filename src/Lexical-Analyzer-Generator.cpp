@@ -35,8 +35,6 @@ int main() {
 
 	Subset_Builder *sb = new Subset_Builder();
 
-	Token_Saver& saver = Token_Saver::get_Instance();
-
 	sb->convert_to_DFA(start);
 
 	return 0;
