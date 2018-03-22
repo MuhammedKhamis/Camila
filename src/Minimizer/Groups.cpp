@@ -15,3 +15,7 @@ int Groups::find_group(int node){
 	}
 	return -1;
 }
+
+void Groups::add(Group g){
+		groups.push_back(g);
+}
