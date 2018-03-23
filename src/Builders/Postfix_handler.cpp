@@ -57,14 +57,6 @@ bool Postfix_handler::is_converted_operator(string c){
 	return false;
 }
 
-/*
- * Check the operators
- */
-bool Postfix_handler::is_operator_eval(char c){
-	if(c == '%' || c == '?' || c == '#' || c == '|')
-			return true;
-	return false;
-}
 
 /*
  * Returns the priority of each operation

@@ -46,7 +46,7 @@ void scan_file(string src_code,Machine* m){
 			}else{
 				// bad transition
 				if(last_correct_state->get_priority() == valid){
-					//cout << last_correct_state->get_token() << endl;
+					cout << last_correct_state->get_token() << endl;
 					i = last_correct_index;
 				}else{
 					i = ++last_correct_index;
@@ -75,60 +75,27 @@ int main() {
 	Subset_Builder *sb = new Subset_Builder();
 
 
-
 	Transition_Table* table = sb->convert_to_DFA(start);
 
+	Minimizer * minimizer = new Minimizer(table);
 
 
-  Machine* m = new Machine(table);
+
+	Machine* m = new Machine(minimizer->get_minimized());
   
-  File_Reader fr ;
+
+
+	File_Reader fr ;
 
   if(!fr.read_file("a.txt")){
 	  cout << "Error\n";
 	  return 0;
   }
-  scan_file(fr.src_code(),m);
+  	  scan_file(fr.src_code(),m);
 
-	int stop_s=clock();
+  	  int stop_s=clock();
 
 	cout << "time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
 
-/*
-  Group accepted_group,non_accepted_group;
-
-	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
-
-	for(auto it = tab.begin() ; it != tab.end();it++){
-
-		int id = it->first;
-
-		if(table->get_state(id)->get_priority() == valid){
-			accepted_group.add(id);
-		}else{
-			non_accepted_group.add(id);
-		}
-	}
-
-	Groups gp;
-
-	gp.add(accepted_group);
-	gp.add(non_accepted_group);
-
-	Minimizer mz(gp,tab);
-
-
-
-	unordered_map<int,unordered_map<char,int>>  new_tab = mz.get_minimzed();
-
-	  cout << "Hellod" << endl;
-
-
-	Transition_Table* tity = new Transition_Table(new_tab);
-
-	//table->print_table();
-
-	tity->print_table();
-*/
 	return 0;
 }

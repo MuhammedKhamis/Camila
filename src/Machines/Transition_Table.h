@@ -24,6 +24,7 @@ public:
 	void print_table();
 	State* get_state(int id);
 	unordered_map<int,unordered_map<string,int>> get_table();
+	void set_start_state_id(int id);
 
 protected:
 
@@ -32,6 +33,7 @@ private:
 	unordered_map<int,unordered_map<string,int>> table;
 	vector<State*> state_ids;
 	int current_id;
+	int start_state_id;
 
 };
 

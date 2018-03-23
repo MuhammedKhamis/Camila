@@ -12,6 +12,7 @@ Transition_Table::Transition_Table(unordered_map<int,unordered_map<string,int>> 
 	this->table = table;
 	state_ids.resize(table.size());
 	current_id = 0;
+	start_state_id = 0;
 }
 
 State* Transition_Table::get_next_state(int current,string input){
@@ -37,11 +38,15 @@ State* Transition_Table::current_state(){
 }
 
 State* Transition_Table::get_start_state(){
-	return *state_ids.begin();
+	return state_ids[start_state_id];
 }
 
 State* Transition_Table::get_state(int id){
 	return state_ids[id];
+}
+
+void Transition_Table::set_start_state_id(int id){
+	start_state_id = id;
 }
 
 void Transition_Table::print_table(){

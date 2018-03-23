@@ -23,7 +23,13 @@ public:
 	 */
 	int find_group(int node);
 
-public:
+	int groups_count();
+
+	Group get_group(int id);
+
+	void add_node_to_group(int id, int node);
+
+private:
 	std::vector<Group> groups;
 };
 

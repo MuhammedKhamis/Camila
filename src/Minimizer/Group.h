@@ -8,7 +8,8 @@
 #ifndef GROUP_H_
 #define GROUP_H_
 
-#include <set>
+#include <bits/stdc++.h>
+using namespace std;
 
 class Group {
 public:
@@ -27,16 +28,24 @@ public:
 	 */
 	bool exist(int node);
 
+	vector<pair<int,int>> get_pairs();
+
+	vector<int> get_values();
+
+	int group_size();
+
+	int get_group_item();
+
 	/**
 	 * print all nodes numbers of this group
 	 */
 	void print();
 
-public:
+private:
 	/**
 	 * list of nodes belongs to this group
 	 */
-	std::set<int> group;
+	set<int> group;
 };
 
 #endif /* GROUP_H_ */
