@@ -10,9 +10,13 @@
 
 #include <bits/stdc++.h>
 #include "Groups.h"
+using namespace std;
 
 class Minimizer {
 public:
+
+	Minimizer(Groups g, unordered_map<int,unordered_map<char,int>> table);
+
 	/**
 	 * this function stop when it became stable
 	 * it became stable when there is more nodes must to be split to another group

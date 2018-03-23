@@ -38,6 +38,11 @@ Rules::Rules(){
 
 	Node* Rules::parse_nfa(){
 
+		return parse_nfa_priority();
+
+	}
+	Node* Rules::parse_nfa_ordered(){
+
 		for(unsigned int i = 0 ; i < order.size();i++){
 			if(order[i] == keyword_index){
 				b.evaluate_keyword(keywords[keywords_order++]);
@@ -52,3 +57,19 @@ Rules::Rules(){
 		return t.assemble_saved_graphs();
 	}
 
+	Node* Rules::parse_nfa_priority(){
+
+		for(unsigned int i = 0 ; i < keywords.size();i++){
+			b.evaluate_keyword(keywords[i]);
+		}
+		for(unsigned int i = 0 ; i < punctuations.size();i++){
+				b.evaluate_keyword(punctuations[i]);
+		}
+		for(unsigned int i = 0 ; i < definitions.size();i++){
+				b.evaluate_keyword(definitions[i]);
+		}
+		for(unsigned int i = 0 ; i < expressions.size();i++){
+				b.evaluate_keyword(expressions[i]);
+		}
+		return t.assemble_saved_graphs();
+	}

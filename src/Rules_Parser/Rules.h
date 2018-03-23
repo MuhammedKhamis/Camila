@@ -34,6 +34,10 @@ public:
 
 
 private:
+
+	Node* parse_nfa_ordered();
+
+	Node* parse_nfa_priority();
 	/*
 	 * vector of order to select which vector should be popped from next
 	 */

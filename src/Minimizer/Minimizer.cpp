@@ -79,3 +79,8 @@ unordered_map<char, int> Minimizer::renaming_next_states(int node, char inputs[]
 	}
 	return next_states;
 }
+
+Minimizer::Minimizer(Groups g, unordered_map<int,unordered_map<char,int>> table){
+	this->g = g;
+	this->table = table;
+}

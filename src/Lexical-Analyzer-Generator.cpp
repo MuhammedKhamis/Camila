@@ -19,18 +19,19 @@
 #include "Rules_Parser/RulesParser.h"
 #include "Minimizer/Group.h"
 #include "Minimizer/Groups.h"
+#include "Minimizer/Minimizer.h"
 
 using namespace std;
 
 int main() {
 
-	Builder& b = Builder::get_Instance();
+	//Builder& b = Builder::get_Instance();
 
-	//b.evaluate_expression({"relop",":", "\=\=" ,"|" ,"!\=" ,"|", ">", "|" ,">\=" ,"|" ,"<" ,"|" ,"<\="});
+	//b.evaluate_expression({"relop",":", "\\=\\=" ,"|" ,"!\\=" ,"|", ">", "|" ,">\\=" ,"|" ,"<" ,"|" ,"<\\="});
 
-	b.evaluate_expression({"mulop",":" ,"\\*" ,"|" ,"/"});
+	//b.evaluate_expression({"mulop",":" ,"\\*" ,"|" ,"/"});
 
-	/*
+
 	RulesParser rp;
 	FileRulesReader frr;
 	string path("src/files/rules.txt");
@@ -40,13 +41,28 @@ int main() {
 
 	Node* start = r.parse_nfa();
 
+
+/*
+	Token_Saver& ts = Token_Saver::get_Instance();
+
+	Thomson_Builder& tb = Thomson_Builder::get_Instance();
+
+	Graph *g1 = tb.initialize_graph("a");
+	Graph *g2 = tb.initialize_graph("b");
+
+	ts.add_token("ab");
+
+	Graph* g = tb.concat_operation(g1,g2);
+
+	tb.save_graph(g,"ab");
+
+	Node* start = tb.assemble_saved_graphs();
+
 	Subset_Builder *sb = new Subset_Builder();
 
 	Transition_Table* table = sb->convert_to_DFA(start);
 
 
-
-	/*
 	Group accepted_group,non_accepted_group;
 
 	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
@@ -61,24 +77,11 @@ int main() {
 			non_accepted_group.add(id);
 		}
 	}
-/*
-	Groups g;
-	g.add(accepted_group);
-	g.add(non_accepted_group);
-	*/
 
-	/*
+	Groups gp;
 
-	// divide into 2 grups ac , not ac
-
-	//  put them in group data structure
-	Group accepted_group, non_accepted_group;
-	//fill groups
-
-	//add groups to Groups
-	Groups g;
-	g.add(accepted_group);
-	g.add(non_accepted_group);
-	*/
+	gp.add(accepted_group);
+	gp.add(non_accepted_group);
+*/
 	return 0;
 }
