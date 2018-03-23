@@ -53,6 +53,8 @@ private:
 
 	bool is_operator(char c);
 
+	bool is_operator_eval(char c);
+
 	char convert_operator(char c);
 	char convert_operator_back(char c);
 
