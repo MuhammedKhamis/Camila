@@ -17,19 +17,9 @@ Subset_Builder::Subset_Builder(){
 Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
 
-	for(int i = 0 ; i < adjList.size(); i++){
-		cout << "state: " <<  i << endl;
-		for(int j = 0 ; j < adjList[i].size() ; j++){
-			cout << "input: " << adjList[i][j].first <<  " next: " << adjList[i][j].second;
-		}
-		cout << endl;
-	}
-	cout << endl;
 	queue<pair<int,set<int>>> q;
 
-
 	set<int> closure = eps_closure( {start->get_node_number()} );
-
 
 	int state_number = 0;
 

@@ -41,6 +41,10 @@ int main() {
 
 	Node* start = r.parse_nfa();
 
+	Subset_Builder *sb = new Subset_Builder();
+
+	Transition_Table* table = sb->convert_to_DFA(start);
+
 
 /*
 	Token_Saver& ts = Token_Saver::get_Instance();
@@ -58,9 +62,7 @@ int main() {
 
 	Node* start = tb.assemble_saved_graphs();
 
-	Subset_Builder *sb = new Subset_Builder();
 
-	Transition_Table* table = sb->convert_to_DFA(start);
 
 
 	Group accepted_group,non_accepted_group;

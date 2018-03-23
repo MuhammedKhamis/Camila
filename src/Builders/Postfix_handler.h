@@ -54,6 +54,7 @@ private:
 	bool is_operator(char c);
 
 	char convert_operator(char c);
+	char convert_operator_back(char c);
 
 };
 

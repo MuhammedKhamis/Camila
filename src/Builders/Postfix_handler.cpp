@@ -22,6 +22,19 @@ char Postfix_handler::convert_operator(char c)
     }
     return c;
 }
+
+char Postfix_handler::convert_operator_back(char c)
+{
+    if(c == '%')
+    {
+        return '*';
+    }else if (c == '?')
+    {
+        return '+';
+    }
+    return c;
+}
+
 /*
  * Check whether the operand is Letter or number
 */
@@ -171,7 +184,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         else if(c != ' ') //Operand
         {
           string temp = "";
-          temp += c;
+          temp += convert_operator_back(c);
           Graph* g = T_builder.initialize_graph(temp);
           st.push(g);
         }
