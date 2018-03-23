@@ -14,8 +14,8 @@
 
 using namespace std;
 
-void Minimizer::minimize(char inputs[]) {
-	int size = sizeof(inputs) / sizeof(char);
+void Minimizer::minimize(vector<char> inputs ) {
+	int size = inputs.size();
 	bool unstable = true;
 	while (unstable) {
 		unstable = false;
@@ -59,7 +59,7 @@ bool Minimizer::sub_minimize(char input) {
 }
 
 unordered_map<int, unordered_map<char, int>> Minimizer::build_minimized_table(
-		char inputs[]) {
+		vector<char> inputs) {
 	std::unordered_map<int, std::unordered_map<char, int>> m_table;
 	for (unsigned int g_idx = 0; g_idx < g.groups.size(); ++g_idx) {
 		Group g_ptr = g.groups[g_idx];
@@ -73,9 +73,9 @@ unordered_map<int, unordered_map<char, int>> Minimizer::build_minimized_table(
 }
 
 unordered_map<char, int> Minimizer::renaming_next_states(int node,
-		char inputs[]) {
+		vector<char> inputs) {
 	unordered_map<char, int> next_states;
-	int size = sizeof(inputs) / sizeof(char);
+	int size = inputs.size();
 	for (int c = 0; c < size; ++c) {
 		int g_num = g.find_group(table[node][inputs[c]]);
 		next_states[inputs[c]] = g_num;
@@ -89,7 +89,19 @@ Minimizer::Minimizer(Groups g,
 	this->table = table;
 }
 
-std::unordered_map<char, int> Minimizer::get_minimzed(char inputs[]) {
+unordered_map<int,unordered_map<char, int>> Minimizer::get_minimzed() {
+
+	vector<char> inputs;
+
+	for(auto it = table.begin() ; it!= table.end() ; it++){
+		unordered_map<char, int> temp = it->second;
+		for(auto it1 = temp.begin() ; it1 != temp.end() ; it1++){
+			if(!count(inputs.begin(),inputs.end(),it1->first)){
+				inputs.push_back(it1->first);
+			}
+		}
+	}
+	cout << "Hello from minimize";
 	minimize(inputs);
 	return build_minimized_table(inputs);
 }

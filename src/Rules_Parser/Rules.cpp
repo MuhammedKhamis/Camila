@@ -59,22 +59,22 @@ Rules::Rules(){
 
 	Node* Rules::parse_nfa_priority(){
 
-		/*
+
 		for(unsigned int i = 0 ; i < keywords.size();i++){
 			b.evaluate_keyword(keywords[i]);
 		}
-
+	/*
 		for(unsigned int i = 0 ; i < punctuations.size();i++){
 				b.evaluate_punctuation(punctuations[i]);
 		}
-		*/
+
 		for(unsigned int i = 0 ; i < definitions.size();i++){
 				b.evaluate_definition(definitions[i]);
 		}
 		for(unsigned int i = 0 ; i < expressions.size();i++){
 				b.evaluate_expression(expressions[i]);
 		}
-
+*/
 		return t.assemble_saved_graphs();
 
 	}

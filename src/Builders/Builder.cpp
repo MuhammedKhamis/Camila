@@ -106,23 +106,23 @@ bool Builder::is_operation(char inp){
 */
 vector<char> Builder::convert_range(vector<char> str)
 {
-    char upper_case[] = {'A','|','B','|','C','|','D','|','E','|','F','|','G','|','H','|','I','|','J','|','K','|','L','|','M','|','N','|','O','|','P','|','Q','|','R','|','S','|','T','|','U','|','V','|','W','|','X','|','Y','|','Z'};
-    char lower_case[] = {'a','|','b','|','c','|','d','|','e','|','f','|','g','|','h','|','i','|','j','|','k','|','l','|','m','|','n','|','o','|','p','|','q','|','r','|','s','|','t','|','u','|','v','|','w','|','x','|','y','|','z'};
-    char digits []    = {'0','|','1','|','2','|','3','|','4','|','5','|','6','|','7','|','8','|','9'};
-    for(unsigned int i=0; i<str.size(); i++)
-    {
-        if(str[i] == '-' && str[i-1] == 'A') //range sign
-        {   str.insert(str.begin()+i+2, upper_case, upper_case+51);
-            str.erase(str.begin()+i-1,str.begin()+i+2);
-        }else if(str[i] == '-' && str[i-1] == 'a') //range sign
-        {   str.insert(str.begin()+i+2,lower_case, lower_case+51);
-            str.erase(str.begin()+i-1,str.begin()+i+2);
-        }else if(str[i] == '-' && str[i-1] == '0') //range sign
-        {   str.insert(str.begin()+i+2,digits, digits+19);
-            str.erase(str.begin()+i-1,str.begin()+i+2);
-        }
-    }
-    return str;
+	char upper_case[] = {'(','A','|','B','|','C','|','D','|','E','|','F','|','G','|','H','|','I','|','J','|','K','|','L','|','M','|','N','|','O','|','P','|','Q','|','R','|','S','|','T','|','U','|','V','|','W','|','X','|','Y','|','Z',')'};
+	    char lower_case[] = {'(','a','|','b','|','c','|','d','|','e','|','f','|','g','|','h','|','i','|','j','|','k','|','l','|','m','|','n','|','o','|','p','|','q','|','r','|','s','|','t','|','u','|','v','|','w','|','x','|','y','|','z',')'};
+	    char digits []    = {'(','0','|','1','|','2','|','3','|','4','|','5','|','6','|','7','|','8','|','9',')'};
+	    for(unsigned int i=0; i<str.size(); i++)
+	    {
+	        if(str[i] == '-' && str[i-1] == 'A') //range sign
+	        {   str.insert(str.begin()+i+2, upper_case, upper_case+53);
+	            str.erase(str.begin()+i-1,str.begin()+i+2);
+	        }else if(str[i] == '-' && str[i-1] == 'a') //range sign
+	        {   str.insert(str.begin()+i+2,lower_case, lower_case+53);
+	            str.erase(str.begin()+i-1,str.begin()+i+2);
+	        }else if(str[i] == '-' && str[i-1] == '0') //range sign
+	        {   str.insert(str.begin()+i+2,digits, digits+21);
+	            str.erase(str.begin()+i-1,str.begin()+i+2);
+	        }
+	    }
+	    return str;
 }
 
 void Builder::postfix_processing(vector<char> exp , string token){
