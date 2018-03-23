@@ -130,6 +130,8 @@ void Builder::postfix_processing(vector<char> exp , string token){
 
 	string postfix_exp = post_handler.to_postfix(exp);
 
+	cout << postfix_exp << endl;
+
 	// get the postfix and evaluate it
 	// build the thomson graph while evaluating
 	post_handler.evaluate_postfix(postfix_exp, token);

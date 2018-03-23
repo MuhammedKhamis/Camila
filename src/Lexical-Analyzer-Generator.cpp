@@ -20,6 +20,9 @@
 #include "Minimizer/Group.h"
 #include "Minimizer/Groups.h"
 #include "Minimizer/Minimizer.h"
+#include "Machines/Machine.h"
+#include "Machines/State.h"
+#include "Files_Handler/FileReader.h"
 
 using namespace std;
 
@@ -56,13 +59,6 @@ void scan_file(string src_code,Machine* m){
 int main() {
 
 
-	//Builder& b = Builder::get_Instance();
-
-	//b.evaluate_expression({"relop",":", "\\=\\=" ,"|" ,"!\\=" ,"|", ">", "|" ,">\\=" ,"|" ,"<" ,"|" ,"<\\="});
-
-	//b.evaluate_expression({"mulop",":" ,"\\*" ,"|" ,"/"});
-
-
 	RulesParser rp;
 	FileRulesReader frr;
 	string path("src/files/rules.txt");
@@ -76,8 +72,15 @@ int main() {
 
   Transition_Table* table = sb->convert_to_DFA(start);
 
+  Machine* m = new Machine(table);
   
+  File_Reader fr ;
 
+  if(!fr.read_file("a.txt")){
+	  cout << "Error\n";
+	  return 0;
+  }
+  //scan_file(fr.src_code(),m);
 
 /*
 	Token_Saver& ts = Token_Saver::get_Instance();
