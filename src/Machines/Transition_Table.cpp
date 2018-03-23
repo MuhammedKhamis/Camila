@@ -8,13 +8,13 @@
 #include "Transition_Table.h"
 
 
-Transition_Table::Transition_Table(unordered_map<int,unordered_map<char,int>> table){
+Transition_Table::Transition_Table(unordered_map<int,unordered_map<string,int>> table){
 	this->table = table;
 	state_ids.resize(table.size());
 	current_id = 0;
 }
 
-State* Transition_Table::get_next_state(int current,char input){
+State* Transition_Table::get_next_state(int current,string input){
 	if(table.find(current) == table.end()){
 		return 0;
 	}
@@ -45,23 +45,27 @@ State* Transition_Table::get_state(int id){
 }
 
 void Transition_Table::print_table(){
+
 	cout << "state count: " << state_ids.size() << endl;
+
 	for(int i = 0 ; i < state_ids.size() ; i++){
 		cout << "id: " << i << ", state: " << state_ids[i]->get_token();
 		cout << endl;
 	}
 
 	for(auto it = table.begin() ; it != table.end() ; it++){
+
 		int first = it->first;
 		cout << "current state: " << first << endl;
 		for(auto it1 = table[first].begin() ; it1 != table[first].end();it1++){
 			cout << "input change: " << it1->first << ", next: " << it1->second << endl;
 		}
 		cout << " ---------------------- " << endl;
+
 	}
 
 }
-unordered_map<int,unordered_map<char,int>> Transition_Table::get_table(){
+unordered_map<int,unordered_map<string,int>> Transition_Table::get_table(){
 	return table;
 }
 

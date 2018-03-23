@@ -25,12 +25,12 @@ public:
 	/*
 	 * convert infix expression to postfix expression
 	 */
-	string to_postfix(vector<char> exp);
+	vector<string> to_postfix(vector<string> exp);
 
 	/*
 	 * Takes postfix expression and evaluate its NFA and return the starting Node of NFA	 *
 	 */
-	Node* evaluate_postfix(string exp,string token);
+	Node* evaluate_postfix(vector<string> exp,string token);
 
 private:
 	/*
@@ -44,17 +44,19 @@ private:
 	/*
 	 * Check whether the operand is Letter or number
 	*/
-	bool is_operand(char c);
+	bool is_operand(string c);
 
 	/*
 	 * Returns the priority of each operation
 	 */
-	int priority(char c);
+	int priority(string c);
 
-	bool is_operator(char c);
+	bool is_normal_operator(string c);
 
-	char convert_operator(char c);
-	char convert_operator_back(char c);
+	bool is_converted_operator(string c);
+
+	string convert_operator(string c);
+	string convert_operator_back(string c);
 
 };
 

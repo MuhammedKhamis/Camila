@@ -10,6 +10,7 @@
 
 #include <bits/stdc++.h>
 #include "../Data_Structure/Token_Saver.h"
+#include "../General/functions.h"
 
 using namespace std;
 
@@ -68,14 +69,12 @@ private:
 		  * used to simplify the vector given by check the map if that string
 		  * is saved before in the map or not
 		  * */
-		vector<char> simplify_vector(vector<string> vec);
-
-		bool is_operation(char inp);
+		vector<string> simplify_vector(vector<string> vec);
 
 		/*
 		 converts each range sign to group of (or)s
 		*/
-		vector<char> convert_range(vector<char> str);
+		vector<string> convert_range(vector<string> str);
 
 		/*
 		 *  Singleton handling
@@ -88,11 +87,12 @@ private:
         /*
          *  helping data structure to save the definitions
          * */
-		unordered_map<string,vector<char>> to_val;
+		unordered_map<string,vector<string>> to_val;
 
 		Token_Saver& saver = Token_Saver::get_Instance();
 
-		void postfix_processing(vector<char> exp , string token);
+		void postfix_processing(vector<string> exp , string token);
+
 
 		bool add_concat(char look_back, char current);
 
@@ -105,11 +105,12 @@ private:
 		/*
 		 *  general operations' symbols
 		 * */
-		 const char concat_symbol = '#';
-		 const char or_symbol = '|';
-		 const char star_symbol = '*';
-		 const char plus_symbol = '+';
-		 const char dash_symbol = '-';
+		 const string concat_symbol = "#";
+		 const string or_symbol = "|";
+		 const string star_symbol = "*";
+		 const string plus_symbol = "+";
+		 const string dash_symbol = "-";
+		 const string lambda = "\\L";
 
 
 };

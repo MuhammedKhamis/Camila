@@ -62,20 +62,7 @@ vector<string> RulesParser::parse(string line, int priorities) {
 }
 
 vector<string> RulesParser::Punctuation_parser(string line) {
-	vector<string> tokens;
-	for (unsigned int i = 1; i < line.length() - 1; i++) {
-		string token;
-		// && line[i] != '\\'
-		while (i < line.length() - 1 && line[i] != ' ') {
-			token.append(line.begin() + i, line.begin() + i + 1);
-			i++;
-		}
-		if (!token.empty()) {
-			tokens.push_back(token);
-		}
-		token.clear();
-	}
-	return tokens;
+	return keywords_parser(line);
 }
 
 vector<string> RulesParser::keywords_parser(string line) {
@@ -83,10 +70,6 @@ vector<string> RulesParser::keywords_parser(string line) {
 	for (unsigned int i = 1; i < line.length() - 1; i++) {
 		string token;
 		while (i < line.length() - 1 && line[i] != ' ') {
-			/*
-			if (line[i] == '\\')
-				continue;
-			*/
 			token.append(line.begin() + i, line.begin() + i + 1);
 			i++;
 		}
@@ -109,7 +92,9 @@ vector<string> RulesParser::expressions_parser(string line) {
 bool reserved_symbol(string line, unsigned int i) {
 	return line[i] == '|' || line[i] == '(' || line[i] == ')' || line[i] == '+'
 			|| line[i] == '*' || line[i] == '-' || line[i] == ':'
-			|| line[i] == '=' || line[i] == '\\' || line[i] == '.';
+			|| line[i] == '='  || line[i] == '.';
+
+	//|| line[i] == '\\'
 }
 
 bool is_exponent(string line, unsigned int i) {
@@ -130,9 +115,8 @@ vector<string> RulesParser::expr_def_parser(string line) {
 			continue;
 		}
 		if (reserved_symbol(line, i) || is_exponent(line, i)) {
-			if(line[i] == '\\'){
-				i++;
-				token.append(line.begin() + i, line.begin() + i + 1);
+			if(i && line[i-1] == '\\'){
+				token.push_back(line[i]);
 				continue;
 			}
 			if (!token.empty()) {

@@ -23,7 +23,7 @@ public:
 	 /* Get the Start state of the machine */
 	 State* get_start();
 	 /* go to the next state */
-	 bool next(State* current,char input);
+	 bool next(State* current,string input);
 
 protected:
 
