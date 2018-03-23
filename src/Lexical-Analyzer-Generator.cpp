@@ -13,10 +13,14 @@
 #include "Builders/Subset_Builder.h"
 #include "Data_Structure/Token_Saver.h"
 #include "Builders/Builder.h"
-#include "Machines/Machine.h"
-#include "Machines/State.h"
-#include "General/Enums.h"
-#include "Files_Handler/FileReader.h"
+#include "Machines/Transition_Table.h"
+#include "Rules_Parser/Rules.h"
+#include "Rules_Parser/FileRulesReader.h"
+#include "Rules_Parser/RulesParser.h"
+#include "Minimizer/Group.h"
+#include "Minimizer/Groups.h"
+#include "Minimizer/Minimizer.h"
+
 using namespace std;
 
 
@@ -51,25 +55,68 @@ void scan_file(string src_code,Machine* m){
 
 int main() {
 
-	File_Reader f;
 
-	Builder& b = Builder::get_Instance();
+	//Builder& b = Builder::get_Instance();
 
-	b.evaluate_expression({"kamel",":","a","h","m","e","d"});
+	//b.evaluate_expression({"relop",":", "\\=\\=" ,"|" ,"!\\=" ,"|", ">", "|" ,">\\=" ,"|" ,"<" ,"|" ,"<\\="});
 
-	Thomson_Builder& t = Thomson_Builder::get_Instance();
+	//b.evaluate_expression({"mulop",":" ,"\\*" ,"|" ,"/"});
 
-	Node* start = t.assemble_saved_graphs();
+
+	RulesParser rp;
+	FileRulesReader frr;
+	string path("src/files/rules.txt");
+	vector<string> lines = frr.read(path);
+
+	Rules r = rp.parse_lines(lines);
+
+	Node* start = r.parse_nfa();
 
 	Subset_Builder *sb = new Subset_Builder();
 
-	Machine* m = sb->convert_to_DFA(start);
+  Transition_Table* table = sb->convert_to_DFA(start);
 
-	if(!f.read_file("a.txt")){
-		cout << "error in reading file";
-		return 0;
+  
+
+
+/*
+	Token_Saver& ts = Token_Saver::get_Instance();
+
+	Thomson_Builder& tb = Thomson_Builder::get_Instance();
+
+	Graph *g1 = tb.initialize_graph("a");
+	Graph *g2 = tb.initialize_graph("b");
+
+	ts.add_token("ab");
+
+	Graph* g = tb.concat_operation(g1,g2);
+
+	tb.save_graph(g,"ab");
+
+	Node* start = tb.assemble_saved_graphs();
+
+
+
+
+	Group accepted_group,non_accepted_group;
+
+	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
+
+	for(auto it = tab.begin() ; it != tab.end();it++){
+
+		int id = it->first;
+
+		if(table->get_state(id)->get_priority() == valid){
+			accepted_group.add(id);
+		}else{
+			non_accepted_group.add(id);
+		}
 	}
-	scan_file(f.src_code(),m);
 
+	Groups gp;
+
+	gp.add(accepted_group);
+	gp.add(non_accepted_group);
+*/
 	return 0;
 }

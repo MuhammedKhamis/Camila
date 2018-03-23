@@ -14,14 +14,13 @@ Subset_Builder::Subset_Builder(){
 
 
 
-Machine* Subset_Builder::convert_to_DFA(Node* start){
+
+Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
 
 	queue<pair<int,set<int>>> q;
 
-
 	set<int> closure = eps_closure( {start->get_node_number()} );
-
 
 	int state_number = 0;
 
@@ -107,7 +106,7 @@ Machine* Subset_Builder::convert_to_DFA(Node* start){
 	}
 	//t->print_table();
 	// return machine if you want
-	return new Machine(t);
+	return t;
 }
 
 int Subset_Builder::appeared_before(set<int> new_Dstate){

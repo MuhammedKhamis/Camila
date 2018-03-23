@@ -23,7 +23,8 @@ class Subset_Builder{
 public:
 
 	Subset_Builder();
-	Machine* convert_to_DFA(Node* start);
+
+	Transition_Table* convert_to_DFA(Node* start);
 
 protected:
 

@@ -39,6 +39,11 @@ State* Transition_Table::current_state(){
 State* Transition_Table::get_start_state(){
 	return *state_ids.begin();
 }
+
+State* Transition_Table::get_state(int id){
+	return state_ids[id];
+}
+
 void Transition_Table::print_table(){
 	cout << "state count: " << state_ids.size() << endl;
 	for(int i = 0 ; i < state_ids.size() ; i++){
@@ -55,5 +60,8 @@ void Transition_Table::print_table(){
 		cout << " ---------------------- " << endl;
 	}
 
+}
+unordered_map<int,unordered_map<char,int>> Transition_Table::get_table(){
+	return table;
 }
 
