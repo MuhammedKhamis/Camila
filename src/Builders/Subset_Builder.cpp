@@ -105,7 +105,7 @@ Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 		t->add_state(new State(p,token,state_id));
 	}
 
-	t->print_table();
+	//t->print_table();
 
 	return t;
 }

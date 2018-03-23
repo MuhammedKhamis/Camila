@@ -22,7 +22,7 @@ public:
 	 * it became stable when there is more nodes must to be split to another group
 	 * division done based on the given list of input
 	 */
-	void minimize(char inputs[]);
+	void minimize(vector<char> inputs);
 
 	/**
 	 * dividing the groups into subgroups based on given input
@@ -35,18 +35,18 @@ public:
 	/**
 	 * extract the minimized table
 	 */
-	std::unordered_map<int, std::unordered_map<char, int>> build_minimized_table(char inputs[]);
+	std::unordered_map<int, std::unordered_map<char, int>> build_minimized_table(vector<char> inputs);
 
 	/**
 	 * renaming next states
 	 */
-	std::unordered_map<char, int> renaming_next_states(int node, char inputs[]);
+	std::unordered_map<char, int> renaming_next_states(int node, vector<char> inputs);
 
 	/**
 	 * sequnce of minimization
 	 * minimize, rename then return minimized table
 	 */
-	std::unordered_map<char, int> get_minimzed(char inputs[]);
+	unordered_map<int,unordered_map<char, int>> get_minimzed();
 
 
 private:

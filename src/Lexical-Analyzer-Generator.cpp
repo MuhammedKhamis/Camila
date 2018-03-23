@@ -72,6 +72,8 @@ int main() {
 
   Transition_Table* table = sb->convert_to_DFA(start);
 
+
+  /*
   Machine* m = new Machine(table);
   
   File_Reader fr ;
@@ -80,28 +82,11 @@ int main() {
 	  cout << "Error\n";
 	  return 0;
   }
-  //scan_file(fr.src_code(),m);
-
-/*
-	Token_Saver& ts = Token_Saver::get_Instance();
-
-	Thomson_Builder& tb = Thomson_Builder::get_Instance();
-
-	Graph *g1 = tb.initialize_graph("a");
-	Graph *g2 = tb.initialize_graph("b");
-
-	ts.add_token("ab");
-
-	Graph* g = tb.concat_operation(g1,g2);
-
-	tb.save_graph(g,"ab");
-
-	Node* start = tb.assemble_saved_graphs();
+  scan_file(fr.src_code(),m);
+*/
 
 
-
-
-	Group accepted_group,non_accepted_group;
+  Group accepted_group,non_accepted_group;
 
 	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
 
@@ -120,6 +105,21 @@ int main() {
 
 	gp.add(accepted_group);
 	gp.add(non_accepted_group);
-*/
+
+	Minimizer mz(gp,tab);
+
+
+
+	unordered_map<int,unordered_map<char,int>>  new_tab = mz.get_minimzed();
+
+	  cout << "Hellod" << endl;
+
+
+	Transition_Table* tity = new Transition_Table(new_tab);
+
+	//table->print_table();
+
+	//tity->print_table();
+
 	return 0;
 }
