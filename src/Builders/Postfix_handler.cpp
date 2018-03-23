@@ -52,6 +52,15 @@ bool Postfix_handler::is_operator(char c){
 }
 
 /*
+ * Check the operators
+ */
+bool Postfix_handler::is_operator_eval(char c){
+	if(c == '%' || c == '?' || c == '#' || c == '|')
+			return true;
+	return false;
+}
+
+/*
  * Returns the priority of each operation
  */
 int Postfix_handler::priority(char c){
@@ -149,7 +158,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
     for (int i = 0; i<n; i++)
     {   char c = exp[i];
 
-        if (is_operator(c))
+        if (is_operator_eval(c))
         {
            if(c == '#'){
         	   Graph* g1 = st.top(); //Operand 1
@@ -184,7 +193,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         else if(c != ' ') //Operand
         {
           string temp = "";
-          temp += convert_operator_back(c);
+          temp += c;
           Graph* g = T_builder.initialize_graph(temp);
           st.push(g);
         }
