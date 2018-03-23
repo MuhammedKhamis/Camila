@@ -11,13 +11,22 @@ Postfix_handler& Postfix_handler::get_Instance(){
 	static Postfix_handler instance;
 	return instance;
 }
+char Postfix_handler::convert_operator(char c)
+{
+    if(c == '*')
+    {
+        return '%';
+    }else if (c == '+')
+    {
+        return '?';
+    }
+    return c;
+}
 /*
  * Check whether the operand is Letter or number
 */
 bool Postfix_handler::is_operand(char c){
-	if((c == '{') || (c == '}') || (c == ',') || (c == ';') || (c == '=') || (c == '!') || (c == '<') || (c == '>') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-				return true;
-		return false;
+	return !is_operator(c);
 }
 
 /*
@@ -33,13 +42,13 @@ bool Postfix_handler::is_operator(char c){
  * Returns the priority of each operation
  */
 int Postfix_handler::priority(char c){
-	if(c == '*' || c == '+')
-		return 3;
-	else if(c == '#')//concatenation --> must be added before converting to Postfix
-		return 2;
-	else if(c == '|')
-		return 1;
-	else return -1;
+	if(c == '%' || c == '?')
+			return 3;
+		else if(c == '#')//concatenation --> must be added before converting to Postfix
+			return 2;
+		else if(c == '|')
+			return 1;
+		else return -1;
 }
 
 /*
@@ -47,69 +56,75 @@ int Postfix_handler::priority(char c){
  * */
 string Postfix_handler::to_postfix(vector<char> exp)
 {
-  stack<char> st;
-  st.push('@'); //Indicating the start
-  int n = exp.size();
-  string output;
-  for(int i=0; i<n; i++)
-  {
-	 char c = exp[i];
-	 //If token is operand print it to ouput
-	 if(is_operand(c))
-	 {
-		 output += c;
-		 output += ' ';
-	 }
-	 //If token is operator check priority to
-	 //make the token bigger than all the values in stack
-	 else if(is_operator(c))
-	 {
-		 while(st.top() != '@' && st.top() != '(' &&(priority(c) <= priority(st.top())))
-			{
-				char temp = st.top();
-			 	st.pop();
-				output += temp;
-				output += ' ';
-			}
-			st.push(c);
-	 }
-	 //Push opening brackets to stack
-	 else if(c == '(')
-	 {
-		 st.push('(');
-	 }
-	 //If closing bracket pop all the contents from stack until
-	 //opening bracket is met
-	 else if(c == ')')
-	 {
-		 while(st.top() != '@' && st.top() != '(')
+	stack<char> st;
+	  st.push('@'); //Indicating the start
+	  int n = exp.size();
+	  string output;
+	  for(int i=0; i<n; i++)
+	  {
+		 char c = exp[i];
+		 if(c == '\\')
 		 {
-			 char temp = st.top();
-	         st.pop();
-	         output += temp;
-	         output += ' ';
+	        c = exp[i+1];
+	        output += c;
+	        output += ' ';
+	        i++;
+	     }
+		 //If token is operator check priority to
+		 //make the token bigger than all the values in stack
+		 else if(is_operator(c))
+		 {   c = convert_operator(c);
+			 while(st.top() != '@' && st.top() != '(' &&(priority(c) <= priority(st.top())))
+				{
+					char temp = st.top();
+				 	st.pop();
+					output += temp;
+					output += ' ';
+				}
+				st.push(c);
 		 }
-	     if(st.top() == '(')
-            {
-                char temp = st.top();
-                st.pop();
-            }
+		 //Push opening brackets to stack
+		 else if(c == '(')
+		 {
+			 st.push('(');
+		 }
+		 //If closing bracket pop all the contents from stack until
+		 //opening bracket is met
+		 else if(c == ')')
+		 {
+			 while(st.top() != '@' && st.top() != '(')
+			 {
+				 char temp = st.top();
+		         st.pop();
+		         output += temp;
+		         output += ' ';
+			 }
+		     if(st.top() == '(')
+	            {
+	                char temp = st.top();
+	                st.pop();
+	            }
 
-	 }
-  }
-  while(st.top() != '@')
-      {
-          char c = st.top();
-          st.pop();
-          output += c;
-          output += ' ';
-      }
- return output;
+		 }	 //If token is operand print it to output
+		 else if (c != ' ')
+		 {
+			 output += c;
+			 output += ' ';
+		 }
+	  }
+	  while(st.top() != '@')
+	      {
+	          char c = st.top();
+	          st.pop();
+	          output += c;
+	          output += ' ';
+	      }
+	 return output;
 }
 
 /*
  * Takes postfix expression and evaluate its NFA and return the starting Node of NFA
- * NOT TESTED
+ * Hint: # is concatenation - % is (*) closure - ? is (+) closure
  * */
 Node* Postfix_handler::evaluate_postfix(string exp, string token)
 {   //Initialzing stack
@@ -139,13 +154,13 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         	   Graph* result;
                result = T_builder.or_operation(g2,g1);
                st.push(result);
-           }else if(c == '*'){
+           }else if(c == '%'){ // % = *
                Graph* g = st.top(); //Operand
         	   st.pop();
         	   Graph* result;
                result = T_builder.star_operation(g);
                st.push(result);
-           }else if(c == '+'){
+           }else if(c == '?'){ // ? = +
                Graph* g = st.top(); //Operand
         	   st.pop();
         	   Graph* result;
@@ -153,7 +168,7 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
                st.push(result);
            }
         }
-        else if(is_operand(c))
+        else if(c != ' ') //Operand
         {
           string token = "";
           token += c;
