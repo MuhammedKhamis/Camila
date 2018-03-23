@@ -58,6 +58,15 @@ bool Postfix_handler::is_converted_operator(string c){
 }
 
 /*
+ * Check the operators
+ */
+bool Postfix_handler::is_operator_eval(char c){
+	if(c == '%' || c == '?' || c == '#' || c == '|')
+			return true;
+	return false;
+}
+
+/*
  * Returns the priority of each operation
  */
 int Postfix_handler::priority(string c){
@@ -157,10 +166,12 @@ Node* Postfix_handler::evaluate_postfix(vector<string> exp, string token)
 
     // Scan all characters one by one
 
+
     for (int i = 0; i < n; i++)
     {   string c = exp[i];
 
         if (is_converted_operator(c))
+
         {
            if(c == "#"){
         	   Graph* g1 = st.top(); //Operand 1

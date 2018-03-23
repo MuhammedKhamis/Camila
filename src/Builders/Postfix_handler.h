@@ -58,6 +58,7 @@ private:
 	string convert_operator(string c);
 	string convert_operator_back(string c);
 
+
 };
 
 #endif /* POSTFIXHANDLER_H_ */
