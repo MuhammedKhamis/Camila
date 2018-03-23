@@ -42,6 +42,12 @@ public:
 	 */
 	std::unordered_map<char, int> renaming_next_states(int node, char inputs[]);
 
+	/**
+	 * sequnce of minimization
+	 * minimize, rename then return minimized table
+	 */
+	std::unordered_map<char, int> get_minimzed(char inputs[]);
+
 
 private:
 	/**

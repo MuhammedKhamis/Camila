@@ -64,13 +64,15 @@ unordered_map<int, unordered_map<char, int>> Minimizer::build_minimized_table(
 		Group g_ptr = g.groups[g_idx];
 		set<int>::iterator it = g_ptr.group.begin();
 		int g_num = g.find_group(*it);
-		unordered_map<char, int> next_states = renaming_next_states(*it, inputs);
+		unordered_map<char, int> next_states = renaming_next_states(*it,
+				inputs);
 		m_table[g_num] = next_states;
 	}
 	return m_table;
 }
 
-unordered_map<char, int> Minimizer::renaming_next_states(int node, char inputs[]){
+unordered_map<char, int> Minimizer::renaming_next_states(int node,
+		char inputs[]) {
 	unordered_map<char, int> next_states;
 	int size = sizeof(inputs) / sizeof(char);
 	for (int c = 0; c < size; ++c) {
@@ -80,7 +82,13 @@ unordered_map<char, int> Minimizer::renaming_next_states(int node, char inputs[]
 	return next_states;
 }
 
-Minimizer::Minimizer(Groups g, unordered_map<int,unordered_map<char,int>> table){
+Minimizer::Minimizer(Groups g,
+		unordered_map<int, unordered_map<char, int>> table) {
 	this->g = g;
 	this->table = table;
+}
+
+std::unordered_map<char, int> Minimizer::get_minimzed(char inputs[]) {
+	minimize(inputs);
+	return build_minimized_table(inputs);
 }
