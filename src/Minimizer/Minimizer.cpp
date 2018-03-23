@@ -26,7 +26,7 @@ void Minimizer::minimize(char inputs[]) {
 }
 
 bool Minimizer::sub_minimize(char input) {
-	bool stable = true, rep = true;
+	bool unstable = false, rep = true;
 	while (rep) {
 		rep = false;
 		for (vector<Group>::iterator it = g.groups.begin();
@@ -49,12 +49,13 @@ bool Minimizer::sub_minimize(char input) {
 			g.groups.pop_back();
 			g.add(g1);
 			if (!g2.group.empty()) {
-				stable = false;
+				unstable = true;
 				rep = true;
+				g.add(g2);
 			}
 		}
 	}
-	return stable;
+	return unstable;
 }
 
 unordered_map<int, unordered_map<char, int>> Minimizer::build_minimized_table(
