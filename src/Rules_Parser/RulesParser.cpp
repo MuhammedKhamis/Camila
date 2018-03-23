@@ -22,10 +22,10 @@ Rules RulesParser::parse_lines(vector<string> lines) {
 		unsigned int idx = 0;
 		string line = lines.back();
 		lines.pop_back();
-		if (line[0] == '[') {	//keywords
-			rules.add_keyword(parse(line,0));
-		} else if (line[0] == '{') {	//Punctuation
-			rules.add_punctuations(parse(line, 1));
+		if (line[0] == '[') {	//Punctuation
+			rules.add_punctuations(parse(line,1));
+		} else if (line[0] == '{') {	//keyword
+			rules.add_keyword(parse(line, 0));
 		} else {
 			while (line[idx] != ':' && line[idx] != '=') {
 				idx++;
@@ -60,11 +60,13 @@ vector<string> RulesParser::parse(string line, int priorities) {
 	}
 	return temp;
 }
-vector<string> RulesParser::keywords_parser(string line) {
+
+vector<string> RulesParser::Punctuation_parser(string line) {
 	vector<string> tokens;
 	for (unsigned int i = 1; i < line.length() - 1; i++) {
 		string token;
-		while (i < line.length() - 1 && line[i] != ' ' && line[i] != '\\') {
+		// && line[i] != '\\'
+		while (i < line.length() - 1 && line[i] != ' ') {
 			token.append(line.begin() + i, line.begin() + i + 1);
 			i++;
 		}
@@ -76,13 +78,15 @@ vector<string> RulesParser::keywords_parser(string line) {
 	return tokens;
 }
 
-vector<string> RulesParser::Punctuation_parser(string line) {
+vector<string> RulesParser::keywords_parser(string line) {
 	vector<string> tokens;
 	for (unsigned int i = 1; i < line.length() - 1; i++) {
 		string token;
 		while (i < line.length() - 1 && line[i] != ' ') {
+			/*
 			if (line[i] == '\\')
 				continue;
+			*/
 			token.append(line.begin() + i, line.begin() + i + 1);
 			i++;
 		}
