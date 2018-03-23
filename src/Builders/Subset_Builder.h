@@ -44,7 +44,7 @@ private:
 	unordered_map<int,set<int>> Dstates;
 
 
-
+	const string lambda = "\\L";
 
 };
 

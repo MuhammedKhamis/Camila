@@ -17,7 +17,7 @@ Machine::Machine(Transition_Table *table){
  State* Machine::get_start(){
 	 return table->get_start_state();
  }
- bool Machine::next(State* current, char input){
+ bool Machine::next(State* current, string input){
 	 int current_id = current->get_id();
 	 State* next = table->get_next_state(current_id,input);
 	 if(next == 0){

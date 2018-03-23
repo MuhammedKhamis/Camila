@@ -23,6 +23,7 @@
 #include "Machines/Machine.h"
 #include "Machines/State.h"
 #include "Files_Handler/FileReader.h"
+#include "General/functions.h"
 
 using namespace std;
 
@@ -34,7 +35,7 @@ void scan_file(string src_code,Machine* m){
 		int last_correct_index = 0;
 
 		for(unsigned int i = 0 ; i < src_code.size();i++){
-			bool res = m->next(current,src_code[i]);
+			bool res = m->next(current,char_to_string(src_code[i]));
 			if(res){
 				current = m->get_current();
 				// correct transition
@@ -45,7 +46,7 @@ void scan_file(string src_code,Machine* m){
 			}else{
 				// bad transition
 				if(last_correct_state->get_priority() == valid){
-					cout << last_correct_state->get_token() << endl;
+					//cout << last_correct_state->get_token() << endl;
 					i = last_correct_index;
 				}else{
 					i = ++last_correct_index;
@@ -58,6 +59,8 @@ void scan_file(string src_code,Machine* m){
 
 int main() {
 
+	int start_s=clock();
+
 
 	RulesParser rp;
 	FileRulesReader frr;
@@ -68,12 +71,15 @@ int main() {
 
 	Node* start = r.parse_nfa();
 
+
 	Subset_Builder *sb = new Subset_Builder();
 
-  Transition_Table* table = sb->convert_to_DFA(start);
 
 
-  /*
+	Transition_Table* table = sb->convert_to_DFA(start);
+
+
+
   Machine* m = new Machine(table);
   
   File_Reader fr ;
@@ -83,9 +89,12 @@ int main() {
 	  return 0;
   }
   scan_file(fr.src_code(),m);
-*/
 
+	int stop_s=clock();
 
+	cout << "time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
+
+/*
   Group accepted_group,non_accepted_group;
 
 	unordered_map<int,unordered_map<char,int>> tab = table->get_table();
@@ -119,7 +128,7 @@ int main() {
 
 	//table->print_table();
 
-	//tity->print_table();
-
+	tity->print_table();
+*/
 	return 0;
 }

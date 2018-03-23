@@ -16,6 +16,8 @@ Subset_Builder::Subset_Builder(){
 
 
 Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
+
+
 	bfs(start);
 
 	queue<pair<int,set<int>>> q;
@@ -28,42 +30,31 @@ Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 
 	Dstates[state_number++] = closure;
 
-	unordered_map<int,unordered_map<char,int>> table;
+	unordered_map<int,unordered_map<string,int>> table;
+
+
 
 	while(!q.empty()){
+
 		pair<int,set<int>> front = q.front();
 		set<int> top = front.second;
 		q.pop();
 
-		/*
-		cout << front.first << endl;
-		for(auto it = top.begin(); it!= top.end() ; it++){
-			cout << *it << ", ";
-		}
-		cout << endl;
+		unordered_map<string,vector<int>> temp;
 
-		*/
-		unordered_map<char,vector<int>> temp;
-		/*
-		 *  get all possible inputs
-		 *  o/p = set of s
-		 * */
+
 		for(auto it = top.begin(); it != top.end() ; it++){
 			for(unsigned int i = 0; i < adjList[*it].size() ; i++){
 				if(adjList[*it][i].first == lambda){
 					continue;
 				}
 				string s = adjList[*it][i].first;
-				char t = string_to_char(s);
-				temp[t].push_back(adjList[*it][i].second);
+				temp[s].push_back(adjList[*it][i].second);
 			}
 		}
-		/*
-		 *  make the set of states
-		 *
-		 * */
+
 		if(temp.empty()){
-			table[front.first] = unordered_map<char,int>();
+			table[front.first] = unordered_map<string,int>();
 			continue;
 		}
 		for(auto it = temp.begin(); it != temp.end(); it++){
@@ -80,7 +71,6 @@ Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 		}
 
 	}
-
 
 	// make state table;
 	Transition_Table *t = new Transition_Table(table);
@@ -108,6 +98,8 @@ Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 	//t->print_table();
 
 	return t;
+
+
 }
 
 int Subset_Builder::appeared_before(set<int> new_Dstate){
@@ -120,6 +112,7 @@ int Subset_Builder::appeared_before(set<int> new_Dstate){
 		for(auto it1 = new_Dstate.begin() ; it1 != new_Dstate.end() ; it1++){
 			if(!old_Dstate.count(*it1)){
 				res = false;
+				break;
 			}
 		}
 		if(res){
