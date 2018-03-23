@@ -23,7 +23,38 @@
 
 using namespace std;
 
+
+void scan_file(string src_code,Machine* m){
+
+		State* current = m->get_start();
+		State* last_correct_state = current;
+		int last_correct_index = 0;
+
+		for(unsigned int i = 0 ; i < src_code.size();i++){
+			bool res = m->next(current,src_code[i]);
+			if(res){
+				current = m->get_current();
+				// correct transition
+				if(current->get_priority() == valid){
+					last_correct_state = current;
+					last_correct_index = i;
+				}
+			}else{
+				// bad transition
+				if(last_correct_state->get_priority() == valid){
+					cout << last_correct_state->get_token() << endl;
+					i = last_correct_index;
+				}else{
+					i = ++last_correct_index;
+				}
+				current = m->get_start();
+				last_correct_state = current;
+			}
+		}
+}
+
 int main() {
+
 
 	//Builder& b = Builder::get_Instance();
 
@@ -43,7 +74,9 @@ int main() {
 
 	Subset_Builder *sb = new Subset_Builder();
 
-	Transition_Table* table = sb->convert_to_DFA(start);
+  Transition_Table* table = sb->convert_to_DFA(start);
+
+  
 
 
 /*

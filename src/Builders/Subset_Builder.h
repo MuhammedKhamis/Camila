@@ -14,6 +14,7 @@
 #include "../Data_Structure/Token_Saver.h"
 #include "../Machines/Transition_Table.h"
 #include "../General/Enums.h"
+#include "../Machines/Machine.h"
 
 using namespace std;
 
@@ -22,6 +23,7 @@ class Subset_Builder{
 public:
 
 	Subset_Builder();
+
 	Transition_Table* convert_to_DFA(Node* start);
 
 protected:

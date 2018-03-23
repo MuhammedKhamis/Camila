@@ -14,6 +14,7 @@ Subset_Builder::Subset_Builder(){
 
 
 
+
 Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 	bfs(start);
 
@@ -103,7 +104,7 @@ Transition_Table* Subset_Builder::convert_to_DFA(Node* start){
 		}
 		t->add_state(new State(p,token,state_id));
 	}
-	t->print_table();
+	//t->print_table();
 	// return machine if you want
 	return t;
 }
