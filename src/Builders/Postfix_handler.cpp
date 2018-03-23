@@ -170,9 +170,9 @@ Node* Postfix_handler::evaluate_postfix(string exp, string token)
         }
         else if(c != ' ') //Operand
         {
-          string token = "";
-          token += c;
-          Graph* g = T_builder.initialize_graph(token);
+          string temp = "";
+          temp += c;
+          Graph* g = T_builder.initialize_graph(temp);
           st.push(g);
         }
     }
