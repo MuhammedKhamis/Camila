@@ -87,7 +87,14 @@ string run(string rules_file , string input_file){
 
 	// minimized DFA
 	Minimizer * minimizer = new Minimizer(table);
-	Machine* m = new Machine(minimizer->get_minimized());
+
+	Transition_Table* minimized_table = minimizer->get_minimized();
+
+	Machine* m = new Machine(minimized_table);
+
+
+	//minimized_table->print_table();
+
   
 	// try to read the src code.
 	if(!fr.read_file(input_file)){
@@ -142,14 +149,16 @@ int main(int argc, char** argv) {
 
   	int stop_s=clock();
 
- 	cout << "Done :)\n";
+ 	cout << "Done :D\n";
 
 	cout << "total time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
 
-	/* Just Testing
-	string rules_file = "src/files/rules.txt";
-	string input_file = "a.txt";
-	terminal_output(rules_file,input_file);
-	 */
+
+	/*
+		// Just Testing
+		string rules_file = "src/files/rules.txt";
+		string input_file = "a.txt";
+		terminal_output(rules_file,input_file);
+	*/
 	return 0;
 }

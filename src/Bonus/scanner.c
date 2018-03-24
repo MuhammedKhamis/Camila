@@ -4,6 +4,8 @@ extern int yylex();
 extern int yylineno;
 extern char* yytext;
 
+/*
+
 int main(void)
 {
 	int ntoken;
@@ -14,3 +16,4 @@ int main(void)
 	}
 	return 0;
 }
+*/
