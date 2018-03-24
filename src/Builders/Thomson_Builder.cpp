@@ -40,7 +40,7 @@ Graph* Thomson_Builder::concat_operation(Graph* g1 , Graph* g2){
 }
 
 Graph* Thomson_Builder::or_operation(Graph* g1 , Graph* g2){
-
+/*
 	Node* start = new Node;
 
 	Node* end = new Node;
@@ -62,11 +62,21 @@ Graph* Thomson_Builder::or_operation(Graph* g1 , Graph* g2){
 	int sz = g1->get_graph_size() + g2->get_graph_size() + 2;
 
 	Graph* g = new Graph(start,end,sz);
-	return g;
+	*/
+
+	g1->get_start_node()->add_edge(g2->get_start_node(),lambda);
+	g2->get_end_node()->add_edge(g1->get_end_node(),lambda);
+
+	int sz = g1->get_graph_size() + g2->get_graph_size();
+
+	g1->set_graph_size(sz);
+
+	return g1;
 }
 
 
 Graph* Thomson_Builder::star_operation(Graph* g1){
+/*
 	Node* start = new Node;
 	Node* end = new Node;
 
@@ -88,11 +98,14 @@ Graph* Thomson_Builder::star_operation(Graph* g1){
 	int sz = g1->get_graph_size() + 2;
 
 	Graph* g = new Graph(start,end,sz);
-
-	return g;
+*/
+	g1->get_start_node()->add_edge(g1->get_end_node(),lambda);
+	g1->get_end_node()->add_edge(g1->get_start_node(),lambda);
+	return g1;
 }
 
 Graph* Thomson_Builder::plus_operation(Graph* g1){
+/*
 	Node* start = new Node;
 	Node* end = new Node;
 
@@ -112,8 +125,10 @@ Graph* Thomson_Builder::plus_operation(Graph* g1){
 	int sz = g1->get_graph_size() + 2;
 
 	Graph* g = new Graph(start,end,sz);
+*/
+	g1->get_end_node()->add_edge(g1->get_start_node(),lambda);
 
-	return g;
+	return g1;
 }
 
 void Thomson_Builder::save_graph(Graph* g,string token){
