@@ -18,7 +18,8 @@ vector<string> FileRulesReader::read(string path) {
 		string line;
 		ifstream file(path);
 		if (!file) {
-			cout << "Cannot open lexical rules file.\n";
+			perror("Cannot open lexical rules file.\n");
+			return lines;
 		}
 		while (getline(file, line)) {
 			lines.push_back(line);

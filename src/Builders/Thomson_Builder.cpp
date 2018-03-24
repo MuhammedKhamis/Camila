@@ -117,6 +117,7 @@ Graph* Thomson_Builder::plus_operation(Graph* g1){
 }
 
 void Thomson_Builder::save_graph(Graph* g,string token){
+
 	g->get_end_node()->set_token(token);
 	saved_graphs.push_back(g);
 }

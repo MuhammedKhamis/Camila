@@ -40,17 +40,21 @@ void Builder::evaluate_keyword(vector<string> keywords){
 
 	for(unsigned int i = 0 ; i < keywords.size() ; i++){
 		vector<string> new_keyword;
+		string token="";
 		for(unsigned int j = 0 ; j < keywords[i].size(); j++){
 			if(j && keywords[i][j-1] != '\\'){
 				// to put # before next character
 				new_keyword.push_back(concat_symbol);
 			}
 			new_keyword.push_back(char_to_string(keywords[i][j]));
+			if(keywords[i][j] != '\\'){
+				token+=keywords[i][j];
+			}
 		}
-		saver.add_token(keywords[i]);
+		saver.add_token(token);
 
 		// call postfix for this vector to generate, evaluate, create
-		postfix_processing(new_keyword,keywords[i]);
+		postfix_processing(new_keyword,token);
 	}
 }
 

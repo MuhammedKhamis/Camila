@@ -17,11 +17,13 @@ public:
 	virtual ~File_Reader();
 	bool read_file(string path);
 	string src_code();
+	bool write_file(string file, string path);
 protected:
 
 private:
 
 	ifstream is;
+	ofstream os;
 
 };
 
