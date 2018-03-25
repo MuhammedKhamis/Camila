@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/lex.yy.c
+stdio.h
+-
+string.h
+-
+errno.h
+-
+stdlib.h
+-
+inttypes.h
+-
+unistd.h
+-
+
+/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/scanner.c
+stdio.h
+-
+

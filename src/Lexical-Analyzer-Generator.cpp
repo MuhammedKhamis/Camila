@@ -54,6 +54,8 @@ string scan_file(string src_code,Machine* m){
 					i = last_correct_index;
 				}else{
 					i = ++last_correct_index;
+					output+= "ERROR FOUND\n";
+
 				}
 				current = m->get_start();
 				last_correct_state = current;
@@ -127,7 +129,7 @@ void file_output(string rules_file , string input_file, string output_file){
 
 int main(int argc, char** argv) {
 
-
+/*
 	if(argc != 3 && argc != 4){
 		string err = "Error Invalid size of the arguments\n";
 			   err += "you may run it like this: ";
@@ -152,13 +154,13 @@ int main(int argc, char** argv) {
  	cout << "Done :D\n";
 
 	cout << "total time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
+*/
 
-
-	/*
+/*
 		// Just Testing
-		string rules_file = "src/files/rules.txt";
-		string input_file = "a.txt";
+		string rules_file = "regularExpressions.txt";
+		string input_file = "test_1.txt";
 		terminal_output(rules_file,input_file);
-	*/
+*/
 	return 0;
 }
