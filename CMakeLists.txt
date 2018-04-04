@@ -45,6 +45,6 @@ set(SOURCE_FILES
         src/Rules_Parser/Rules.h
         src/Rules_Parser/RulesParser.cpp
         src/Rules_Parser/RulesParser.h
-        src/Lexical-Analyzer-Generator.cpp)
+        src/Lexical-Analyzer-Generator.cpp src/Symbol_Table/Symbol_table.cpp src/Symbol_Table/Symbol_table.h src/Symbol_Table/Symbol_table_iterator.cpp src/Symbol_Table/Symbol_table_iterator.h src/Scanner/Scanner.cpp src/Scanner/Scanner.h)
 
 add_executable(Lexical_Analyzer_Generator ${SOURCE_FILES})
