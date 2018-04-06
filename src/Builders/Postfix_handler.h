@@ -46,6 +46,16 @@ private:
 	*/
 	bool is_operand(string c);
 
+	int precedence(string c);
+
+	bool is_operation(string c);
+
+	vector<string> to_postfix2(vector<string> exp);
+
+	Node* evaluate_postfix2(vector<string> exp,string token);
+
+	Graph* apply_operation(string operation, stack<Graph*>& st,Thomson_Builder& tb);
+
 	/*
 	 * Returns the priority of each operation
 	 */

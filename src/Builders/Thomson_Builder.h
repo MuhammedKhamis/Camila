@@ -13,6 +13,7 @@
 #include "../Graph/Graph.h"
 #include "../Graph/Node.h"
 #include "../General/Enums.h"
+#include "../General/functions.h"
 
 using namespace std;
 
@@ -46,6 +47,11 @@ public:
 	 * the + operation for 1 graph
 	 * */
 	Graph* plus_operation(Graph* g1);
+
+	/*
+	 * the - operation graph construction
+	 * */
+	Graph* range_operation(Graph* g1 , Graph* g2);
 	/*
 	 *  after finish building one expression we save it in vector and give its
 	 *  last node a token as if we reached this node and want to know the type

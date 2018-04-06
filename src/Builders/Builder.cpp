@@ -25,7 +25,7 @@ void Builder::evaluate_expression(vector<string> expression){
 
 	vector<string> new_exp = simplify_vector(expression);
 
-	new_exp = convert_range(new_exp);
+	//new_exp = convert_range(new_exp);
 
 	saver.add_token(*expression.begin());
 

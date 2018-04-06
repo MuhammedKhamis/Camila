@@ -2,7 +2,7 @@ id: letter (letter|digit)*
 letter = a-z | A-z
 digit = 0 - 9
 mulop: \* | /
-addop: \+ | -
+addop: \+ | \-
 relop: \=\= | !\= | > | >\= | < | <\=
 assign: =
 num: digit+ | digit+ . digits ( \L | E digits)

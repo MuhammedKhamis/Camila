@@ -131,6 +131,23 @@ Graph* Thomson_Builder::plus_operation(Graph* g1){
 	return g1;
 }
 
+Graph* Thomson_Builder::range_operation(Graph* g1 , Graph* g2) {
+
+	int start_range = (int)string_to_char(g1->get_start_node()->get_edges().begin()->get_value());
+	int end_range =  (int)string_to_char(g2->get_start_node()->get_edges().begin()->get_value());
+
+	Graph* g = or_operation(g1,g2);
+
+	Node* start = g->get_start_node();
+	Node* end = g->get_end_node();
+
+	for(int i = start_range+1; i < end_range ; i++){
+		start->add_edge(end,char_to_string((char)i));
+	}
+
+	return g1;
+}
+
 void Thomson_Builder::save_graph(Graph* g,string token){
 
 	g->get_end_node()->set_token(token);

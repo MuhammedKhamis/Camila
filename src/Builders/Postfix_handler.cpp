@@ -46,15 +46,11 @@ bool Postfix_handler::is_operand(string c){
  * Check the operators
  */
 bool Postfix_handler::is_normal_operator(string c){
-	if(c == "+" || c == "*" || c == "#" || c == "|")
-			return true;
-	return false;
+	return c == "+" || c == "*" || c == "#" || c == "|";
 }
 
 bool Postfix_handler::is_converted_operator(string c){
-	if(c == "?" || c == "%" || c == "#" || c == "|")
-			return true;
-	return false;
+	return c == "?" || c == "%" || c == "#" || c == "|";
 }
 
 
@@ -76,6 +72,8 @@ int Postfix_handler::priority(string c){
  * */
 vector<string> Postfix_handler::to_postfix(vector<string> exp)
 {
+	return to_postfix2(exp);
+
 	stack<string> st;
 	  st.push("@"); //Indicating the start
 	  int n = exp.size();
@@ -140,6 +138,7 @@ vector<string> Postfix_handler::to_postfix(vector<string> exp)
 	          output .push_back(" ");
 	      }
 	 return output;
+
 }
 
 /*
@@ -147,7 +146,11 @@ vector<string> Postfix_handler::to_postfix(vector<string> exp)
  * Hint: # is concatenation - % is (*) closure - ? is (+) closure
  * */
 Node* Postfix_handler::evaluate_postfix(vector<string> exp, string token)
-{   //Initialzing stack
+{
+
+	return evaluate_postfix2(exp,token);
+
+	//Initialzing stack
     stack<Graph*> st
     ;
     //Intitializing Thomson builder
@@ -211,4 +214,144 @@ Node* Postfix_handler::evaluate_postfix(vector<string> exp, string token)
     T_builder.save_graph(final_graph,token);
 
     return start_node;
+}
+
+int Postfix_handler::precedence(string c) {
+    if(c == "*" || c == "+"){
+        return 4;
+    }
+    if(c == "-"){
+        return 3;
+    }
+    if(c == "#"){
+        return 2;
+    }
+    if(c == "|"){
+        return 1;
+    }
+    return 0;
+}
+
+
+bool Postfix_handler::is_operation(string c) {
+	return is_normal_operator(c) || c == "-";
+}
+
+vector<string> Postfix_handler::to_postfix2(vector<string> exp) {
+
+	stack<string> st;
+
+	int n = (int)exp.size();
+
+	vector<string> output;
+
+	bool look_ahead = false;
+
+	for(int i=0; i < n ; i++)
+	{
+		string s = exp[i];
+		if(s == "\\L"){
+			output.emplace_back(s);
+		}
+		else if(look_ahead){
+			look_ahead = false;
+			output.emplace_back(s);
+		}else{
+			look_ahead = false;
+			if(s == "("){
+				st.push(s);
+			}else if(s == ")"){
+				while(!st.empty() &&  st.top() != "("){
+					output.emplace_back(st.top());
+					st.pop();
+				}
+				st.pop();
+			}else if(is_operation(s)){
+				while(!st.empty() && precedence(st.top()) >= precedence(s)){
+					output.emplace_back(st.top());
+					st.pop();
+				}
+				st.push(s);
+			}else{
+				output.emplace_back(s);
+				if(s == "\\"){
+					look_ahead = true;
+				}
+			}
+		}
+	}
+	while(!st.empty()){
+		output.emplace_back(st.top());
+		st.pop();
+	}
+	return output;
+}
+
+Node* Postfix_handler::evaluate_postfix2(vector<string> exp, string token) {
+
+	stack<Graph*> st;
+
+	//Intitializing Thomson builder
+	Thomson_Builder& T_builder = Thomson_Builder::get_Instance();
+
+	int n = (int)exp.size();
+
+	bool look_ahead = false;
+
+	// Scan all characters one by one
+	for (int i = 0; i < n; i++){
+		string c = exp[i];
+
+		if(look_ahead){
+			look_ahead = false;
+			Graph* g = T_builder.initialize_graph(c);
+			st.push(g);
+		}else if(c == "\\"){
+			look_ahead = true;
+		}else if(is_operation(c)){
+			look_ahead = false;
+			// apply operation
+			apply_operation(c,st,T_builder);
+		}else{
+			look_ahead = false;
+			// normal string
+			Graph* g = T_builder.initialize_graph(c);
+			st.push(g);
+		}
+
+	}
+	Graph* final_graph = st.top();
+	st.pop();
+	Node* start_node = final_graph->get_start_node();
+
+	T_builder.save_graph(final_graph,token);
+
+	return start_node;
+}
+
+Graph* Postfix_handler::apply_operation(string operation, stack<Graph *> &st,Thomson_Builder& tb) {
+
+	Graph* g1 = st.top();
+	st.pop();
+	Graph* res;
+
+	if(operation == "*"){
+		res = tb.star_operation(g1);
+	}else if(operation == "+"){
+		res = tb.plus_operation(g1);
+	}else if(operation == "-"){
+		Graph* g2 = st.top();
+		st.pop();
+		res = tb.range_operation(g2,g1);
+	}else if(operation == "#"){
+		Graph* g2 = st.top();
+		st.pop();
+		res = tb.concat_operation(g2,g1);
+	}else{
+		Graph* g2 = st.top();
+		st.pop();
+		res = tb.or_operation(g2,g1);
+	}
+	st.push(res);
+	return res;
 }

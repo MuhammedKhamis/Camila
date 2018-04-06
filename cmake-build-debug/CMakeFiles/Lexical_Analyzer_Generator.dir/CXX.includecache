@@ -67,6 +67,8 @@ bits/stdc++.h
 /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Node.h
 ../General/Enums.h
 /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/General/Enums.h
+../General/functions.h
+/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/General/functions.h
 
 /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Data_Structure/Token_Saver.cpp
 Token_Saver.h

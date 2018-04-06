@@ -150,7 +150,13 @@ Transition_Table* Minimizer::get_minimized(){
 Transition_Table * Minimizer::make_minimized_table(){
 	unordered_map<int,unordered_map<string,int>> new_table;
 
+	//cout << "Total number of states : ";
+	//cout << gs.groups_count() << endl;
+
 	for(int i = 0 ; i < gs.groups_count(); i++){
+
+		//cout << "Group " << i << " got " << gs.get_group(i).group_size() << " items\n";
+
 		int item = gs.get_group(i).get_group_item();
 		new_table[i] = unordered_map<string,int>();
 		for(auto it = table[item].begin() ; it != table[item].end() ; it++){

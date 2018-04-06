@@ -40,13 +40,17 @@ int main(int argc, char** argv) {
 
 	cout << "total time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
 */
-
-
 		// Just Testing
-		string rules_file = "rules_path";
-		string input_file = "input_file_path";
+		string rules_file = "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/files/rules.txt";
+		string input_file = "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/test_2.txt";
         Scanner *s = new Scanner;
-        s->terminal_output(rules_file,input_file);
+    long long start_s=clock();
+
+    s->terminal_output(rules_file,input_file);
+
+    long long stop_s=clock();
+
+    cout << "total time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
 
 	return 0;
 }
