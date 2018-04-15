@@ -1,1 +1,1 @@
-# Lexical-Analyzer-Generator
+# Parser Generator
