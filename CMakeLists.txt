@@ -51,6 +51,6 @@ set(SOURCE_FILES
         src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
         src/Lexical/Symbol_Table/Symbol_table_iterator.h
         src/Lexical/Scanner/Scanner.cpp
-        src/Lexical/Scanner/Scanner.h)
+        src/Lexical/Scanner/Scanner.h src/Parser/Grammar_parser/Input_Parser.cpp src/Parser/Grammar_parser/Input_Parser.h)
 
-add_executable(Lexical_Analyzer_Generator ${SOURCE_FILES})
+add_executable(Lexical_Analyzer_Generator ${SOURCE_FILES} src/Parser/Grammar_parser/Input_Parser.cpp src/Parser/Grammar_parser/Input_Parser.h)

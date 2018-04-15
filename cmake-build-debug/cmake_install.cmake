@@ -1,4 +1,4 @@
-# Install script for directory: /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
+# Install script for directory: /home/mishors/CLionProjects/Lexical-Analyzer-Generator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

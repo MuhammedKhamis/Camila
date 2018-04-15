@@ -1,0 +1,14 @@
+//
+// Created by mishors on 15/04/18.
+//
+
+#ifndef LEXICAL_ANALYZER_GENERATOR_INPUT_PARSER_H
+#define LEXICAL_ANALYZER_GENERATOR_INPUT_PARSER_H
+
+
+class Input_Parser {
+
+};
+
+
+#endif //LEXICAL_ANALYZER_GENERATOR_INPUT_PARSER_H

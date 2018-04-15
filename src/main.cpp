@@ -52,6 +52,9 @@ int main(int argc, char** argv) {
 
     cout << "total time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << endl;
 
+    cout << "Input Parser Commit";
+
+
 	return 0;
 }
 
