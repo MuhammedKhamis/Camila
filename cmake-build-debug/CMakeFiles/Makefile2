@@ -54,10 +54,10 @@ RM = /opt/clion-2018.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator
+CMAKE_SOURCE_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug
+CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Lexical_Analyzer_Generator.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analy
 CMakeFiles/Lexical_Analyzer_Generator.dir/all:
 	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/depend
 	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target Lexical_Analyzer_Generator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target Lexical_Analyzer_Generator"
 .PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/Lexical_Analyzer_Generator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lexical_Analyzer_Generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lexical_Analyzer_Generator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/rule
 
 # Convenience name for target.

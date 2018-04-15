@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lexical_Analyzer_Generator">
-				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Lexical_Analyzer_Generator" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug"/>
+				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Lexical_Analyzer_Generator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lexical_Analyzer_Generator"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lexical_Analyzer_Generator"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lexical_Analyzer_Generator/fast">
-				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Lexical_Analyzer_Generator" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug"/>
+				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Lexical_Analyzer_Generator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,158 +77,158 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lexical_Analyzer_Generator/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lexical_Analyzer_Generator/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/lex.yy.c">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/scanner.c">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Builder.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Builder.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Builder.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Builder.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Postfix_handler.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Postfix_handler.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Postfix_handler.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Postfix_handler.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Subset_Builder.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Subset_Builder.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Subset_Builder.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Subset_Builder.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Thomson_Builder.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Thomson_Builder.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Thomson_Builder.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Thomson_Builder.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Data_Structure/Token_Saver.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Data_Structure/Token_Saver.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Data_Structure/Token_Saver.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Data_Structure/Token_Saver.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Files_Handler/FileReader.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Files_Handler/FileReader.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Files_Handler/FileReader.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Files_Handler/FileReader.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/Enums.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/Enums.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/functions.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/functions.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/functions.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/functions.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Edge.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Edge.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Edge.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Edge.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Graph.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Graph.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Graph.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Graph.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Node.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Node.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Node.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Node.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Machine.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Machine.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Machine.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Machine.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/State.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/State.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/State.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/State.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Transition_Table.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Transition_Table.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Transition_Table.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Transition_Table.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Group.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Group.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Group.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Group.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Groups.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Groups.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Groups.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Groups.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Minimizer.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Minimizer.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Minimizer.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Minimizer.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/FileRulesReader.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/FileRulesReader.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/FileRulesReader.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/FileRulesReader.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/Rules.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/Rules.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/Rules.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/Rules.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/RulesParser.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/RulesParser.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/RulesParser.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/RulesParser.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Scanner/Scanner.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Scanner/Scanner.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Scanner/Scanner.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Scanner/Scanner.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table_iterator.h">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table_iterator.h">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/main.cpp">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/main.cpp">
 			<Option target="Lexical_Analyzer_Generator"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/CMakeLists.txt">
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
