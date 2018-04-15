@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2018.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analy
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2018.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,680 +123,680 @@ Lexical_Analyzer_Generator/fast:
 	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/build
 .PHONY : Lexical_Analyzer_Generator/fast
 
-src/Bonus/lex.yy.o: src/Bonus/lex.yy.c.o
+src/Lexical/Bonus/lex.yy.o: src/Lexical/Bonus/lex.yy.c.o
 
-.PHONY : src/Bonus/lex.yy.o
-
-# target to build an object file
-src/Bonus/lex.yy.c.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o
-.PHONY : src/Bonus/lex.yy.c.o
-
-src/Bonus/lex.yy.i: src/Bonus/lex.yy.c.i
-
-.PHONY : src/Bonus/lex.yy.i
-
-# target to preprocess a source file
-src/Bonus/lex.yy.c.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.i
-.PHONY : src/Bonus/lex.yy.c.i
-
-src/Bonus/lex.yy.s: src/Bonus/lex.yy.c.s
-
-.PHONY : src/Bonus/lex.yy.s
-
-# target to generate assembly for a file
-src/Bonus/lex.yy.c.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.s
-.PHONY : src/Bonus/lex.yy.c.s
-
-src/Bonus/scanner.o: src/Bonus/scanner.c.o
-
-.PHONY : src/Bonus/scanner.o
+.PHONY : src/Lexical/Bonus/lex.yy.o
 
 # target to build an object file
-src/Bonus/scanner.c.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o
-.PHONY : src/Bonus/scanner.c.o
+src/Lexical/Bonus/lex.yy.c.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o
+.PHONY : src/Lexical/Bonus/lex.yy.c.o
 
-src/Bonus/scanner.i: src/Bonus/scanner.c.i
+src/Lexical/Bonus/lex.yy.i: src/Lexical/Bonus/lex.yy.c.i
 
-.PHONY : src/Bonus/scanner.i
+.PHONY : src/Lexical/Bonus/lex.yy.i
 
 # target to preprocess a source file
-src/Bonus/scanner.c.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.i
-.PHONY : src/Bonus/scanner.c.i
+src/Lexical/Bonus/lex.yy.c.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.i
+.PHONY : src/Lexical/Bonus/lex.yy.c.i
 
-src/Bonus/scanner.s: src/Bonus/scanner.c.s
+src/Lexical/Bonus/lex.yy.s: src/Lexical/Bonus/lex.yy.c.s
 
-.PHONY : src/Bonus/scanner.s
+.PHONY : src/Lexical/Bonus/lex.yy.s
 
 # target to generate assembly for a file
-src/Bonus/scanner.c.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.s
-.PHONY : src/Bonus/scanner.c.s
+src/Lexical/Bonus/lex.yy.c.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.s
+.PHONY : src/Lexical/Bonus/lex.yy.c.s
 
-src/Builders/Builder.o: src/Builders/Builder.cpp.o
+src/Lexical/Bonus/scanner.o: src/Lexical/Bonus/scanner.c.o
 
-.PHONY : src/Builders/Builder.o
+.PHONY : src/Lexical/Bonus/scanner.o
 
 # target to build an object file
-src/Builders/Builder.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o
-.PHONY : src/Builders/Builder.cpp.o
+src/Lexical/Bonus/scanner.c.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o
+.PHONY : src/Lexical/Bonus/scanner.c.o
 
-src/Builders/Builder.i: src/Builders/Builder.cpp.i
+src/Lexical/Bonus/scanner.i: src/Lexical/Bonus/scanner.c.i
 
-.PHONY : src/Builders/Builder.i
+.PHONY : src/Lexical/Bonus/scanner.i
 
 # target to preprocess a source file
-src/Builders/Builder.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.i
-.PHONY : src/Builders/Builder.cpp.i
+src/Lexical/Bonus/scanner.c.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.i
+.PHONY : src/Lexical/Bonus/scanner.c.i
 
-src/Builders/Builder.s: src/Builders/Builder.cpp.s
+src/Lexical/Bonus/scanner.s: src/Lexical/Bonus/scanner.c.s
 
-.PHONY : src/Builders/Builder.s
+.PHONY : src/Lexical/Bonus/scanner.s
 
 # target to generate assembly for a file
-src/Builders/Builder.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.s
-.PHONY : src/Builders/Builder.cpp.s
+src/Lexical/Bonus/scanner.c.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.s
+.PHONY : src/Lexical/Bonus/scanner.c.s
 
-src/Builders/Postfix_handler.o: src/Builders/Postfix_handler.cpp.o
+src/Lexical/Builders/Builder.o: src/Lexical/Builders/Builder.cpp.o
 
-.PHONY : src/Builders/Postfix_handler.o
+.PHONY : src/Lexical/Builders/Builder.o
 
 # target to build an object file
-src/Builders/Postfix_handler.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o
-.PHONY : src/Builders/Postfix_handler.cpp.o
+src/Lexical/Builders/Builder.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o
+.PHONY : src/Lexical/Builders/Builder.cpp.o
 
-src/Builders/Postfix_handler.i: src/Builders/Postfix_handler.cpp.i
+src/Lexical/Builders/Builder.i: src/Lexical/Builders/Builder.cpp.i
 
-.PHONY : src/Builders/Postfix_handler.i
+.PHONY : src/Lexical/Builders/Builder.i
 
 # target to preprocess a source file
-src/Builders/Postfix_handler.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.i
-.PHONY : src/Builders/Postfix_handler.cpp.i
+src/Lexical/Builders/Builder.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.i
+.PHONY : src/Lexical/Builders/Builder.cpp.i
 
-src/Builders/Postfix_handler.s: src/Builders/Postfix_handler.cpp.s
+src/Lexical/Builders/Builder.s: src/Lexical/Builders/Builder.cpp.s
 
-.PHONY : src/Builders/Postfix_handler.s
+.PHONY : src/Lexical/Builders/Builder.s
 
 # target to generate assembly for a file
-src/Builders/Postfix_handler.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.s
-.PHONY : src/Builders/Postfix_handler.cpp.s
+src/Lexical/Builders/Builder.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.s
+.PHONY : src/Lexical/Builders/Builder.cpp.s
 
-src/Builders/Subset_Builder.o: src/Builders/Subset_Builder.cpp.o
+src/Lexical/Builders/Postfix_handler.o: src/Lexical/Builders/Postfix_handler.cpp.o
 
-.PHONY : src/Builders/Subset_Builder.o
+.PHONY : src/Lexical/Builders/Postfix_handler.o
 
 # target to build an object file
-src/Builders/Subset_Builder.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o
-.PHONY : src/Builders/Subset_Builder.cpp.o
+src/Lexical/Builders/Postfix_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o
+.PHONY : src/Lexical/Builders/Postfix_handler.cpp.o
 
-src/Builders/Subset_Builder.i: src/Builders/Subset_Builder.cpp.i
+src/Lexical/Builders/Postfix_handler.i: src/Lexical/Builders/Postfix_handler.cpp.i
 
-.PHONY : src/Builders/Subset_Builder.i
+.PHONY : src/Lexical/Builders/Postfix_handler.i
 
 # target to preprocess a source file
-src/Builders/Subset_Builder.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.i
-.PHONY : src/Builders/Subset_Builder.cpp.i
+src/Lexical/Builders/Postfix_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.i
+.PHONY : src/Lexical/Builders/Postfix_handler.cpp.i
 
-src/Builders/Subset_Builder.s: src/Builders/Subset_Builder.cpp.s
+src/Lexical/Builders/Postfix_handler.s: src/Lexical/Builders/Postfix_handler.cpp.s
 
-.PHONY : src/Builders/Subset_Builder.s
+.PHONY : src/Lexical/Builders/Postfix_handler.s
 
 # target to generate assembly for a file
-src/Builders/Subset_Builder.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.s
-.PHONY : src/Builders/Subset_Builder.cpp.s
+src/Lexical/Builders/Postfix_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.s
+.PHONY : src/Lexical/Builders/Postfix_handler.cpp.s
 
-src/Builders/Thomson_Builder.o: src/Builders/Thomson_Builder.cpp.o
+src/Lexical/Builders/Subset_Builder.o: src/Lexical/Builders/Subset_Builder.cpp.o
 
-.PHONY : src/Builders/Thomson_Builder.o
+.PHONY : src/Lexical/Builders/Subset_Builder.o
 
 # target to build an object file
-src/Builders/Thomson_Builder.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o
-.PHONY : src/Builders/Thomson_Builder.cpp.o
+src/Lexical/Builders/Subset_Builder.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o
+.PHONY : src/Lexical/Builders/Subset_Builder.cpp.o
 
-src/Builders/Thomson_Builder.i: src/Builders/Thomson_Builder.cpp.i
+src/Lexical/Builders/Subset_Builder.i: src/Lexical/Builders/Subset_Builder.cpp.i
 
-.PHONY : src/Builders/Thomson_Builder.i
+.PHONY : src/Lexical/Builders/Subset_Builder.i
 
 # target to preprocess a source file
-src/Builders/Thomson_Builder.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.i
-.PHONY : src/Builders/Thomson_Builder.cpp.i
+src/Lexical/Builders/Subset_Builder.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.i
+.PHONY : src/Lexical/Builders/Subset_Builder.cpp.i
 
-src/Builders/Thomson_Builder.s: src/Builders/Thomson_Builder.cpp.s
+src/Lexical/Builders/Subset_Builder.s: src/Lexical/Builders/Subset_Builder.cpp.s
 
-.PHONY : src/Builders/Thomson_Builder.s
+.PHONY : src/Lexical/Builders/Subset_Builder.s
 
 # target to generate assembly for a file
-src/Builders/Thomson_Builder.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.s
-.PHONY : src/Builders/Thomson_Builder.cpp.s
+src/Lexical/Builders/Subset_Builder.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.s
+.PHONY : src/Lexical/Builders/Subset_Builder.cpp.s
 
-src/Data_Structure/Token_Saver.o: src/Data_Structure/Token_Saver.cpp.o
+src/Lexical/Builders/Thomson_Builder.o: src/Lexical/Builders/Thomson_Builder.cpp.o
 
-.PHONY : src/Data_Structure/Token_Saver.o
+.PHONY : src/Lexical/Builders/Thomson_Builder.o
 
 # target to build an object file
-src/Data_Structure/Token_Saver.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o
-.PHONY : src/Data_Structure/Token_Saver.cpp.o
+src/Lexical/Builders/Thomson_Builder.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o
+.PHONY : src/Lexical/Builders/Thomson_Builder.cpp.o
 
-src/Data_Structure/Token_Saver.i: src/Data_Structure/Token_Saver.cpp.i
+src/Lexical/Builders/Thomson_Builder.i: src/Lexical/Builders/Thomson_Builder.cpp.i
 
-.PHONY : src/Data_Structure/Token_Saver.i
+.PHONY : src/Lexical/Builders/Thomson_Builder.i
 
 # target to preprocess a source file
-src/Data_Structure/Token_Saver.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.i
-.PHONY : src/Data_Structure/Token_Saver.cpp.i
+src/Lexical/Builders/Thomson_Builder.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.i
+.PHONY : src/Lexical/Builders/Thomson_Builder.cpp.i
 
-src/Data_Structure/Token_Saver.s: src/Data_Structure/Token_Saver.cpp.s
+src/Lexical/Builders/Thomson_Builder.s: src/Lexical/Builders/Thomson_Builder.cpp.s
 
-.PHONY : src/Data_Structure/Token_Saver.s
+.PHONY : src/Lexical/Builders/Thomson_Builder.s
 
 # target to generate assembly for a file
-src/Data_Structure/Token_Saver.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.s
-.PHONY : src/Data_Structure/Token_Saver.cpp.s
+src/Lexical/Builders/Thomson_Builder.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.s
+.PHONY : src/Lexical/Builders/Thomson_Builder.cpp.s
 
-src/Files_Handler/FileReader.o: src/Files_Handler/FileReader.cpp.o
+src/Lexical/Data_Structure/Token_Saver.o: src/Lexical/Data_Structure/Token_Saver.cpp.o
 
-.PHONY : src/Files_Handler/FileReader.o
+.PHONY : src/Lexical/Data_Structure/Token_Saver.o
 
 # target to build an object file
-src/Files_Handler/FileReader.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o
-.PHONY : src/Files_Handler/FileReader.cpp.o
+src/Lexical/Data_Structure/Token_Saver.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o
+.PHONY : src/Lexical/Data_Structure/Token_Saver.cpp.o
 
-src/Files_Handler/FileReader.i: src/Files_Handler/FileReader.cpp.i
+src/Lexical/Data_Structure/Token_Saver.i: src/Lexical/Data_Structure/Token_Saver.cpp.i
 
-.PHONY : src/Files_Handler/FileReader.i
+.PHONY : src/Lexical/Data_Structure/Token_Saver.i
 
 # target to preprocess a source file
-src/Files_Handler/FileReader.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.i
-.PHONY : src/Files_Handler/FileReader.cpp.i
+src/Lexical/Data_Structure/Token_Saver.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.i
+.PHONY : src/Lexical/Data_Structure/Token_Saver.cpp.i
 
-src/Files_Handler/FileReader.s: src/Files_Handler/FileReader.cpp.s
+src/Lexical/Data_Structure/Token_Saver.s: src/Lexical/Data_Structure/Token_Saver.cpp.s
 
-.PHONY : src/Files_Handler/FileReader.s
+.PHONY : src/Lexical/Data_Structure/Token_Saver.s
 
 # target to generate assembly for a file
-src/Files_Handler/FileReader.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.s
-.PHONY : src/Files_Handler/FileReader.cpp.s
+src/Lexical/Data_Structure/Token_Saver.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.s
+.PHONY : src/Lexical/Data_Structure/Token_Saver.cpp.s
 
-src/General/functions.o: src/General/functions.cpp.o
+src/Lexical/Files_Handler/FileReader.o: src/Lexical/Files_Handler/FileReader.cpp.o
 
-.PHONY : src/General/functions.o
+.PHONY : src/Lexical/Files_Handler/FileReader.o
 
 # target to build an object file
-src/General/functions.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o
-.PHONY : src/General/functions.cpp.o
+src/Lexical/Files_Handler/FileReader.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o
+.PHONY : src/Lexical/Files_Handler/FileReader.cpp.o
 
-src/General/functions.i: src/General/functions.cpp.i
+src/Lexical/Files_Handler/FileReader.i: src/Lexical/Files_Handler/FileReader.cpp.i
 
-.PHONY : src/General/functions.i
+.PHONY : src/Lexical/Files_Handler/FileReader.i
 
 # target to preprocess a source file
-src/General/functions.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.i
-.PHONY : src/General/functions.cpp.i
+src/Lexical/Files_Handler/FileReader.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.i
+.PHONY : src/Lexical/Files_Handler/FileReader.cpp.i
 
-src/General/functions.s: src/General/functions.cpp.s
+src/Lexical/Files_Handler/FileReader.s: src/Lexical/Files_Handler/FileReader.cpp.s
 
-.PHONY : src/General/functions.s
+.PHONY : src/Lexical/Files_Handler/FileReader.s
 
 # target to generate assembly for a file
-src/General/functions.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.s
-.PHONY : src/General/functions.cpp.s
+src/Lexical/Files_Handler/FileReader.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.s
+.PHONY : src/Lexical/Files_Handler/FileReader.cpp.s
 
-src/Graph/Edge.o: src/Graph/Edge.cpp.o
+src/Lexical/General/functions.o: src/Lexical/General/functions.cpp.o
 
-.PHONY : src/Graph/Edge.o
+.PHONY : src/Lexical/General/functions.o
 
 # target to build an object file
-src/Graph/Edge.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o
-.PHONY : src/Graph/Edge.cpp.o
+src/Lexical/General/functions.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o
+.PHONY : src/Lexical/General/functions.cpp.o
 
-src/Graph/Edge.i: src/Graph/Edge.cpp.i
+src/Lexical/General/functions.i: src/Lexical/General/functions.cpp.i
 
-.PHONY : src/Graph/Edge.i
+.PHONY : src/Lexical/General/functions.i
 
 # target to preprocess a source file
-src/Graph/Edge.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.i
-.PHONY : src/Graph/Edge.cpp.i
+src/Lexical/General/functions.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.i
+.PHONY : src/Lexical/General/functions.cpp.i
 
-src/Graph/Edge.s: src/Graph/Edge.cpp.s
+src/Lexical/General/functions.s: src/Lexical/General/functions.cpp.s
 
-.PHONY : src/Graph/Edge.s
+.PHONY : src/Lexical/General/functions.s
 
 # target to generate assembly for a file
-src/Graph/Edge.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.s
-.PHONY : src/Graph/Edge.cpp.s
+src/Lexical/General/functions.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.s
+.PHONY : src/Lexical/General/functions.cpp.s
 
-src/Graph/Graph.o: src/Graph/Graph.cpp.o
+src/Lexical/Graph/Edge.o: src/Lexical/Graph/Edge.cpp.o
 
-.PHONY : src/Graph/Graph.o
+.PHONY : src/Lexical/Graph/Edge.o
 
 # target to build an object file
-src/Graph/Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o
-.PHONY : src/Graph/Graph.cpp.o
+src/Lexical/Graph/Edge.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o
+.PHONY : src/Lexical/Graph/Edge.cpp.o
 
-src/Graph/Graph.i: src/Graph/Graph.cpp.i
+src/Lexical/Graph/Edge.i: src/Lexical/Graph/Edge.cpp.i
 
-.PHONY : src/Graph/Graph.i
+.PHONY : src/Lexical/Graph/Edge.i
 
 # target to preprocess a source file
-src/Graph/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.i
-.PHONY : src/Graph/Graph.cpp.i
+src/Lexical/Graph/Edge.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.i
+.PHONY : src/Lexical/Graph/Edge.cpp.i
 
-src/Graph/Graph.s: src/Graph/Graph.cpp.s
+src/Lexical/Graph/Edge.s: src/Lexical/Graph/Edge.cpp.s
 
-.PHONY : src/Graph/Graph.s
+.PHONY : src/Lexical/Graph/Edge.s
 
 # target to generate assembly for a file
-src/Graph/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.s
-.PHONY : src/Graph/Graph.cpp.s
+src/Lexical/Graph/Edge.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.s
+.PHONY : src/Lexical/Graph/Edge.cpp.s
 
-src/Graph/Node.o: src/Graph/Node.cpp.o
+src/Lexical/Graph/Graph.o: src/Lexical/Graph/Graph.cpp.o
 
-.PHONY : src/Graph/Node.o
+.PHONY : src/Lexical/Graph/Graph.o
 
 # target to build an object file
-src/Graph/Node.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o
-.PHONY : src/Graph/Node.cpp.o
+src/Lexical/Graph/Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o
+.PHONY : src/Lexical/Graph/Graph.cpp.o
 
-src/Graph/Node.i: src/Graph/Node.cpp.i
+src/Lexical/Graph/Graph.i: src/Lexical/Graph/Graph.cpp.i
 
-.PHONY : src/Graph/Node.i
+.PHONY : src/Lexical/Graph/Graph.i
 
 # target to preprocess a source file
-src/Graph/Node.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.i
-.PHONY : src/Graph/Node.cpp.i
+src/Lexical/Graph/Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.i
+.PHONY : src/Lexical/Graph/Graph.cpp.i
 
-src/Graph/Node.s: src/Graph/Node.cpp.s
+src/Lexical/Graph/Graph.s: src/Lexical/Graph/Graph.cpp.s
 
-.PHONY : src/Graph/Node.s
+.PHONY : src/Lexical/Graph/Graph.s
 
 # target to generate assembly for a file
-src/Graph/Node.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.s
-.PHONY : src/Graph/Node.cpp.s
+src/Lexical/Graph/Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.s
+.PHONY : src/Lexical/Graph/Graph.cpp.s
 
-src/Lexical-Analyzer-Generator.o: src/Lexical-Analyzer-Generator.cpp.o
+src/Lexical/Graph/Node.o: src/Lexical/Graph/Node.cpp.o
 
-.PHONY : src/Lexical-Analyzer-Generator.o
+.PHONY : src/Lexical/Graph/Node.o
 
 # target to build an object file
-src/Lexical-Analyzer-Generator.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o
-.PHONY : src/Lexical-Analyzer-Generator.cpp.o
+src/Lexical/Graph/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o
+.PHONY : src/Lexical/Graph/Node.cpp.o
 
-src/Lexical-Analyzer-Generator.i: src/Lexical-Analyzer-Generator.cpp.i
+src/Lexical/Graph/Node.i: src/Lexical/Graph/Node.cpp.i
 
-.PHONY : src/Lexical-Analyzer-Generator.i
+.PHONY : src/Lexical/Graph/Node.i
 
 # target to preprocess a source file
-src/Lexical-Analyzer-Generator.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.i
-.PHONY : src/Lexical-Analyzer-Generator.cpp.i
+src/Lexical/Graph/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.i
+.PHONY : src/Lexical/Graph/Node.cpp.i
 
-src/Lexical-Analyzer-Generator.s: src/Lexical-Analyzer-Generator.cpp.s
+src/Lexical/Graph/Node.s: src/Lexical/Graph/Node.cpp.s
 
-.PHONY : src/Lexical-Analyzer-Generator.s
+.PHONY : src/Lexical/Graph/Node.s
 
 # target to generate assembly for a file
-src/Lexical-Analyzer-Generator.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.s
-.PHONY : src/Lexical-Analyzer-Generator.cpp.s
+src/Lexical/Graph/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.s
+.PHONY : src/Lexical/Graph/Node.cpp.s
 
-src/Machines/Machine.o: src/Machines/Machine.cpp.o
+src/Lexical/Machines/Machine.o: src/Lexical/Machines/Machine.cpp.o
 
-.PHONY : src/Machines/Machine.o
+.PHONY : src/Lexical/Machines/Machine.o
 
 # target to build an object file
-src/Machines/Machine.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o
-.PHONY : src/Machines/Machine.cpp.o
+src/Lexical/Machines/Machine.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o
+.PHONY : src/Lexical/Machines/Machine.cpp.o
 
-src/Machines/Machine.i: src/Machines/Machine.cpp.i
+src/Lexical/Machines/Machine.i: src/Lexical/Machines/Machine.cpp.i
 
-.PHONY : src/Machines/Machine.i
+.PHONY : src/Lexical/Machines/Machine.i
 
 # target to preprocess a source file
-src/Machines/Machine.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.i
-.PHONY : src/Machines/Machine.cpp.i
+src/Lexical/Machines/Machine.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.i
+.PHONY : src/Lexical/Machines/Machine.cpp.i
 
-src/Machines/Machine.s: src/Machines/Machine.cpp.s
+src/Lexical/Machines/Machine.s: src/Lexical/Machines/Machine.cpp.s
 
-.PHONY : src/Machines/Machine.s
+.PHONY : src/Lexical/Machines/Machine.s
 
 # target to generate assembly for a file
-src/Machines/Machine.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.s
-.PHONY : src/Machines/Machine.cpp.s
+src/Lexical/Machines/Machine.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.s
+.PHONY : src/Lexical/Machines/Machine.cpp.s
 
-src/Machines/State.o: src/Machines/State.cpp.o
+src/Lexical/Machines/State.o: src/Lexical/Machines/State.cpp.o
 
-.PHONY : src/Machines/State.o
+.PHONY : src/Lexical/Machines/State.o
 
 # target to build an object file
-src/Machines/State.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o
-.PHONY : src/Machines/State.cpp.o
+src/Lexical/Machines/State.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o
+.PHONY : src/Lexical/Machines/State.cpp.o
 
-src/Machines/State.i: src/Machines/State.cpp.i
+src/Lexical/Machines/State.i: src/Lexical/Machines/State.cpp.i
 
-.PHONY : src/Machines/State.i
+.PHONY : src/Lexical/Machines/State.i
 
 # target to preprocess a source file
-src/Machines/State.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.i
-.PHONY : src/Machines/State.cpp.i
+src/Lexical/Machines/State.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.i
+.PHONY : src/Lexical/Machines/State.cpp.i
 
-src/Machines/State.s: src/Machines/State.cpp.s
+src/Lexical/Machines/State.s: src/Lexical/Machines/State.cpp.s
 
-.PHONY : src/Machines/State.s
+.PHONY : src/Lexical/Machines/State.s
 
 # target to generate assembly for a file
-src/Machines/State.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.s
-.PHONY : src/Machines/State.cpp.s
+src/Lexical/Machines/State.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.s
+.PHONY : src/Lexical/Machines/State.cpp.s
 
-src/Machines/Transition_Table.o: src/Machines/Transition_Table.cpp.o
+src/Lexical/Machines/Transition_Table.o: src/Lexical/Machines/Transition_Table.cpp.o
 
-.PHONY : src/Machines/Transition_Table.o
+.PHONY : src/Lexical/Machines/Transition_Table.o
 
 # target to build an object file
-src/Machines/Transition_Table.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o
-.PHONY : src/Machines/Transition_Table.cpp.o
+src/Lexical/Machines/Transition_Table.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o
+.PHONY : src/Lexical/Machines/Transition_Table.cpp.o
 
-src/Machines/Transition_Table.i: src/Machines/Transition_Table.cpp.i
+src/Lexical/Machines/Transition_Table.i: src/Lexical/Machines/Transition_Table.cpp.i
 
-.PHONY : src/Machines/Transition_Table.i
+.PHONY : src/Lexical/Machines/Transition_Table.i
 
 # target to preprocess a source file
-src/Machines/Transition_Table.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.i
-.PHONY : src/Machines/Transition_Table.cpp.i
+src/Lexical/Machines/Transition_Table.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.i
+.PHONY : src/Lexical/Machines/Transition_Table.cpp.i
 
-src/Machines/Transition_Table.s: src/Machines/Transition_Table.cpp.s
+src/Lexical/Machines/Transition_Table.s: src/Lexical/Machines/Transition_Table.cpp.s
 
-.PHONY : src/Machines/Transition_Table.s
+.PHONY : src/Lexical/Machines/Transition_Table.s
 
 # target to generate assembly for a file
-src/Machines/Transition_Table.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.s
-.PHONY : src/Machines/Transition_Table.cpp.s
+src/Lexical/Machines/Transition_Table.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.s
+.PHONY : src/Lexical/Machines/Transition_Table.cpp.s
 
-src/Minimizer/Group.o: src/Minimizer/Group.cpp.o
+src/Lexical/Minimizer/Group.o: src/Lexical/Minimizer/Group.cpp.o
 
-.PHONY : src/Minimizer/Group.o
+.PHONY : src/Lexical/Minimizer/Group.o
 
 # target to build an object file
-src/Minimizer/Group.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o
-.PHONY : src/Minimizer/Group.cpp.o
+src/Lexical/Minimizer/Group.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o
+.PHONY : src/Lexical/Minimizer/Group.cpp.o
 
-src/Minimizer/Group.i: src/Minimizer/Group.cpp.i
+src/Lexical/Minimizer/Group.i: src/Lexical/Minimizer/Group.cpp.i
 
-.PHONY : src/Minimizer/Group.i
+.PHONY : src/Lexical/Minimizer/Group.i
 
 # target to preprocess a source file
-src/Minimizer/Group.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.i
-.PHONY : src/Minimizer/Group.cpp.i
+src/Lexical/Minimizer/Group.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.i
+.PHONY : src/Lexical/Minimizer/Group.cpp.i
 
-src/Minimizer/Group.s: src/Minimizer/Group.cpp.s
+src/Lexical/Minimizer/Group.s: src/Lexical/Minimizer/Group.cpp.s
 
-.PHONY : src/Minimizer/Group.s
+.PHONY : src/Lexical/Minimizer/Group.s
 
 # target to generate assembly for a file
-src/Minimizer/Group.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.s
-.PHONY : src/Minimizer/Group.cpp.s
+src/Lexical/Minimizer/Group.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.s
+.PHONY : src/Lexical/Minimizer/Group.cpp.s
 
-src/Minimizer/Groups.o: src/Minimizer/Groups.cpp.o
+src/Lexical/Minimizer/Groups.o: src/Lexical/Minimizer/Groups.cpp.o
 
-.PHONY : src/Minimizer/Groups.o
+.PHONY : src/Lexical/Minimizer/Groups.o
 
 # target to build an object file
-src/Minimizer/Groups.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o
-.PHONY : src/Minimizer/Groups.cpp.o
+src/Lexical/Minimizer/Groups.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o
+.PHONY : src/Lexical/Minimizer/Groups.cpp.o
 
-src/Minimizer/Groups.i: src/Minimizer/Groups.cpp.i
+src/Lexical/Minimizer/Groups.i: src/Lexical/Minimizer/Groups.cpp.i
 
-.PHONY : src/Minimizer/Groups.i
+.PHONY : src/Lexical/Minimizer/Groups.i
 
 # target to preprocess a source file
-src/Minimizer/Groups.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.i
-.PHONY : src/Minimizer/Groups.cpp.i
+src/Lexical/Minimizer/Groups.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.i
+.PHONY : src/Lexical/Minimizer/Groups.cpp.i
 
-src/Minimizer/Groups.s: src/Minimizer/Groups.cpp.s
+src/Lexical/Minimizer/Groups.s: src/Lexical/Minimizer/Groups.cpp.s
 
-.PHONY : src/Minimizer/Groups.s
+.PHONY : src/Lexical/Minimizer/Groups.s
 
 # target to generate assembly for a file
-src/Minimizer/Groups.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.s
-.PHONY : src/Minimizer/Groups.cpp.s
+src/Lexical/Minimizer/Groups.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.s
+.PHONY : src/Lexical/Minimizer/Groups.cpp.s
 
-src/Minimizer/Minimizer.o: src/Minimizer/Minimizer.cpp.o
+src/Lexical/Minimizer/Minimizer.o: src/Lexical/Minimizer/Minimizer.cpp.o
 
-.PHONY : src/Minimizer/Minimizer.o
+.PHONY : src/Lexical/Minimizer/Minimizer.o
 
 # target to build an object file
-src/Minimizer/Minimizer.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o
-.PHONY : src/Minimizer/Minimizer.cpp.o
+src/Lexical/Minimizer/Minimizer.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o
+.PHONY : src/Lexical/Minimizer/Minimizer.cpp.o
 
-src/Minimizer/Minimizer.i: src/Minimizer/Minimizer.cpp.i
+src/Lexical/Minimizer/Minimizer.i: src/Lexical/Minimizer/Minimizer.cpp.i
 
-.PHONY : src/Minimizer/Minimizer.i
+.PHONY : src/Lexical/Minimizer/Minimizer.i
 
 # target to preprocess a source file
-src/Minimizer/Minimizer.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.i
-.PHONY : src/Minimizer/Minimizer.cpp.i
+src/Lexical/Minimizer/Minimizer.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.i
+.PHONY : src/Lexical/Minimizer/Minimizer.cpp.i
 
-src/Minimizer/Minimizer.s: src/Minimizer/Minimizer.cpp.s
+src/Lexical/Minimizer/Minimizer.s: src/Lexical/Minimizer/Minimizer.cpp.s
 
-.PHONY : src/Minimizer/Minimizer.s
+.PHONY : src/Lexical/Minimizer/Minimizer.s
 
 # target to generate assembly for a file
-src/Minimizer/Minimizer.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.s
-.PHONY : src/Minimizer/Minimizer.cpp.s
+src/Lexical/Minimizer/Minimizer.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.s
+.PHONY : src/Lexical/Minimizer/Minimizer.cpp.s
 
-src/Rules_Parser/FileRulesReader.o: src/Rules_Parser/FileRulesReader.cpp.o
+src/Lexical/Rules_Parser/FileRulesReader.o: src/Lexical/Rules_Parser/FileRulesReader.cpp.o
 
-.PHONY : src/Rules_Parser/FileRulesReader.o
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.o
 
 # target to build an object file
-src/Rules_Parser/FileRulesReader.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o
-.PHONY : src/Rules_Parser/FileRulesReader.cpp.o
+src/Lexical/Rules_Parser/FileRulesReader.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.cpp.o
 
-src/Rules_Parser/FileRulesReader.i: src/Rules_Parser/FileRulesReader.cpp.i
+src/Lexical/Rules_Parser/FileRulesReader.i: src/Lexical/Rules_Parser/FileRulesReader.cpp.i
 
-.PHONY : src/Rules_Parser/FileRulesReader.i
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.i
 
 # target to preprocess a source file
-src/Rules_Parser/FileRulesReader.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.i
-.PHONY : src/Rules_Parser/FileRulesReader.cpp.i
+src/Lexical/Rules_Parser/FileRulesReader.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.i
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.cpp.i
 
-src/Rules_Parser/FileRulesReader.s: src/Rules_Parser/FileRulesReader.cpp.s
+src/Lexical/Rules_Parser/FileRulesReader.s: src/Lexical/Rules_Parser/FileRulesReader.cpp.s
 
-.PHONY : src/Rules_Parser/FileRulesReader.s
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.s
 
 # target to generate assembly for a file
-src/Rules_Parser/FileRulesReader.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.s
-.PHONY : src/Rules_Parser/FileRulesReader.cpp.s
+src/Lexical/Rules_Parser/FileRulesReader.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.s
+.PHONY : src/Lexical/Rules_Parser/FileRulesReader.cpp.s
 
-src/Rules_Parser/Rules.o: src/Rules_Parser/Rules.cpp.o
+src/Lexical/Rules_Parser/Rules.o: src/Lexical/Rules_Parser/Rules.cpp.o
 
-.PHONY : src/Rules_Parser/Rules.o
+.PHONY : src/Lexical/Rules_Parser/Rules.o
 
 # target to build an object file
-src/Rules_Parser/Rules.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o
-.PHONY : src/Rules_Parser/Rules.cpp.o
+src/Lexical/Rules_Parser/Rules.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o
+.PHONY : src/Lexical/Rules_Parser/Rules.cpp.o
 
-src/Rules_Parser/Rules.i: src/Rules_Parser/Rules.cpp.i
+src/Lexical/Rules_Parser/Rules.i: src/Lexical/Rules_Parser/Rules.cpp.i
 
-.PHONY : src/Rules_Parser/Rules.i
+.PHONY : src/Lexical/Rules_Parser/Rules.i
 
 # target to preprocess a source file
-src/Rules_Parser/Rules.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.i
-.PHONY : src/Rules_Parser/Rules.cpp.i
+src/Lexical/Rules_Parser/Rules.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.i
+.PHONY : src/Lexical/Rules_Parser/Rules.cpp.i
 
-src/Rules_Parser/Rules.s: src/Rules_Parser/Rules.cpp.s
+src/Lexical/Rules_Parser/Rules.s: src/Lexical/Rules_Parser/Rules.cpp.s
 
-.PHONY : src/Rules_Parser/Rules.s
+.PHONY : src/Lexical/Rules_Parser/Rules.s
 
 # target to generate assembly for a file
-src/Rules_Parser/Rules.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.s
-.PHONY : src/Rules_Parser/Rules.cpp.s
+src/Lexical/Rules_Parser/Rules.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.s
+.PHONY : src/Lexical/Rules_Parser/Rules.cpp.s
 
-src/Rules_Parser/RulesParser.o: src/Rules_Parser/RulesParser.cpp.o
+src/Lexical/Rules_Parser/RulesParser.o: src/Lexical/Rules_Parser/RulesParser.cpp.o
 
-.PHONY : src/Rules_Parser/RulesParser.o
+.PHONY : src/Lexical/Rules_Parser/RulesParser.o
 
 # target to build an object file
-src/Rules_Parser/RulesParser.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o
-.PHONY : src/Rules_Parser/RulesParser.cpp.o
+src/Lexical/Rules_Parser/RulesParser.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o
+.PHONY : src/Lexical/Rules_Parser/RulesParser.cpp.o
 
-src/Rules_Parser/RulesParser.i: src/Rules_Parser/RulesParser.cpp.i
+src/Lexical/Rules_Parser/RulesParser.i: src/Lexical/Rules_Parser/RulesParser.cpp.i
 
-.PHONY : src/Rules_Parser/RulesParser.i
+.PHONY : src/Lexical/Rules_Parser/RulesParser.i
 
 # target to preprocess a source file
-src/Rules_Parser/RulesParser.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.i
-.PHONY : src/Rules_Parser/RulesParser.cpp.i
+src/Lexical/Rules_Parser/RulesParser.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.i
+.PHONY : src/Lexical/Rules_Parser/RulesParser.cpp.i
 
-src/Rules_Parser/RulesParser.s: src/Rules_Parser/RulesParser.cpp.s
+src/Lexical/Rules_Parser/RulesParser.s: src/Lexical/Rules_Parser/RulesParser.cpp.s
 
-.PHONY : src/Rules_Parser/RulesParser.s
+.PHONY : src/Lexical/Rules_Parser/RulesParser.s
 
 # target to generate assembly for a file
-src/Rules_Parser/RulesParser.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.s
-.PHONY : src/Rules_Parser/RulesParser.cpp.s
+src/Lexical/Rules_Parser/RulesParser.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.s
+.PHONY : src/Lexical/Rules_Parser/RulesParser.cpp.s
 
-src/Scanner/Scanner.o: src/Scanner/Scanner.cpp.o
+src/Lexical/Scanner/Scanner.o: src/Lexical/Scanner/Scanner.cpp.o
 
-.PHONY : src/Scanner/Scanner.o
+.PHONY : src/Lexical/Scanner/Scanner.o
 
 # target to build an object file
-src/Scanner/Scanner.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o
-.PHONY : src/Scanner/Scanner.cpp.o
+src/Lexical/Scanner/Scanner.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o
+.PHONY : src/Lexical/Scanner/Scanner.cpp.o
 
-src/Scanner/Scanner.i: src/Scanner/Scanner.cpp.i
+src/Lexical/Scanner/Scanner.i: src/Lexical/Scanner/Scanner.cpp.i
 
-.PHONY : src/Scanner/Scanner.i
+.PHONY : src/Lexical/Scanner/Scanner.i
 
 # target to preprocess a source file
-src/Scanner/Scanner.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.i
-.PHONY : src/Scanner/Scanner.cpp.i
+src/Lexical/Scanner/Scanner.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.i
+.PHONY : src/Lexical/Scanner/Scanner.cpp.i
 
-src/Scanner/Scanner.s: src/Scanner/Scanner.cpp.s
+src/Lexical/Scanner/Scanner.s: src/Lexical/Scanner/Scanner.cpp.s
 
-.PHONY : src/Scanner/Scanner.s
+.PHONY : src/Lexical/Scanner/Scanner.s
 
 # target to generate assembly for a file
-src/Scanner/Scanner.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.s
-.PHONY : src/Scanner/Scanner.cpp.s
+src/Lexical/Scanner/Scanner.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.s
+.PHONY : src/Lexical/Scanner/Scanner.cpp.s
 
-src/Symbol_Table/Symbol_table.o: src/Symbol_Table/Symbol_table.cpp.o
+src/Lexical/Symbol_Table/Symbol_table.o: src/Lexical/Symbol_Table/Symbol_table.cpp.o
 
-.PHONY : src/Symbol_Table/Symbol_table.o
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.o
 
 # target to build an object file
-src/Symbol_Table/Symbol_table.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o
-.PHONY : src/Symbol_Table/Symbol_table.cpp.o
+src/Lexical/Symbol_Table/Symbol_table.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.cpp.o
 
-src/Symbol_Table/Symbol_table.i: src/Symbol_Table/Symbol_table.cpp.i
+src/Lexical/Symbol_Table/Symbol_table.i: src/Lexical/Symbol_Table/Symbol_table.cpp.i
 
-.PHONY : src/Symbol_Table/Symbol_table.i
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.i
 
 # target to preprocess a source file
-src/Symbol_Table/Symbol_table.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.i
-.PHONY : src/Symbol_Table/Symbol_table.cpp.i
+src/Lexical/Symbol_Table/Symbol_table.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.i
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.cpp.i
 
-src/Symbol_Table/Symbol_table.s: src/Symbol_Table/Symbol_table.cpp.s
+src/Lexical/Symbol_Table/Symbol_table.s: src/Lexical/Symbol_Table/Symbol_table.cpp.s
 
-.PHONY : src/Symbol_Table/Symbol_table.s
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.s
 
 # target to generate assembly for a file
-src/Symbol_Table/Symbol_table.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.s
-.PHONY : src/Symbol_Table/Symbol_table.cpp.s
+src/Lexical/Symbol_Table/Symbol_table.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.s
+.PHONY : src/Lexical/Symbol_Table/Symbol_table.cpp.s
 
-src/Symbol_Table/Symbol_table_iterator.o: src/Symbol_Table/Symbol_table_iterator.cpp.o
+src/Lexical/Symbol_Table/Symbol_table_iterator.o: src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o
 
-.PHONY : src/Symbol_Table/Symbol_table_iterator.o
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.o
 
 # target to build an object file
-src/Symbol_Table/Symbol_table_iterator.cpp.o:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o
-.PHONY : src/Symbol_Table/Symbol_table_iterator.cpp.o
+src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o
 
-src/Symbol_Table/Symbol_table_iterator.i: src/Symbol_Table/Symbol_table_iterator.cpp.i
+src/Lexical/Symbol_Table/Symbol_table_iterator.i: src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i
 
-.PHONY : src/Symbol_Table/Symbol_table_iterator.i
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.i
 
 # target to preprocess a source file
-src/Symbol_Table/Symbol_table_iterator.cpp.i:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.i
-.PHONY : src/Symbol_Table/Symbol_table_iterator.cpp.i
+src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i
 
-src/Symbol_Table/Symbol_table_iterator.s: src/Symbol_Table/Symbol_table_iterator.cpp.s
+src/Lexical/Symbol_Table/Symbol_table_iterator.s: src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
 
-.PHONY : src/Symbol_Table/Symbol_table_iterator.s
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.s
 
 # target to generate assembly for a file
-src/Symbol_Table/Symbol_table_iterator.cpp.s:
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.s
-.PHONY : src/Symbol_Table/Symbol_table_iterator.cpp.s
+src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
+.PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -807,81 +807,81 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lexical_Analyzer_Generator"
-	@echo "... src/Bonus/lex.yy.o"
-	@echo "... src/Bonus/lex.yy.i"
-	@echo "... src/Bonus/lex.yy.s"
-	@echo "... src/Bonus/scanner.o"
-	@echo "... src/Bonus/scanner.i"
-	@echo "... src/Bonus/scanner.s"
-	@echo "... src/Builders/Builder.o"
-	@echo "... src/Builders/Builder.i"
-	@echo "... src/Builders/Builder.s"
-	@echo "... src/Builders/Postfix_handler.o"
-	@echo "... src/Builders/Postfix_handler.i"
-	@echo "... src/Builders/Postfix_handler.s"
-	@echo "... src/Builders/Subset_Builder.o"
-	@echo "... src/Builders/Subset_Builder.i"
-	@echo "... src/Builders/Subset_Builder.s"
-	@echo "... src/Builders/Thomson_Builder.o"
-	@echo "... src/Builders/Thomson_Builder.i"
-	@echo "... src/Builders/Thomson_Builder.s"
-	@echo "... src/Data_Structure/Token_Saver.o"
-	@echo "... src/Data_Structure/Token_Saver.i"
-	@echo "... src/Data_Structure/Token_Saver.s"
-	@echo "... src/Files_Handler/FileReader.o"
-	@echo "... src/Files_Handler/FileReader.i"
-	@echo "... src/Files_Handler/FileReader.s"
-	@echo "... src/General/functions.o"
-	@echo "... src/General/functions.i"
-	@echo "... src/General/functions.s"
-	@echo "... src/Graph/Edge.o"
-	@echo "... src/Graph/Edge.i"
-	@echo "... src/Graph/Edge.s"
-	@echo "... src/Graph/Graph.o"
-	@echo "... src/Graph/Graph.i"
-	@echo "... src/Graph/Graph.s"
-	@echo "... src/Graph/Node.o"
-	@echo "... src/Graph/Node.i"
-	@echo "... src/Graph/Node.s"
-	@echo "... src/Lexical-Analyzer-Generator.o"
-	@echo "... src/Lexical-Analyzer-Generator.i"
-	@echo "... src/Lexical-Analyzer-Generator.s"
-	@echo "... src/Machines/Machine.o"
-	@echo "... src/Machines/Machine.i"
-	@echo "... src/Machines/Machine.s"
-	@echo "... src/Machines/State.o"
-	@echo "... src/Machines/State.i"
-	@echo "... src/Machines/State.s"
-	@echo "... src/Machines/Transition_Table.o"
-	@echo "... src/Machines/Transition_Table.i"
-	@echo "... src/Machines/Transition_Table.s"
-	@echo "... src/Minimizer/Group.o"
-	@echo "... src/Minimizer/Group.i"
-	@echo "... src/Minimizer/Group.s"
-	@echo "... src/Minimizer/Groups.o"
-	@echo "... src/Minimizer/Groups.i"
-	@echo "... src/Minimizer/Groups.s"
-	@echo "... src/Minimizer/Minimizer.o"
-	@echo "... src/Minimizer/Minimizer.i"
-	@echo "... src/Minimizer/Minimizer.s"
-	@echo "... src/Rules_Parser/FileRulesReader.o"
-	@echo "... src/Rules_Parser/FileRulesReader.i"
-	@echo "... src/Rules_Parser/FileRulesReader.s"
-	@echo "... src/Rules_Parser/Rules.o"
-	@echo "... src/Rules_Parser/Rules.i"
-	@echo "... src/Rules_Parser/Rules.s"
-	@echo "... src/Rules_Parser/RulesParser.o"
-	@echo "... src/Rules_Parser/RulesParser.i"
-	@echo "... src/Rules_Parser/RulesParser.s"
-	@echo "... src/Scanner/Scanner.o"
-	@echo "... src/Scanner/Scanner.i"
-	@echo "... src/Scanner/Scanner.s"
-	@echo "... src/Symbol_Table/Symbol_table.o"
-	@echo "... src/Symbol_Table/Symbol_table.i"
-	@echo "... src/Symbol_Table/Symbol_table.s"
-	@echo "... src/Symbol_Table/Symbol_table_iterator.o"
-	@echo "... src/Symbol_Table/Symbol_table_iterator.i"
-	@echo "... src/Symbol_Table/Symbol_table_iterator.s"
+	@echo "... src/Lexical/Bonus/lex.yy.o"
+	@echo "... src/Lexical/Bonus/lex.yy.i"
+	@echo "... src/Lexical/Bonus/lex.yy.s"
+	@echo "... src/Lexical/Bonus/scanner.o"
+	@echo "... src/Lexical/Bonus/scanner.i"
+	@echo "... src/Lexical/Bonus/scanner.s"
+	@echo "... src/Lexical/Builders/Builder.o"
+	@echo "... src/Lexical/Builders/Builder.i"
+	@echo "... src/Lexical/Builders/Builder.s"
+	@echo "... src/Lexical/Builders/Postfix_handler.o"
+	@echo "... src/Lexical/Builders/Postfix_handler.i"
+	@echo "... src/Lexical/Builders/Postfix_handler.s"
+	@echo "... src/Lexical/Builders/Subset_Builder.o"
+	@echo "... src/Lexical/Builders/Subset_Builder.i"
+	@echo "... src/Lexical/Builders/Subset_Builder.s"
+	@echo "... src/Lexical/Builders/Thomson_Builder.o"
+	@echo "... src/Lexical/Builders/Thomson_Builder.i"
+	@echo "... src/Lexical/Builders/Thomson_Builder.s"
+	@echo "... src/Lexical/Data_Structure/Token_Saver.o"
+	@echo "... src/Lexical/Data_Structure/Token_Saver.i"
+	@echo "... src/Lexical/Data_Structure/Token_Saver.s"
+	@echo "... src/Lexical/Files_Handler/FileReader.o"
+	@echo "... src/Lexical/Files_Handler/FileReader.i"
+	@echo "... src/Lexical/Files_Handler/FileReader.s"
+	@echo "... src/Lexical/General/functions.o"
+	@echo "... src/Lexical/General/functions.i"
+	@echo "... src/Lexical/General/functions.s"
+	@echo "... src/Lexical/Graph/Edge.o"
+	@echo "... src/Lexical/Graph/Edge.i"
+	@echo "... src/Lexical/Graph/Edge.s"
+	@echo "... src/Lexical/Graph/Graph.o"
+	@echo "... src/Lexical/Graph/Graph.i"
+	@echo "... src/Lexical/Graph/Graph.s"
+	@echo "... src/Lexical/Graph/Node.o"
+	@echo "... src/Lexical/Graph/Node.i"
+	@echo "... src/Lexical/Graph/Node.s"
+	@echo "... src/Lexical/Machines/Machine.o"
+	@echo "... src/Lexical/Machines/Machine.i"
+	@echo "... src/Lexical/Machines/Machine.s"
+	@echo "... src/Lexical/Machines/State.o"
+	@echo "... src/Lexical/Machines/State.i"
+	@echo "... src/Lexical/Machines/State.s"
+	@echo "... src/Lexical/Machines/Transition_Table.o"
+	@echo "... src/Lexical/Machines/Transition_Table.i"
+	@echo "... src/Lexical/Machines/Transition_Table.s"
+	@echo "... src/Lexical/Minimizer/Group.o"
+	@echo "... src/Lexical/Minimizer/Group.i"
+	@echo "... src/Lexical/Minimizer/Group.s"
+	@echo "... src/Lexical/Minimizer/Groups.o"
+	@echo "... src/Lexical/Minimizer/Groups.i"
+	@echo "... src/Lexical/Minimizer/Groups.s"
+	@echo "... src/Lexical/Minimizer/Minimizer.o"
+	@echo "... src/Lexical/Minimizer/Minimizer.i"
+	@echo "... src/Lexical/Minimizer/Minimizer.s"
+	@echo "... src/Lexical/Rules_Parser/FileRulesReader.o"
+	@echo "... src/Lexical/Rules_Parser/FileRulesReader.i"
+	@echo "... src/Lexical/Rules_Parser/FileRulesReader.s"
+	@echo "... src/Lexical/Rules_Parser/Rules.o"
+	@echo "... src/Lexical/Rules_Parser/Rules.i"
+	@echo "... src/Lexical/Rules_Parser/Rules.s"
+	@echo "... src/Lexical/Rules_Parser/RulesParser.o"
+	@echo "... src/Lexical/Rules_Parser/RulesParser.i"
+	@echo "... src/Lexical/Rules_Parser/RulesParser.s"
+	@echo "... src/Lexical/Scanner/Scanner.o"
+	@echo "... src/Lexical/Scanner/Scanner.i"
+	@echo "... src/Lexical/Scanner/Scanner.s"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table.o"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table.i"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table.s"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.o"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.i"
+	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2018.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,662 +57,662 @@ include CMakeFiles/Lexical_Analyzer_Generator.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o: ../src/Bonus/lex.yy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o   -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/lex.yy.c
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o: ../src/Lexical/Bonus/lex.yy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o   -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/lex.yy.c > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/lex.yy.c -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o: ../src/Bonus/scanner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o   -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/scanner.c
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o: ../src/Lexical/Bonus/scanner.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o   -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/scanner.c > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/scanner.c -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o: ../src/Builders/Builder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Builder.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o: ../src/Lexical/Builders/Builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Builder.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o: ../src/Builders/Postfix_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Postfix_handler.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o: ../src/Lexical/Builders/Postfix_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Postfix_handler.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Postfix_handler.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Postfix_handler.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Postfix_handler.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Postfix_handler.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o: ../src/Builders/Subset_Builder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Subset_Builder.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o: ../src/Lexical/Builders/Subset_Builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Subset_Builder.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Subset_Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Subset_Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Subset_Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Subset_Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o: ../src/Builders/Thomson_Builder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Thomson_Builder.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o: ../src/Lexical/Builders/Thomson_Builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Thomson_Builder.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Thomson_Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Thomson_Builder.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Builders/Thomson_Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Builders/Thomson_Builder.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o: ../src/Data_Structure/Token_Saver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Data_Structure/Token_Saver.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o: ../src/Lexical/Data_Structure/Token_Saver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Data_Structure/Token_Saver.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Data_Structure/Token_Saver.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Data_Structure/Token_Saver.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Data_Structure/Token_Saver.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Data_Structure/Token_Saver.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o: ../src/Files_Handler/FileReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Files_Handler/FileReader.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o: ../src/Lexical/Files_Handler/FileReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Files_Handler/FileReader.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Files_Handler/FileReader.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Files_Handler/FileReader.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Files_Handler/FileReader.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Files_Handler/FileReader.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o: ../src/General/functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/General/functions.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o: ../src/Lexical/General/functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/functions.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/General/functions.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/functions.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/General/functions.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/General/functions.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o: ../src/Graph/Edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Edge.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o: ../src/Lexical/Graph/Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Edge.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Edge.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Edge.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Edge.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Edge.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o: ../src/Graph/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Graph.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o: ../src/Lexical/Graph/Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Graph.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Graph.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Graph.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Graph.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Graph.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o: ../src/Graph/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Node.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o: ../src/Lexical/Graph/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Node.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Node.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Node.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Graph/Node.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Graph/Node.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o: ../src/Machines/Machine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Machine.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o: ../src/Lexical/Machines/Machine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Machine.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Machine.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Machine.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Machine.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Machine.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o: ../src/Machines/State.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/State.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o: ../src/Lexical/Machines/State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/State.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/State.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/State.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/State.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/State.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o: ../src/Machines/Transition_Table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Transition_Table.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o: ../src/Lexical/Machines/Transition_Table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Transition_Table.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Transition_Table.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Transition_Table.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Machines/Transition_Table.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Machines/Transition_Table.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o: ../src/Minimizer/Group.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Group.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o: ../src/Lexical/Minimizer/Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Group.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Group.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Group.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Group.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Group.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o: ../src/Minimizer/Groups.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Groups.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o: ../src/Lexical/Minimizer/Groups.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Groups.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Groups.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Groups.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Groups.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Groups.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o: ../src/Minimizer/Minimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Minimizer.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o: ../src/Lexical/Minimizer/Minimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Minimizer.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Minimizer.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Minimizer.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Minimizer/Minimizer.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Minimizer/Minimizer.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o: ../src/Rules_Parser/FileRulesReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/FileRulesReader.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o: ../src/Lexical/Rules_Parser/FileRulesReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/FileRulesReader.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/FileRulesReader.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/FileRulesReader.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/FileRulesReader.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/FileRulesReader.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o: ../src/Rules_Parser/Rules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/Rules.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o: ../src/Lexical/Rules_Parser/Rules.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/Rules.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/Rules.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/Rules.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/Rules.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/Rules.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o: ../src/Rules_Parser/RulesParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/RulesParser.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o: ../src/Lexical/Rules_Parser/RulesParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/RulesParser.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/RulesParser.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/RulesParser.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Rules_Parser/RulesParser.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Rules_Parser/RulesParser.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o: ../src/Lexical-Analyzer-Generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical-Analyzer-Generator.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/main.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical-Analyzer-Generator.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/main.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical-Analyzer-Generator.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/main.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o: ../src/Symbol_Table/Symbol_table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o: ../src/Lexical/Symbol_Table/Symbol_table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o: ../src/Symbol_Table/Symbol_table_iterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table_iterator.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o: ../src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table_iterator.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Symbol_Table/Symbol_table_iterator.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o
 
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o: ../src/Scanner/Scanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Scanner/Scanner.cpp
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o: CMakeFiles/Lexical_Analyzer_Generator.dir/flags.make
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o: ../src/Lexical/Scanner/Scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o -c /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Scanner/Scanner.cpp
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Scanner/Scanner.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.i
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Scanner/Scanner.cpp > CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.i
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Scanner/Scanner.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.s
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Scanner/Scanner.cpp -o CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.s
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.requires:
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.requires
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.requires
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.provides.build
-.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.provides
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.provides: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.provides.build
+.PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.provides
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o
+CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.provides.build: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o
 
 
 # Object files for target Lexical_Analyzer_Generator
 Lexical_Analyzer_Generator_OBJECTS = \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o" \
-"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o"
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o" \
+"CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o"
 
 # External object files for target Lexical_Analyzer_Generator
 Lexical_Analyzer_Generator_EXTERNAL_OBJECTS =
 
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o
-Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o
+Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o
 Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/build.make
 Lexical_Analyzer_Generator: CMakeFiles/Lexical_Analyzer_Generator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable Lexical_Analyzer_Generator"
@@ -723,31 +723,31 @@ CMakeFiles/Lexical_Analyzer_Generator.dir/build: Lexical_Analyzer_Generator
 
 .PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/build
 
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/lex.yy.c.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Bonus/scanner.c.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Builder.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Postfix_handler.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Subset_Builder.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Builders/Thomson_Builder.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Data_Structure/Token_Saver.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Files_Handler/FileReader.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/General/functions.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Edge.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Graph.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Graph/Node.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Machine.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/State.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Machines/Transition_Table.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Group.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Groups.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Minimizer/Minimizer.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/FileRulesReader.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/Rules.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Rules_Parser/RulesParser.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical-Analyzer-Generator.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Symbol_Table/Symbol_table_iterator.cpp.o.requires
-CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Scanner/Scanner.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o.requires
+CMakeFiles/Lexical_Analyzer_Generator.dir/requires: CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o.requires
 
 .PHONY : CMakeFiles/Lexical_Analyzer_Generator.dir/requires
 

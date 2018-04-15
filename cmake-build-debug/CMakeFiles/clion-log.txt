@@ -1,4 +1,4 @@
-/home/muhammed/Desktop/clion-2018.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator
+/opt/clion-2018.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/cmake-build-debug

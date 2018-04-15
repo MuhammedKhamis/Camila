@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/lex.yy.c
+/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c
 stdio.h
 -
 string.h
@@ -20,7 +20,7 @@ inttypes.h
 unistd.h
 -
 
-/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Bonus/scanner.c
+/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c
 stdio.h
 -
 
