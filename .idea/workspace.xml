@@ -11,39 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bf225de-b6bb-4600-bca7-565afb152340" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Parser/First/First.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/First/First.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Follow/Follow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Follow/Follow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Production/Production.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Production/Production.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="3bf225de-b6bb-4600-bca7-565afb152340" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +35,8 @@
       <file leaf-file-name="Parsing_Table_Generator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="184">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -227,15 +195,16 @@
       <workItem from="1523799428219" duration="921000" />
       <workItem from="1523801057166" duration="537000" />
       <workItem from="1523909070399" duration="6271000" />
-      <workItem from="1523915417574" duration="1860000" />
+      <workItem from="1523915417574" duration="2121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29561000" />
+    <option name="totallyTimeSpent" value="29822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -652,8 +621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="184">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
