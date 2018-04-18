@@ -15,6 +15,6 @@ vector<string> Parsing_Table::get_production(string non_terminal, string input) 
     if(table[non_terminal].find(input) == table[non_terminal].end()){
         return {};
     }
-    return table.find(non_terminal)->second.find(input)->second.get_reversed_production();
+    return table[non_terminal][input].get_reversed_production();
 
 }

@@ -3,3 +3,7 @@
 //
 
 #include "Follow.h"
+
+string Follow::get_value()  {
+    return value;
+}

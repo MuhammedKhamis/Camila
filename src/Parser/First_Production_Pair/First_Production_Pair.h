@@ -11,12 +11,31 @@
 
 using namespace std;
 
+/*
+ *
+ *  class to hold each first and its corresponding production
+ *
+ *  Ex:- when first = x then production xYz is produced
+ *
+ * */
 class First_Production_Pair {
 
 public:
+
     First_Production_Pair( Production &p,  First &f);
 
+    /*
+     *
+     *  getter for the production
+     *
+     * */
      Production &getProduction();
+
+     /*
+      *
+      * getter for the first
+      *
+      */
 
      First &getFirst();
 

@@ -11,12 +11,12 @@ Non_Terminal_Info::Non_Terminal_Info( vector<First_Production_Pair> &first_produ
 Non_Terminal_Info::Non_Terminal_Info( string &non_terminal) : non_terminal(non_terminal) {}
 
 
-void Non_Terminal_Info::add_first_production(First &f, Production &p) {
+void Non_Terminal_Info::add_first_production_pair(First &f, Production &p) {
     First_Production_Pair fpp(p,f);
-    this->add_first_production(fpp);
+    this->add_first_production_pair(fpp);
 }
 
-void Non_Terminal_Info::add_first_production(First_Production_Pair &fpp) {
+void Non_Terminal_Info::add_first_production_pair(First_Production_Pair &fpp) {
     this->first_production.emplace_back(fpp);
 }
 
@@ -30,4 +30,8 @@ vector<Follow> Non_Terminal_Info::get_follows() {
 
 vector<First_Production_Pair> Non_Terminal_Info::get_first_production_pairs() {
     return this->first_production;
+}
+
+string Non_Terminal_Info::get_non_terminal() {
+    return non_terminal;
 }

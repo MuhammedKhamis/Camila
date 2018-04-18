@@ -9,7 +9,9 @@ Production::Production(vector<string> &production,  string &non_terminal) : prod
 
 Production::Production(string &non_terminal) : non_terminal(non_terminal) {}
 
-//Production::Production() {}
+Production::Production() {
+    this->non_terminal = "sync";
+}
 
 Production::~Production() {}
 

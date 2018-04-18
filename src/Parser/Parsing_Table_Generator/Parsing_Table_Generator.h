@@ -16,8 +16,21 @@ using namespace std;
 class Parsing_Table_Generator {
 
 public:
+
+    /*
+     *  Constructor for the parse table generator that takes the non_terminals and their info
+     *  as parameters each non_terminal_info object corresponds to its non_terminal
+     *  in the other vector.
+     *
+     * */
+
     Parsing_Table_Generator( vector<string> &non_terminals,  vector<Non_Terminal_Info> &non_terminal_info);
 
+    /*
+     * function that generate the parsing table with knowing the non_terminals and their info
+     *  as first and its corresponding production and its follows.
+     *
+     * */
     Parsing_Table generate_table();
 
 private:
