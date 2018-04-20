@@ -6,5 +6,11 @@
  */
 
 
+#include <string>
+#include <set>
+#include "first_finder.h"
 
 
+set<string> First_finder::find_first(string x){
+
+}

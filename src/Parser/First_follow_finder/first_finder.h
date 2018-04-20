@@ -8,7 +8,8 @@
 #ifndef PARSER_FIRST_FOLLOW_FINDER_FIRST_FINDER_H_
 #define PARSER_FIRST_FOLLOW_FINDER_FIRST_FINDER_H_
 
-#include <string.h>
+#include <set>
+#include <string>
 
 using namespace std;
 
@@ -16,11 +17,11 @@ class First_finder{
 
 public:
 	/**
-	 * input is the production name
-	 * find the first of a production
+	 * input is the x
+	 * find the first of x
 	 * return a set of terminals results
 	 */
-	void find_first(string p_name);
+	set<string> find_first(string x);
 
 };
 
