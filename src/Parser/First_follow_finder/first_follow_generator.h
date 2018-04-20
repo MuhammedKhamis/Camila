@@ -11,8 +11,21 @@
 #include <set>
 #include <string>
 #include <map>
-#include "first_finder.h"
-#include "follow_finder.h"
+
+using namespace std;
+
+
+/**
+ * constant value for epsilon
+ * we consider epsilon is referred to by eps
+ */
+const string eps = "\'eps\'";
+/**
+ * this status used by some functions to take certain action
+ * this action is to continue in extraction from the next non terminal or not
+ * it's set or reset after each call of those function
+ */
+bool status = false;
 
 /**
  * productions which we work on.
@@ -37,20 +50,27 @@ public:
 	 * this reset the two first_of_productions and follow_of_productions
 	 * then run all production rules
 	 * finally set the two maps again
-	 * it's working by three passes:
-	 * first: add all lhs has eps (eps means epsilon)
-	 * second: add all first of productions
-	 * third: working on first of x when x is nonterminal
+	 * it's working by recursion, and use releasing technique
+	 * and dynamic programming algorithm to enhance the operations
 	 */
 	void generate_first_productions();
+
+	/*
+	 *	to be explained....
+	 */
 	void generate_follow_productions();
 	/**
 	 * add a new production to our list of productions
 	 * let prod is x->y1 | y2y3
-	 * lhs = x
-	 * prods = [y1, y2y3]
+	 * so lhs = x
+	 * and prods = [y1, y2y3]
 	 */
 	void add_to_productions(string lhs, set<string> prods);
+
+	/**
+	 * it first reset
+	 * then call for first and follow generator
+	 */
 	void generator();
 };
 

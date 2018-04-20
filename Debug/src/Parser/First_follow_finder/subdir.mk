@@ -4,19 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Parser/First_follow_finder/first_finder.cpp \
-../src/Parser/First_follow_finder/first_follow_generator.cpp \
-../src/Parser/First_follow_finder/follow_finder.cpp 
+../src/Parser/First_follow_finder/first_follow_generator.cpp 
 
 OBJS += \
-./src/Parser/First_follow_finder/first_finder.o \
-./src/Parser/First_follow_finder/first_follow_generator.o \
-./src/Parser/First_follow_finder/follow_finder.o 
+./src/Parser/First_follow_finder/first_follow_generator.o 
 
 CPP_DEPS += \
-./src/Parser/First_follow_finder/first_finder.d \
-./src/Parser/First_follow_finder/first_follow_generator.d \
-./src/Parser/First_follow_finder/follow_finder.d 
+./src/Parser/First_follow_finder/first_follow_generator.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
