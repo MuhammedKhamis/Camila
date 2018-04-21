@@ -11,6 +11,10 @@ using namespace std;
 class First {
     // to be implemented by Murad and Rafaat
 public:
+    virtual ~First(){};
+
+    First(const string &value);
+
     string get_value()  ;
 
 private:

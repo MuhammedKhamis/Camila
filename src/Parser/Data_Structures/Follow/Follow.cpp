@@ -4,6 +4,11 @@
 
 #include "Follow.h"
 
+Follow::Follow(string value) {
+    this->value = value;
+}
+
+
 string Follow::get_value()  {
     return value;
 }

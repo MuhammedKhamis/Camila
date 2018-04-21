@@ -6,7 +6,7 @@
 #define COMPILER_PROJECT_PARSING_TABLE_H
 
 #include <bits/stdc++.h>
-#include "../Production/Production.h"
+#include "../Data_Structures/Production/Production.h"
 
 using namespace std;
 

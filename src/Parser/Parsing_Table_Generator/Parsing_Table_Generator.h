@@ -8,8 +8,8 @@
 #include <bits/stdc++.h>
 #include "../Non_Terminal_Package/Non_Terminal_Info.h"
 #include "../Parsing_Table/Parsing_Table.h"
-#include "../First_Production_Pair/First_Production_Pair.h"
-#include "../Production/Production.h"
+#include "../Data_Structures/First_Production_Pair/First_Production_Pair.h"
+#include "../Data_Structures/Production/Production.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ public:
      *
      * */
 
-    Parsing_Table_Generator( vector<string> &non_terminals,  vector<Non_Terminal_Info> &non_terminal_info);
+    Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info);
 
     /*
      * function that generate the parsing table with knowing the non_terminals and their info

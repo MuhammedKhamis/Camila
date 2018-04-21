@@ -7,3 +7,6 @@
 string First::get_value()  {
     return value;
 }
+
+First::First(const string &value) : value(value) {}
+

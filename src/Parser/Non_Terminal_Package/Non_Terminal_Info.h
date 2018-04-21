@@ -7,10 +7,10 @@
 
 #include <bits/stdc++.h>
 
-#include "../First/First.h"
-#include "../Follow/Follow.h"
-#include "../Production/Production.h"
-#include "../First_Production_Pair/First_Production_Pair.h"
+#include "../Data_Structures/First/First.h"
+#include "../Data_Structures/Follow/Follow.h"
+#include "../Data_Structures/Production/Production.h"
+#include "../Data_Structures/First_Production_Pair/First_Production_Pair.h"
 using namespace std;
 
 
@@ -24,14 +24,14 @@ using namespace std;
  * */
 class Non_Terminal_Info {
 public:
-    Non_Terminal_Info( vector<First_Production_Pair> &first_production,  vector<Follow> &follows,
+    Non_Terminal_Info( vector<First_Production_Pair> &first_production_pairs,  vector<Follow> &follows,
                        string &non_terminal);
 
     Non_Terminal_Info( string &non_terminal);
 
     /*
      *
-     * adding the firsdt_production pair to the info.
+     * adding the first_production pair to the info.
      *
      * */
 
@@ -66,7 +66,7 @@ public:
 
 
 private:
-    vector<First_Production_Pair> first_production;
+    vector<First_Production_Pair> first_production_pairs;
     vector<Follow> follows;
     string non_terminal;
 

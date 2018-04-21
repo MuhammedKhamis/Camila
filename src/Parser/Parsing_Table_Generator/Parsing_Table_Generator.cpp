@@ -5,9 +5,8 @@
 #include "Parsing_Table_Generator.h"
 #include "../../Lexical/General/functions.h"
 
-Parsing_Table_Generator::Parsing_Table_Generator( vector<string> &non_terminals,
-                                                  vector<Non_Terminal_Info> &non_terminal_info) : non_terminals(
-        non_terminals), non_terminal_info(non_terminal_info) {}
+Parsing_Table_Generator::Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info):
+        non_terminal_info(non_terminal_info) {}
 
 
 Parsing_Table Parsing_Table_Generator::generate_table() {
@@ -22,7 +21,7 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
 
         // make new table entry for the non_terminal node.
         table[non_terminals[i]] = unordered_map<string,Production>();
-        // get the first_production pair
+        // get the first_production_pairs pair
         vector<First_Production_Pair> fpp =  non_terminal_info[i].get_first_production_pairs();
 
         // true if there is a lambda in the first

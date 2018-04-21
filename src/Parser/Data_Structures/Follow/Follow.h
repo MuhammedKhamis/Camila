@@ -11,7 +11,11 @@ using namespace std;
 class Follow {
     // to be implemented by Murad and Rafaat
 public:
-    string get_value()  ;
+
+    Follow(string value);
+    virtual ~Follow(){};
+    string get_value();
+
 
 private:
     string value;

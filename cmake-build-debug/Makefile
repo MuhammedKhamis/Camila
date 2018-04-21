@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.1.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.1/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2018.1.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Proj
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2018.1.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2018.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.1.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -771,86 +771,113 @@ src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
 .PHONY : src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.s
 
-src/Parser/First/First.o: src/Parser/First/First.cpp.o
+src/Parser/Data_Structures/First/First.o: src/Parser/Data_Structures/First/First.cpp.o
 
-.PHONY : src/Parser/First/First.o
-
-# target to build an object file
-src/Parser/First/First.cpp.o:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First/First.cpp.o
-.PHONY : src/Parser/First/First.cpp.o
-
-src/Parser/First/First.i: src/Parser/First/First.cpp.i
-
-.PHONY : src/Parser/First/First.i
-
-# target to preprocess a source file
-src/Parser/First/First.cpp.i:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First/First.cpp.i
-.PHONY : src/Parser/First/First.cpp.i
-
-src/Parser/First/First.s: src/Parser/First/First.cpp.s
-
-.PHONY : src/Parser/First/First.s
-
-# target to generate assembly for a file
-src/Parser/First/First.cpp.s:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First/First.cpp.s
-.PHONY : src/Parser/First/First.cpp.s
-
-src/Parser/First_Production_Pair/First_Production_Pair.o: src/Parser/First_Production_Pair/First_Production_Pair.cpp.o
-
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.o
+.PHONY : src/Parser/Data_Structures/First/First.o
 
 # target to build an object file
-src/Parser/First_Production_Pair/First_Production_Pair.cpp.o:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_Production_Pair/First_Production_Pair.cpp.o
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.cpp.o
+src/Parser/Data_Structures/First/First.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First/First.cpp.o
+.PHONY : src/Parser/Data_Structures/First/First.cpp.o
 
-src/Parser/First_Production_Pair/First_Production_Pair.i: src/Parser/First_Production_Pair/First_Production_Pair.cpp.i
+src/Parser/Data_Structures/First/First.i: src/Parser/Data_Structures/First/First.cpp.i
 
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.i
+.PHONY : src/Parser/Data_Structures/First/First.i
 
 # target to preprocess a source file
-src/Parser/First_Production_Pair/First_Production_Pair.cpp.i:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_Production_Pair/First_Production_Pair.cpp.i
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.cpp.i
+src/Parser/Data_Structures/First/First.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First/First.cpp.i
+.PHONY : src/Parser/Data_Structures/First/First.cpp.i
 
-src/Parser/First_Production_Pair/First_Production_Pair.s: src/Parser/First_Production_Pair/First_Production_Pair.cpp.s
+src/Parser/Data_Structures/First/First.s: src/Parser/Data_Structures/First/First.cpp.s
 
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.s
+.PHONY : src/Parser/Data_Structures/First/First.s
 
 # target to generate assembly for a file
-src/Parser/First_Production_Pair/First_Production_Pair.cpp.s:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_Production_Pair/First_Production_Pair.cpp.s
-.PHONY : src/Parser/First_Production_Pair/First_Production_Pair.cpp.s
+src/Parser/Data_Structures/First/First.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First/First.cpp.s
+.PHONY : src/Parser/Data_Structures/First/First.cpp.s
 
-src/Parser/Follow/Follow.o: src/Parser/Follow/Follow.cpp.o
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o: src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.o
 
-.PHONY : src/Parser/Follow/Follow.o
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o
 
 # target to build an object file
-src/Parser/Follow/Follow.cpp.o:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Follow/Follow.cpp.o
-.PHONY : src/Parser/Follow/Follow.cpp.o
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.o
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.o
 
-src/Parser/Follow/Follow.i: src/Parser/Follow/Follow.cpp.i
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.i: src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.i
 
-.PHONY : src/Parser/Follow/Follow.i
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.i
 
 # target to preprocess a source file
-src/Parser/Follow/Follow.cpp.i:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Follow/Follow.cpp.i
-.PHONY : src/Parser/Follow/Follow.cpp.i
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.i
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.i
 
-src/Parser/Follow/Follow.s: src/Parser/Follow/Follow.cpp.s
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.s: src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.s
 
-.PHONY : src/Parser/Follow/Follow.s
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.s
 
 # target to generate assembly for a file
-src/Parser/Follow/Follow.cpp.s:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Follow/Follow.cpp.s
-.PHONY : src/Parser/Follow/Follow.cpp.s
+src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.s
+.PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.s
+
+src/Parser/Data_Structures/Follow/Follow.o: src/Parser/Data_Structures/Follow/Follow.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Follow/Follow.o
+
+# target to build an object file
+src/Parser/Data_Structures/Follow/Follow.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Follow/Follow.cpp.o
+.PHONY : src/Parser/Data_Structures/Follow/Follow.cpp.o
+
+src/Parser/Data_Structures/Follow/Follow.i: src/Parser/Data_Structures/Follow/Follow.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Follow/Follow.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Follow/Follow.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Follow/Follow.cpp.i
+.PHONY : src/Parser/Data_Structures/Follow/Follow.cpp.i
+
+src/Parser/Data_Structures/Follow/Follow.s: src/Parser/Data_Structures/Follow/Follow.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Follow/Follow.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Follow/Follow.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Follow/Follow.cpp.s
+.PHONY : src/Parser/Data_Structures/Follow/Follow.cpp.s
+
+src/Parser/Data_Structures/Production/Production.o: src/Parser/Data_Structures/Production/Production.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Production/Production.o
+
+# target to build an object file
+src/Parser/Data_Structures/Production/Production.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Production/Production.cpp.o
+.PHONY : src/Parser/Data_Structures/Production/Production.cpp.o
+
+src/Parser/Data_Structures/Production/Production.i: src/Parser/Data_Structures/Production/Production.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Production/Production.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Production/Production.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Production/Production.cpp.i
+.PHONY : src/Parser/Data_Structures/Production/Production.cpp.i
+
+src/Parser/Data_Structures/Production/Production.s: src/Parser/Data_Structures/Production/Production.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Production/Production.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Production/Production.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Production/Production.cpp.s
+.PHONY : src/Parser/Data_Structures/Production/Production.cpp.s
 
 src/Parser/Non_Terminal_Package/Non_Terminal_Info.o: src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp.o
 
@@ -932,33 +959,6 @@ src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s: src/Parser/Parsing
 src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
 .PHONY : src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
-
-src/Parser/Production/Production.o: src/Parser/Production/Production.cpp.o
-
-.PHONY : src/Parser/Production/Production.o
-
-# target to build an object file
-src/Parser/Production/Production.cpp.o:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Production/Production.cpp.o
-.PHONY : src/Parser/Production/Production.cpp.o
-
-src/Parser/Production/Production.i: src/Parser/Production/Production.cpp.i
-
-.PHONY : src/Parser/Production/Production.i
-
-# target to preprocess a source file
-src/Parser/Production/Production.cpp.i:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Production/Production.cpp.i
-.PHONY : src/Parser/Production/Production.cpp.i
-
-src/Parser/Production/Production.s: src/Parser/Production/Production.cpp.s
-
-.PHONY : src/Parser/Production/Production.s
-
-# target to generate assembly for a file
-src/Parser/Production/Production.cpp.s:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Production/Production.cpp.s
-.PHONY : src/Parser/Production/Production.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -1068,15 +1068,18 @@ help:
 	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.o"
 	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.i"
 	@echo "... src/Lexical/Symbol_Table/Symbol_table_iterator.s"
-	@echo "... src/Parser/First/First.o"
-	@echo "... src/Parser/First/First.i"
-	@echo "... src/Parser/First/First.s"
-	@echo "... src/Parser/First_Production_Pair/First_Production_Pair.o"
-	@echo "... src/Parser/First_Production_Pair/First_Production_Pair.i"
-	@echo "... src/Parser/First_Production_Pair/First_Production_Pair.s"
-	@echo "... src/Parser/Follow/Follow.o"
-	@echo "... src/Parser/Follow/Follow.i"
-	@echo "... src/Parser/Follow/Follow.s"
+	@echo "... src/Parser/Data_Structures/First/First.o"
+	@echo "... src/Parser/Data_Structures/First/First.i"
+	@echo "... src/Parser/Data_Structures/First/First.s"
+	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o"
+	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.i"
+	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.s"
+	@echo "... src/Parser/Data_Structures/Follow/Follow.o"
+	@echo "... src/Parser/Data_Structures/Follow/Follow.i"
+	@echo "... src/Parser/Data_Structures/Follow/Follow.s"
+	@echo "... src/Parser/Data_Structures/Production/Production.o"
+	@echo "... src/Parser/Data_Structures/Production/Production.i"
+	@echo "... src/Parser/Data_Structures/Production/Production.s"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.o"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.i"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.s"
@@ -1086,9 +1089,6 @@ help:
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.o"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.i"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s"
-	@echo "... src/Parser/Production/Production.o"
-	@echo "... src/Parser/Production/Production.i"
-	@echo "... src/Parser/Production/Production.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
