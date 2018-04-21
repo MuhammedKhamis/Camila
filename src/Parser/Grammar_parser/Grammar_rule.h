@@ -46,6 +46,8 @@ public:
 	 */
 	set<string> get_expressions();
 
+	void replace_with(Grammar_rule new_rule);
+
 };
 
 #endif /* GRAMMAR_RULE_H_ */

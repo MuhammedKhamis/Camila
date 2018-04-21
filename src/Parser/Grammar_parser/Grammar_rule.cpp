@@ -10,12 +10,12 @@
 
 
 Grammar_rule::Grammar_rule() {
-	// TODO Auto-generated constructor stub
+	//  Auto-generated constructor stub
 
 }
 
 Grammar_rule::~Grammar_rule() {
-	// TODO Auto-generated destructor stub
+	//  Auto-generated destructor stub
 }
 
 void Grammar_rule::add_expression(string expr){
@@ -33,6 +33,54 @@ string Grammar_rule::get_non_terminal(){
 set<string> Grammar_rule::get_expressions(){
 	return expressions;
 }
+
+void Grammar_rule::replace_with(Grammar_rule new_rule){
+	string new_rule_name = new_rule.get_non_terminal();
+
+	std::set<string>::iterator it;
+	int last_size = expressions.size();
+	for (it = expressions.begin(); it != expressions.end(); ++it)
+	{
+		if(last_size - expressions.size()){
+			it = expressions.begin();
+			last_size = expressions.size();
+		}
+		//String stream class convert
+		stringstream rule_stream(*it);
+
+		string token;
+
+		//Reading the first word if it is the same of the new_rule_name then there is left recursion
+		getline(rule_stream, token, ' ');
+
+		string append_expr = "";
+
+		//If left recursion
+		if(!token.compare(new_rule_name))
+		{
+			while(getline(rule_stream, token, ' ')){
+				append_expr.append(token);
+				append_expr.append(" ");
+			}
+
+			//remove the old expression
+			expressions.erase(it);
+
+			std::set<string>::iterator it2;
+
+			for (it2 = new_rule.expressions.begin(); it2 != new_rule.expressions.end(); ++it2)
+			{
+				string temp = *it2;
+				temp.append(append_expr);
+				add_expression(temp);
+			}
+		}
+
+	}
+
+}
+
+
 
 void Grammar_rule::set_rule(string input_rule){
 	// stringstream class convert
@@ -68,11 +116,16 @@ void Grammar_rule::set_rule(string input_rule){
 			add_expression(expr);
 			expr = "";
 		}else {
-			//Construct the expression
-			expr.append(token);
-			expr.append(" ");
+			//ignore spaces
+			if(token.compare(" "))
+			{
+				//Construct the expression
+				expr.append(token);
+				expr.append(" ");
+			}
 		}
 	}
 	add_expression(expr);
 }
+
 
