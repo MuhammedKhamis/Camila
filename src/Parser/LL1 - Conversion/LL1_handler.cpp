@@ -35,15 +35,11 @@ void LL1_handler::split(Grammar_rule rule, Grammar_rule* contains, Grammar_rule*
 
 		string append_expr = "";
 
-		//remove space
-		//getline(rule_stream, token, ' ');
 
 		while(getline(rule_stream, token, ' ')){
 			append_expr.append(token);
 			append_expr.append(" ");
 		}
-
-
 
 		//If immediate left recursion remove recursion string then add to (contains rule)
 		if(!curr_name.compare(rule_name))
@@ -83,24 +79,25 @@ vector<Grammar_rule> LL1_handler::eliminate_immediate_recursion(Grammar_rule rul
 
 		vector<Grammar_rule> result;
 
-		result.push_back(contains);
-
-		result.push_back(not_contains);
+		//If size equals 1 it means that no immediate left recursion
+		//so return the original rule
+		if(contains.expressions.size() == 1)
+		{
+			result.push_back(rule);
+		}else{
+			result.push_back(contains);
+			result.push_back(not_contains);
+		}
 
 		return result;
 }
 
 vector<Grammar_rule> LL1_handler::eliminate_left_recursion(vector<Grammar_rule> rules){
-	vector<Grammar_rule> final_rules;
-
-	//Initializing the final_rules with the original values
-	for(int i = 0; i < rules.size(); i++){
-		final_rules.push_back(rules[i]);
-	}
+	vector<Grammar_rule> final_rules = rules;
 
 	//Main_ loop to eliminate left recursion
 	for(int i=0; i < rules.size(); i++){
-		for(int j=0; j < rules.size(); j++){
+		for(int j=0; j < i; j++){
 			/*
 			 * replace each production
 			 * 		A[i] -> A[j] q
@@ -109,22 +106,31 @@ vector<Grammar_rule> LL1_handler::eliminate_left_recursion(vector<Grammar_rule> 
 			 * 	where
 			 * 		A[j] -> b1 | b2 | ... | bk
 			 */
-			final_rules[i].replace_with(rules[j]);
+			string curr_name = final_rules[i].get_non_terminal();
+
+			//Check to not substitute the same rule to itself
+			if(curr_name.compare(rules[j].get_non_terminal()))
+				final_rules[i].replace_with(rules[j]);
 		}
+	}
 
-		/** Call eliminate immediate left recursion and add them to final rules **/
-
+	/** Call eliminate immediate left recursion and add them to final rules **/
+	for(int i=0; i<final_rules.size(); i++)
+	{
 		Grammar_rule curr_rule = final_rules[i];
 
-		//Erase the rule because it will be converted after immediate left recursion elimination
-		final_rules.erase(final_rules.begin() + i);
 
 		vector<Grammar_rule> new_rules = eliminate_immediate_recursion(curr_rule);
 
-		//Adding the new rules after elimination
-		for(int k = 0; k < new_rules.size(); k++){
-			final_rules.push_back(new_rules[k]);
+		if(new_rules.size() == 2){
+			//Erase the rule because it will be converted after immediate left recursion elimination
+			final_rules.erase(final_rules.begin() + i);
+			//to handle index shift due to erasing element
+			i--;
+			final_rules.push_back(new_rules[0]);
+			final_rules.push_back(new_rules[1]);
 		}
 	}
+
 	return final_rules;
 }

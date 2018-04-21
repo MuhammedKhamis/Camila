@@ -19,6 +19,7 @@ public:
 
 	string non_terminal;
 	set<string> expressions;
+	bool substitued = false;
 
 	/* Set the productions rule data by tokenizing
 	 * the input_rule string

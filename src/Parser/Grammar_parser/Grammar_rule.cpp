@@ -51,7 +51,6 @@ void Grammar_rule::append_to_expressions(string append_part){
 
 void Grammar_rule::replace_with(Grammar_rule new_rule){
 	string new_rule_name = new_rule.get_non_terminal();
-
 	std::set<string>::iterator it;
 	int last_size = expressions.size();
 	for (it = expressions.begin(); it != expressions.end(); ++it)

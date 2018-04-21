@@ -18,50 +18,40 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    Grammar_rule rule;
+    Grammar_rule rule1,rule2,rule3;
 
-    rule.set_rule("# A ::= A c1 | b1 | A c2 | b2");
+    rule1.set_rule("# E ::= E + T | T");
 
-    Grammar_rule cont,not_cont;
+    rule2.set_rule("# T ::= T * F | F");
 
+    rule3.set_rule("# F ::= id | ( E )");
 
     LL1_handler ll1;
 
-    vector<Grammar_rule> res;
+    vector<Grammar_rule> res,input;
 
-    res = ll1.eliminate_immediate_recursion(rule);
+    input.push_back(rule1);
 
-    cont = res[0];
+    input.push_back(rule2);
 
-    not_cont = res[1];
+    input.push_back(rule3);
 
-    cout<<rule.non_terminal<<endl;
+    res = ll1.eliminate_left_recursion(input);
 
     std::set<string>::iterator it;
 
-    for (it = rule.expressions.begin(); it != rule.expressions.end(); ++it)
-    {
+    for(int i=0; i<res.size(); i++){
+		Grammar_rule rule = res[i];
+		cout<<rule.get_non_terminal()<<endl;
 
-        cout<<*it<<endl;
+    	for (it = rule.expressions.begin(); it != rule.expressions.end(); ++it)
+		{
+
+			cout<<*it<<endl;
+		}
+
+		cout<<endl;
     }
-
-    cout<<endl;
-
-    cout<<cont.non_terminal<<endl;
-    for (it = cont.expressions.begin(); it != cont.expressions.end(); ++it)
-    {
-
-        cout<<*it<<endl;
-    }
-
-    cout<<endl;
-
-    cout<<not_cont.non_terminal<<endl;
-    for (it = not_cont.expressions.begin(); it != not_cont.expressions.end(); ++it)
-     {
-
-            cout<<*it<<endl;
-     }
 
 	return 0;
 }
