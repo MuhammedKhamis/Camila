@@ -13,6 +13,22 @@
 
 using namespace std;
 
+first_follow_generator::first_follow_generator(
+		map<string, set<string>> productions) {
+	for (map<string, set<string>>::iterator p_it = productions.begin();
+			p_it != productions.end(); ++p_it) {
+		add_to_productions((*p_it).first, (*p_it).second);
+	}
+}
+
+map<string, set<string>> first_follow_generator::get_firsts(){
+	return first_of_productions;
+}
+
+map<string, set<string>> first_follow_generator::get_follows(){
+	return follow_of_productions;
+}
+
 /**
  * this function is used to add a new production to the saved list of productions
  */
@@ -41,21 +57,14 @@ const vector<string> explode(const string& s, const char& c) {
 }
 
 /**
- * clear or structures
+ * clear all structures
  */
-void clear_all_firsts_follows(){
+void clear_all_firsts_follows() {
 	first_of_productions.clear();
 	follow_of_productions.clear();
 }
 
-/**
- *
- * input is the lhs
- * find the first of lhs
- * this function depends on the productions and first_of_productions structures
- * which they are accessible by it
- */
-set<string> first_finder(string lhs) {
+set<string> first_follow_generator::first_finder(string lhs) {
 	set<string> res;	//the result of this call
 	if (lhs == eps) {	//check for epsilon
 		res.insert(eps);
@@ -100,22 +109,48 @@ void first_follow_generator::generate_first_productions() {
 	}
 }
 
-/**
- * to be commented..
- */
-set<string> follow_finder(string lhs) {
-	set<string> res;
-	// to be implemented
+map<string, set<string>> first_follow_generator::follow_finder() {
+	map<string, set<string>> res;
+	for (map<string, set<string>>::iterator p_it = productions.begin();
+			p_it != productions.end(); ++p_it) {
+		for (set<string>::iterator sub_p_it =
+				productions[(*p_it).first].begin();
+				sub_p_it != productions[(*p_it).first].end(); ++sub_p_it) {
+			vector<string> v { explode((*sub_p_it), ' ') };
+			for (unsigned int i = 1; i < v.size() && status; ++i) {
+				if ((i + 1 < v.size())) {
+					follow_of_productions[v[i]].insert(		//if A -> aBb
+							first_of_productions[v[i + 1]].begin(),	//then add first(b)
+							first_of_productions[v[i + 1]].end());
+					if (follow_of_productions[v[i]].find(eps)
+							!= follow_of_productions[v[i]].end()) {	//if first(b) contains eps add follow(A)
+						follow_of_productions[v[i]].erase(eps);
+						res[v[i]].insert((*p_it).first);
+					}
+				} else {
+					res[v[i]].insert((*p_it).first);	//if A -> aB
+				}
+			}
+		}
+	}
 	return res;
 }
 
-/**
- * to be commented..
- */
-void first_follow_generator::generate_follow_productions(){
-	// to be implemented
+void first_follow_generator::generate_follow_productions() {
+	//add $ to S lhs
+	follow_of_productions[(*productions.begin()).first].insert("$");
+	//call for follow_finder, it sets the firsts values and return a list of pointers
+	map<string, set<string>> ptrs = follow_finder();
+	for (map<string, set<string>>::iterator ptr_it = ptrs.begin();
+			ptr_it != ptrs.end(); ++ptr_it) {
+		for (set<string>::iterator sub_ptr_it = (*ptr_it).second.begin();
+				sub_ptr_it != (*ptr_it).second.end(); ++sub_ptr_it) {
+			follow_of_productions[(*ptr_it).first].insert(
+					follow_of_productions[(*sub_ptr_it)].begin(),
+					follow_of_productions[(*sub_ptr_it)].end());
+		}
+	}
 }
-
 
 void first_follow_generator::generator() {
 	//first reset all calculated firsts and follows

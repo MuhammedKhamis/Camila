@@ -14,7 +14,6 @@
 
 using namespace std;
 
-
 /**
  * constant value for epsilon
  * we consider epsilon is referred to by eps
@@ -43,8 +42,33 @@ map<string, set<string>> first_of_productions;
  */
 map<string, set<string>> follow_of_productions;
 
-class first_follow_generator{
+class first_follow_generator {
 public:
+
+	/**
+	 * pass the productions through constructor
+	 */
+	first_follow_generator(map<string, set<string>> productions);
+
+	/**
+	 * getter for firsts
+	 */
+	map<string, set<string>> get_firsts();
+
+	/**
+	 * getter for follows
+	 */
+	map<string, set<string>> get_follows();
+
+	/**
+	 *
+	 * input is the lhs
+	 * find the first of lhs
+	 * this function depends on the productions and first_of_productions structures
+	 * which they are accessible by it
+	 */
+	set<string> first_finder(string lhs);
+
 	/**
 	 * generate first of all productions
 	 * this reset the two first_of_productions and follow_of_productions
@@ -55,8 +79,19 @@ public:
 	 */
 	void generate_first_productions();
 
-	/*
-	 *	to be explained....
+	/**
+	 * this function iterate all productions
+	 * add the first values of each relation
+	 * and save the pointers in a map to be substituted at the end
+	 * the substitutions are made out of this function
+	 * the substitutions are returned
+	 */
+	map<string, set<string>> follow_finder();
+
+	/**
+	 * first add $ to the start rule
+	 * second call for follow_finder to add terminals by calculated first and return the relations
+	 * third substitute with the relations obtained
 	 */
 	void generate_follow_productions();
 	/**
