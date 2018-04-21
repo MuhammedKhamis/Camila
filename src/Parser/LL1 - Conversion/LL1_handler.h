@@ -38,6 +38,8 @@ public:
 	vector<Grammar_rule> eliminate_left_recursion(vector<Grammar_rule> rules);
 
 	vector<Grammar_rule> eliminate_immediate_recursion(Grammar_rule rule);
+
+	void split(Grammar_rule rule, Grammar_rule* contains, Grammar_rule* not_contains);
 };
 
 #endif /* LL1HANDLER_H_ */

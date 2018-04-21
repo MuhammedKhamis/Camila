@@ -34,6 +34,21 @@ set<string> Grammar_rule::get_expressions(){
 	return expressions;
 }
 
+void Grammar_rule::append_to_expressions(string append_part){
+	std::set<string>::iterator it;
+
+	set<string> loop_set = expressions;
+
+	expressions.clear();
+
+	for (it = loop_set.begin(); it != loop_set.end(); ++it)
+	{
+		string temp = *it;
+		temp.append(append_part);
+		add_expression(temp);
+	}
+}
+
 void Grammar_rule::replace_with(Grammar_rule new_rule){
 	string new_rule_name = new_rule.get_non_terminal();
 

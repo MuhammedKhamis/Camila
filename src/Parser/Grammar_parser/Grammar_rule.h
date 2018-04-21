@@ -48,6 +48,8 @@ public:
 
 	void replace_with(Grammar_rule new_rule);
 
+	void append_to_expressions(string append_part);
+
 };
 
 #endif /* GRAMMAR_RULE_H_ */

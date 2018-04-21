@@ -10,33 +10,58 @@
 
 #include "Lexical/Scanner/Scanner.h"
 
-
 #include "Parser/Grammar_parser/Grammar_rule.h"
+
+#include "Parser/LL1 - Conversion/LL1_handler.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
 
-    Grammar_rule prod;
+    Grammar_rule rule;
 
-    prod.set_rule("# A ::= S b d e | S k o l | S t u | S x y");
+    rule.set_rule("# A ::= A c1 | b1 | A c2 | b2");
 
-    Grammar_rule prod2;
+    Grammar_rule cont,not_cont;
 
-    prod2.set_rule("# S ::= r | q");
 
-    prod.replace_with(prod2);
+    LL1_handler ll1;
 
-    cout<<prod.non_terminal<<endl;
+    vector<Grammar_rule> res;
 
-    //cout<<prod2.non_terminal<<endl;
+    res = ll1.eliminate_immediate_recursion(rule);
+
+    cont = res[0];
+
+    not_cont = res[1];
+
+    cout<<rule.non_terminal<<endl;
+
     std::set<string>::iterator it;
-    for (it = prod.expressions.begin(); it != prod.expressions.end(); ++it)
+
+    for (it = rule.expressions.begin(); it != rule.expressions.end(); ++it)
     {
 
         cout<<*it<<endl;
     }
 
+    cout<<endl;
+
+    cout<<cont.non_terminal<<endl;
+    for (it = cont.expressions.begin(); it != cont.expressions.end(); ++it)
+    {
+
+        cout<<*it<<endl;
+    }
+
+    cout<<endl;
+
+    cout<<not_cont.non_terminal<<endl;
+    for (it = not_cont.expressions.begin(); it != not_cont.expressions.end(); ++it)
+     {
+
+            cout<<*it<<endl;
+     }
 
 	return 0;
 }
