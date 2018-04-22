@@ -2,7 +2,7 @@
  * LL1handler.h
  *
  *  Created on: Apr 21, 2018
- *      Author: mishors
+ *      Author: Mohamed Raafat
  */
 
 #ifndef LL1HANDLER_H_
@@ -40,6 +40,14 @@ public:
 	vector<Grammar_rule> eliminate_immediate_recursion(Grammar_rule rule);
 
 	void split(Grammar_rule rule, Grammar_rule* contains, Grammar_rule* not_contains);
+
+	void left_factor(Grammar_rule rule ,vector<Grammar_rule>* result);
+
+	/*
+	 *	Count number of unique starting elements of all expressions of the production rule
+	 *	also counts the frequency of each starting symbol to help in left factoring
+	 */
+	void get_start_symbols(Grammar_rule rule, set<string>* start_symbols, map<string,int>* freq);
 };
 
 #endif /* LL1HANDLER_H_ */

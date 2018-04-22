@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
     Grammar_rule rule1,rule2,rule3;
 
-    rule1.set_rule("# E ::= E + T | T");
+    rule1.set_rule("# A ::= A B | A C | A D | B N | B G | D F | D k");
 
     rule2.set_rule("# T ::= T * F | F");
 
@@ -36,11 +36,13 @@ int main(int argc, char** argv) {
 
     input.push_back(rule3);
 
-    res = ll1.eliminate_left_recursion(input);
+    //res = ll1.eliminate_left_recursion(input);
 
-    std::set<string>::iterator it;
+   ll1.left_factor(rule1, &res);
 
-    for(int i=0; i<res.size(); i++){
+   std::set<string>::iterator it;
+
+   for(int i=0; i<res.size(); i++){
 		Grammar_rule rule = res[i];
 		cout<<rule.get_non_terminal()<<endl;
 
