@@ -24,7 +24,7 @@ const string eps = "\'eps\'";
  * this action is to continue in extraction from the next non terminal or not
  * it's set or reset after each call of those function
  */
-bool status = false;
+bool status = true;
 
 /**
  * productions which we work on.
@@ -33,9 +33,9 @@ map<string, set<string>> productions;
 
 /**
  * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminals
+ * values are a list of all firsts terminal and the associated productions
  */
-map<string, set<string>> first_of_productions;
+map<string, map<string, vector<string>>> first_of_productions;
 /**
  * map all non_terminal (or maybe used as terminal) string name which used as a key
  * values are a list of all firsts terminals
@@ -53,7 +53,7 @@ public:
 	/**
 	 * getter for firsts
 	 */
-	map<string, set<string>> get_firsts();
+	map<string, map<string, vector<string>>> get_firsts();
 
 	/**
 	 * getter for follows
@@ -67,7 +67,7 @@ public:
 	 * this function depends on the productions and first_of_productions structures
 	 * which they are accessible by it
 	 */
-	set<string> first_finder(string lhs);
+	map<string, vector<string>> first_finder(string lhs);
 
 	/**
 	 * generate first of all productions
@@ -107,6 +107,18 @@ public:
 	 * then call for first and follow generator
 	 */
 	void generator();
+
+	void print_productions();
+
+	void clear_all_firsts_follows();
+
+	void print_firsts();
+
+	void print_follows();
+
+	void print_map_vector(map<string, vector<string>> mv);
+
+	void print_vector(vector<string> v);
 };
 
 #endif /* PARSER_FIRST_FOLLOW_FINDER_FIRST_FOLLOW_GENERATOR_H_ */
