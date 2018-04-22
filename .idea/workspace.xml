@@ -11,8 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bf225de-b6bb-4600-bca7-565afb152340" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a2e2f59c-1529-4da5-95bb-a056e4c7479f" name="Default" comment="Merge branch 'parser' of https://github.com/MuhammedKhamis/Compiler-Project into Parser&#10;&#10;# Conflicts:&#10;#&#9;.cproject&#10;#&#9;.gitignore&#10;#&#9;.settings/language.settings.xml&#10;#&#9;Debug/sources.mk&#10;#&#9;Debug/src/subdir.mk&#10;#&#9;README.md&#10;#&#9;src/Lexical/Builders/Builder.h&#10;#&#9;src/Lexical/Builders/Postfix_handler.h&#10;#&#9;src/Lexical/Builders/Subset_Builder.cpp&#10;#&#9;src/Lexical/Builders/Subset_Builder.h&#10;#&#9;src/Lexical/Builders/Thomson_Builder.cpp&#10;#&#9;src/Lexical/Builders/Thomson_Builder.h&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.cpp&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.h&#10;#&#9;src/Lexical/General/Enums.h&#10;#&#9;src/Lexical/General/functions.cpp&#10;#&#9;src/Lexical/General/functions.h&#10;#&#9;src/Lexical/Graph/Edge.cpp&#10;#&#9;src/Lexical/Graph/Edge.h&#10;#&#9;src/Lexical/Graph/Graph.cpp&#10;#&#9;src/Lexical/Graph/Graph.h&#10;#&#9;src/Lexical/Graph/Node.cpp&#10;#&#9;src/Lexical/Graph/Node.h&#10;#&#9;src/Lexical/Machines/Machine.cpp&#10;#&#9;src/Lexical/Machines/Machine.h&#10;#&#9;src/Lexical/Machines/State.cpp&#10;#&#9;src/Lexical/Machines/State.h&#10;#&#9;src/Lexical/Machines/Transition_Table.cpp&#10;#&#9;src/Lexical/Machines/Transition_Table.h">
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,31 +31,80 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeCache.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1035" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Builder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1395" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Postfix_handler.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subset_Builder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Subset_Builder.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Thomson_Builder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Thomson_Builder.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="133" column="29" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minimizer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Minimizer/Minimizer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="139">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="Postfix_handler.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="2013">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Builder.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-            </state>
+            <state relative-caret-position="-1481" />
           </provider>
         </entry>
       </file>
@@ -98,6 +154,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="24" />
     <option name="width" value="1362" />
@@ -108,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,10 +174,16 @@
               <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Compiler-Project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Compiler-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,41 +235,41 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21010000" />
+    <option name="totallyTimeSpent" value="21053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.522694" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.30873495" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.32831326" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.5557229" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29819277" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3298193" />
+      <window_info anchor="bottom" id="CMake" weight="0.3298193" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.5557229" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.5557229" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.32831326" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29819277" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.30873495" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.32831326" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
@@ -241,19 +305,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'parser' of https://github.com/MuhammedKhamis/Compiler-Project into Parser&#10;&#10;# Conflicts:&#10;#&#9;.cproject&#10;#&#9;.gitignore&#10;#&#9;.settings/language.settings.xml&#10;#&#9;Debug/sources.mk&#10;#&#9;Debug/src/subdir.mk&#10;#&#9;README.md&#10;#&#9;src/Lexical/Builders/Builder.h&#10;#&#9;src/Lexical/Builders/Postfix_handler.h&#10;#&#9;src/Lexical/Builders/Subset_Builder.cpp&#10;#&#9;src/Lexical/Builders/Subset_Builder.h&#10;#&#9;src/Lexical/Builders/Thomson_Builder.cpp&#10;#&#9;src/Lexical/Builders/Thomson_Builder.h&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.cpp&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.h&#10;#&#9;src/Lexical/General/Enums.h&#10;#&#9;src/Lexical/General/functions.cpp&#10;#&#9;src/Lexical/General/functions.h&#10;#&#9;src/Lexical/Graph/Edge.cpp&#10;#&#9;src/Lexical/Graph/Edge.h&#10;#&#9;src/Lexical/Graph/Graph.cpp&#10;#&#9;src/Lexical/Graph/Graph.h&#10;#&#9;src/Lexical/Graph/Node.cpp&#10;#&#9;src/Lexical/Graph/Node.h&#10;#&#9;src/Lexical/Machines/Machine.cpp&#10;#&#9;src/Lexical/Machines/Machine.h&#10;#&#9;src/Lexical/Machines/State.cpp&#10;#&#9;src/Lexical/Machines/State.h&#10;#&#9;src/Lexical/Machines/Transition_Table.cpp&#10;#&#9;src/Lexical/Machines/Transition_Table.h" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'parser' of https://github.com/MuhammedKhamis/Compiler-Project into Parser&#10;&#10;# Conflicts:&#10;#&#9;.cproject&#10;#&#9;.gitignore&#10;#&#9;.settings/language.settings.xml&#10;#&#9;Debug/sources.mk&#10;#&#9;Debug/src/subdir.mk&#10;#&#9;README.md&#10;#&#9;src/Lexical/Builders/Builder.h&#10;#&#9;src/Lexical/Builders/Postfix_handler.h&#10;#&#9;src/Lexical/Builders/Subset_Builder.cpp&#10;#&#9;src/Lexical/Builders/Subset_Builder.h&#10;#&#9;src/Lexical/Builders/Thomson_Builder.cpp&#10;#&#9;src/Lexical/Builders/Thomson_Builder.h&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.cpp&#10;#&#9;src/Lexical/Data_Structure/Token_Saver.h&#10;#&#9;src/Lexical/General/Enums.h&#10;#&#9;src/Lexical/General/functions.cpp&#10;#&#9;src/Lexical/General/functions.h&#10;#&#9;src/Lexical/Graph/Edge.cpp&#10;#&#9;src/Lexical/Graph/Edge.h&#10;#&#9;src/Lexical/Graph/Graph.cpp&#10;#&#9;src/Lexical/Graph/Graph.h&#10;#&#9;src/Lexical/Graph/Node.cpp&#10;#&#9;src/Lexical/Graph/Node.h&#10;#&#9;src/Lexical/Machines/Machine.cpp&#10;#&#9;src/Lexical/Machines/Machine.h&#10;#&#9;src/Lexical/Machines/State.cpp&#10;#&#9;src/Lexical/Machines/State.h&#10;#&#9;src/Lexical/Machines/Transition_Table.cpp&#10;#&#9;src/Lexical/Machines/Transition_Table.h" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
@@ -501,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Minimizer/Minimizer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="255">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
@@ -515,8 +576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="56" column="82" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="82" />
+        <state relative-caret-position="195">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -543,22 +604,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
+        <state relative-caret-position="-1395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Thomson_Builder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="151">
+          <caret line="133" column="29" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        <state relative-caret-position="2013">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
         </state>
       </provider>
     </entry>
@@ -571,9 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
+        <state relative-caret-position="-1481" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -584,23 +641,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
