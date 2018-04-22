@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(Lexical_Analyzer_Generator)
+project(Compiler-Project)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -51,6 +51,24 @@ set(SOURCE_FILES
         src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
         src/Lexical/Symbol_Table/Symbol_table_iterator.h
         src/Lexical/Scanner/Scanner.cpp
-        src/Lexical/Scanner/Scanner.h src/Parser/Grammar_parser/Input_Parser.cpp src/Parser/Grammar_parser/Input_Parser.h)
+        src/Lexical/Scanner/Scanner.h 
+        src/Parser/Data_Structures/Production/Production.cpp 
+        src/Parser/Data_Structures/Production/Production.h 
+        src/Parser/Parsing_Table/Parsing_Table.cpp 
+        src/Parser/Parsing_Table/Parsing_Table.h 
+        src/Parser/Data_Structures/First/First.cpp 
+        src/Parser/Data_Structures/First/First.h 
+        src/Parser/Data_Structures/Follow/Follow.cpp 
+        src/Parser/Data_Structures/Follow/Follow.h 
+        src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp 
+        src/Parser/Non_Terminal_Package/Non_Terminal_Info.h 
+        src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp 
+        src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.h 
+        src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp 
+        src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h
+        src/Parser/Grammar_parser/Input_parser.cpp
+        src/Parser/Grammar_parser/Input_parser.h
+        src/Parser/Grammar_parser/Input_reader.cpp
+        src/Parser/Grammar_parser/Input_reader.h)
 
-add_executable(Lexical_Analyzer_Generator ${SOURCE_FILES} src/Parser/Grammar_parser/Input_Parser.cpp src/Parser/Grammar_parser/Input_Parser.h)
+add_executable(Compiler-Project ${SOURCE_FILES})

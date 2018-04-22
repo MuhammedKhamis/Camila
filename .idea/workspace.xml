@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Lexical_Analyzer_Generator" targetName="Lexical_Analyzer_Generator" />
+      <config projectName="Compiler-Project" targetName="Compiler-Project" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -12,65 +12,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bf225de-b6bb-4600-bca7-565afb152340" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Parser/Grammar_parser/Input_Parser.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser/Grammar_parser/Input_Parser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Builder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Postfix_handler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Subset_Builder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Builders/Thomson_Builder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Data_Structure/Token_Saver.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Files_Handler/FileReader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/General/functions.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Edge.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Graph.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Graph/Node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Machine.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/State.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Machines/Transition_Table.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Group.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Groups.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Minimizer/Minimizer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/FileRulesReader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/Rules.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Rules_Parser/RulesParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Compiler-Project" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Compiler-Project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Compiler-Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Compiler-Project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/First/First.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/First/First.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Follow/Follow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Follow/Follow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Production/Production.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser/Production/Production.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -84,11 +47,102 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Production.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Production/Production.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parsing_Table_Generator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Non_Terminal_Info.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parsing_Table.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="First.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First/First.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="First_Production_Pair.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Non_Terminal_Info.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Production.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Production/Production.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1057">
+              <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="First.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First/First.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="First_Production_Pair.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="e#142#166#0" expanded="true" />
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#350#374#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +162,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Input-Parser" />
       </map>
     </option>
     <option name="PUSH_TAGS">
@@ -172,12 +226,27 @@
         <option value="$PROJECT_DIR$/src/Builders/Postfix_handler.cpp" />
         <option value="$PROJECT_DIR$/src/Builders/Builder.cpp" />
         <option value="$PROJECT_DIR$/src/Scanner/Scanner.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/Lexical-Analyzer-Generator.cpp" />
         <option value="$PROJECT_DIR$/../Compiler/src/main.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Production/Production.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Production/Production.h" />
+        <option value="$PROJECT_DIR$/src/Parser/First_Production_Pair/First_Production_Pair.h" />
+        <option value="$PROJECT_DIR$/src/Parser/Follow/Follow.h" />
+        <option value="$PROJECT_DIR$/src/Parser/Follow/Follow.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/First/First.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/First/First.h" />
+        <option value="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h" />
+        <option value="$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h" />
+        <option value="$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h" />
+
       </list>
     </option>
   </component>
@@ -187,10 +256,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="24" />
     <option name="width" value="1362" />
     <option name="height" value="700" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -202,19 +277,21 @@
         <subPane>
           <expand>
             <path>
-              <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lexical-Analyzer-Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Compiler-Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lexical-Analyzer-Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Compiler-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lexical-Analyzer-Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Compiler-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Lexical_Analyzer_Generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lexical-Analyzer-Generator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,11 +301,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Parser/Data_Structures" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Parser/Data_Structures" />
       <recent name="$PROJECT_DIR$/src/" />
       <recent name="$PROJECT_DIR$/src/Lexical" />
     </key>
@@ -245,8 +323,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/src/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lexical_Analyzer_Generator" TARGET_NAME="Lexical_Analyzer_Generator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lexical_Analyzer_Generator" RUN_TARGET_NAME="Lexical_Analyzer_Generator" />
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/src/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Compiler-Project" TARGET_NAME="Compiler-Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Compiler-Project" RUN_TARGET_NAME="Compiler-Project" />
+    <configuration name="Compiler-Project" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Compiler-Project" TARGET_NAME="Compiler-Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Compiler-Project" RUN_TARGET_NAME="Compiler-Project" />
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Compiler-Project" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -267,21 +350,38 @@
       <workItem from="1523090189939" duration="58000" />
       <workItem from="1523799428219" duration="921000" />
       <workItem from="1523801057166" duration="537000" />
-      <workItem from="1523808183710" duration="1152000" />
+      <workItem from="1523909070399" duration="6271000" />
+      <workItem from="1523915417574" duration="2121000" />
+      <workItem from="1524345750834" duration="1101000" />
+      <workItem from="1523808183710" duration="1741000" />
     </task>
+    <task id="LOCAL-00001" summary="Input-Parser new branch">
+      <created>1523809450320</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523809450320</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21981000" />
+    <option name="totallyTimeSpent" value="34878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
+    <option name="totallyTimeSpent" value="22570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41352805" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.4066265" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32831326" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.5557229" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29819277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -289,11 +389,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.5557229" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29819277" />
@@ -341,12 +442,20 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Input-Parser new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Input-Parser new branch" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.cpp">
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -412,15 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Thomson_Builder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Postfix_handler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        <state relative-caret-position="414">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -564,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Minimizer/Minimizer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/Minimizer/Group.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -592,31 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Graph/Edge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexical/files/rules.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Thomson_Builder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
@@ -634,17 +708,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.h">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="54">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -655,6 +729,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Graph/Edge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Graph/Edge.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Minimizer/Minimizer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="160" column="25" lean-forward="true" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Thomson_Builder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Builders/Builder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Follow/Follow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Follow/Follow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="e#43#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First/First.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First/First.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#142#166#0" expanded="true" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -674,6 +853,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Production/Production.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Data_Structures/Production/Production.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1057">
+          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table/Parsing_Table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Lexical_Analyzer_Generator.cbp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -685,8 +903,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#350#374#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
