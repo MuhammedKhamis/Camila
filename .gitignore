@@ -43,3 +43,4 @@ CTestTestfile.cmake
 
 .idea/**/workspace.xml
 .idea/**/tasks.xml
+/Debug
