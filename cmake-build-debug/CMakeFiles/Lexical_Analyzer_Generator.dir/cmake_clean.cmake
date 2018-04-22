@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o"
   "CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Scanner/Scanner.cpp.o"
   "CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Production/Production.cpp.o"
+  "CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Grammar_parser/Input_Parser.cpp.o"
   "Lexical_Analyzer_Generator.pdb"
   "Lexical_Analyzer_Generator"
 )

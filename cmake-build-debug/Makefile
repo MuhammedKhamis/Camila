@@ -48,10 +48,10 @@ RM = /opt/clion-2018.1.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
+CMAKE_SOURCE_DIR = /home/mishors/CLionProjects/Lexical-Analyzer-Generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -71,6 +71,7 @@ rebuild_cache/fast: rebuild_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
 	/opt/clion-2018.1.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +79,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/mishors/clion-2018.1.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles /home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -959,6 +971,32 @@ src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s: src/Parser/Parsing
 src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
 .PHONY : src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
+src/Parser/Grammar_parser/Input_Parser.o: src/Parser/Grammar_parser/Input_Parser.cpp.o
+
+.PHONY : src/Parser/Grammar_parser/Input_Parser.o
+
+# target to build an object file
+src/Parser/Grammar_parser/Input_Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Grammar_parser/Input_Parser.cpp.o
+.PHONY : src/Parser/Grammar_parser/Input_Parser.cpp.o
+
+src/Parser/Grammar_parser/Input_Parser.i: src/Parser/Grammar_parser/Input_Parser.cpp.i
+
+.PHONY : src/Parser/Grammar_parser/Input_Parser.i
+
+# target to preprocess a source file
+src/Parser/Grammar_parser/Input_Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Grammar_parser/Input_Parser.cpp.i
+.PHONY : src/Parser/Grammar_parser/Input_Parser.cpp.i
+
+src/Parser/Grammar_parser/Input_Parser.s: src/Parser/Grammar_parser/Input_Parser.cpp.s
+
+.PHONY : src/Parser/Grammar_parser/Input_Parser.s
+
+# target to generate assembly for a file
+src/Parser/Grammar_parser/Input_Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/Lexical_Analyzer_Generator.dir/build.make CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Grammar_parser/Input_Parser.cpp.s
+.PHONY : src/Parser/Grammar_parser/Input_Parser.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -993,7 +1031,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Compiler-Project"
 	@echo "... src/Lexical/Bonus/lex.yy.o"
@@ -1089,6 +1126,9 @@ help:
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.o"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.i"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s"
+	@echo "... src/Parser/Grammar_parser/Input_Parser.o"
+	@echo "... src/Parser/Grammar_parser/Input_Parser.i"
+	@echo "... src/Parser/Grammar_parser/Input_Parser.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

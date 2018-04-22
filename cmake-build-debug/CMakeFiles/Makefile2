@@ -50,14 +50,15 @@ CMAKE_COMMAND = /opt/clion-2018.1.1/bin/cmake/bin/cmake
 # The command to remove a file.
 RM = /opt/clion-2018.1.1/bin/cmake/bin/cmake -E remove -f
 
+
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
+CMAKE_SOURCE_DIR = /home/mishors/CLionProjects/Lexical-Analyzer-Generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Compiler-Project.dir
@@ -68,6 +69,7 @@ CMakeFiles/Compiler-Project.dir/all:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target Compiler-Project"
 .PHONY : CMakeFiles/Compiler-Project.dir/all
+
 
 # Include target in all.
 all: CMakeFiles/Compiler-Project.dir/all
@@ -80,6 +82,7 @@ CMakeFiles/Compiler-Project.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Compiler-Project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Compiler-Project.dir/rule
+
 
 # Convenience name for target.
 Compiler-Project: CMakeFiles/Compiler-Project.dir/rule

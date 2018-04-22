@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/lex.yy.c" "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o"
-  "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/scanner.c" "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o"
+  "/home/mishors/CLionProjects/Lexical-Analyzer-Generator/src/Lexical/Bonus/lex.yy.c" "/home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/lex.yy.c.o"
+  "/home/mishors/CLionProjects/Lexical-Analyzer-Generator/src/Lexical/Bonus/scanner.c" "/home/mishors/CLionProjects/Lexical-Analyzer-Generator/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Bonus/scanner.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -38,6 +38,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp" "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp.o"
   "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Production/Production.cpp" "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/Parser/Production/Production.cpp.o"
   "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/main.cpp" "/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/CMakeFiles/Lexical_Analyzer_Generator.dir/src/main.cpp.o"
+
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
