@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 
     input.push_back(rule3);
 
-    //res = ll1.eliminate_left_recursion(input);
+   //res = ll1.eliminate_left_recursion(input);
 
    ll1.left_factor(rule1, &res);
 

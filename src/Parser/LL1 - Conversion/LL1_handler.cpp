@@ -166,12 +166,11 @@ void LL1_handler::get_start_symbols(Grammar_rule rule, set<string>* start_symbol
 	return;
 }
 
-void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule>* result){
+void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 
 	//Get start symbols of of each expression in the production to check left factoring
 	set<string> start_symbols;
 	map<string,int> freq;
-
 	get_start_symbols(rule, &start_symbols, &freq);
 
 	//If no left factoring return vector has the input production rule indicating not left factoring
@@ -190,7 +189,10 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule>* result){
 
 	//Left factoring
 
-	//Create rules of n
+	//intermediate result
+	vector<Grammar_rule> temp_result;
+
+	//Create empty rules
 	for(int i=0; i<number_of_rules; i++){
 		Grammar_rule prod;
 		string name = rule.get_non_terminal();
@@ -199,8 +201,43 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule>* result){
 			name.append(extra_name);
 		}
 		prod.set_non_terminal(name);
-		result->push_back(prod);
+		temp_result.push_back(prod);
 	}
 
- return;
+
+	set<string> :: iterator it;
+	Grammar_rule original_rule = rule;
+	int i;
+	for(it = start_symbols.begin(), i=1; it != start_symbols.end(); ++it,i++){
+		string rule_name = *it;
+
+		//Name of the added rule due to left factoring
+		string new_exp = rule_name;
+		new_exp.append(" ");
+		new_exp.append(temp_result[i].get_non_terminal());
+		temp_result[0].add_expression(new_exp);
+
+		set<string> :: iterator it2;
+		for(it2 = original_rule.expressions.begin(); it2 != original_rule.expressions.end(); ++it2){
+			//String stream class convert
+			stringstream rule_stream(*it2);
+
+			string token;
+
+			//Reading the first word if it is the same of the new_rule_name then there is left recursion
+			getline(rule_stream, token, ' ');
+
+			string rest_exp = "";
+			if(!token.compare(rule_name)){
+				while(getline(rule_stream, token, ' ')){
+					rest_exp.append(token);
+				}
+				temp_result[i].add_expression(rest_exp);
+			}
+		}
+	}
+
+	for(int i=0; i<temp_result.size(); i++)
+		result->push_back(temp_result[i]);
+
 }
