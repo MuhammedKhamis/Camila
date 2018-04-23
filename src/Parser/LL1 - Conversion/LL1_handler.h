@@ -11,7 +11,6 @@
 #include "Parser/Grammar_parser/Grammar_rule.h"
 #include <bits/stdc++.h>
 
-
 using namespace std;
 
 class LL1_handler {
