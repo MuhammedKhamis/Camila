@@ -173,19 +173,22 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 	map<string,int> freq;
 	get_start_symbols(rule, &start_symbols, &freq);
 
+	//prefix_handler instance to handle prefix of expressions
+	prefix_handler ph;
+
+	//initialize the handler with the input expressions
+	ph.set_expressions(rule.expressions);
+
+	//classify the expressions into disjoint sets according to the longest common prefix
+	ph.generate_sets();
+
 	//If no left factoring return vector has the input production rule indicating not left factoring
-	if(start_symbols.size() == rule.expressions.size()) {
+	if(ph.get_sets_number() == rule.expressions.size()) {
 		result->push_back(rule);
 		return;
 	}
 
-	map<string,int> :: iterator itr;
-
-	//Initialized by 1 because there is at least on rule to be created
-	int number_of_rules = 1;
-	for(itr = freq.begin(); itr != freq.end(); ++itr){
-		if(itr ->second > 1) number_of_rules++;
-	}
+	int number_of_rules = ph.get_rules_number();
 
 	//Left factoring
 
@@ -204,36 +207,36 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 		temp_result.push_back(prod);
 	}
 
+	vector<set<string>> disj_sets = ph.get_sets();
 
-	set<string> :: iterator it;
-	Grammar_rule original_rule = rule;
-	int i;
-	for(it = start_symbols.begin(), i=1; it != start_symbols.end(); ++it,i++){
-		string rule_name = *it;
+	int k=1;
 
-		//Name of the added rule due to left factoring
-		string new_exp = rule_name;
-		new_exp.append(" ");
-		new_exp.append(temp_result[i].get_non_terminal());
-		temp_result[0].add_expression(new_exp);
+	for(int i=0; i<disj_sets.size(); i++){
+		set<string> curr_set = disj_sets[i];
+		std::set<string>::iterator it;
+		//if No common prefix
+		if(curr_set.size() == 1){
+			it = curr_set.begin();
+			string expression = *it;
+			//No factoring here
+			temp_result[0].add_expression(expression);
+		}else{
+			//find the common prefix string of the current set
+			string common_prefix = ph.get_common_prefix(curr_set);
+			//Make the name of expression after left factoring
+			//by concatenating the prefix to the new rule
+			string expr_name = common_prefix;
+			expr_name += " ";
+			expr_name.append(temp_result[k].get_non_terminal());
+			//add it after left factoring to the original rule
+			temp_result[0].add_expression(expr_name);
 
-		set<string> :: iterator it2;
-		for(it2 = original_rule.expressions.begin(); it2 != original_rule.expressions.end(); ++it2){
-			//String stream class convert
-			stringstream rule_stream(*it2);
-
-			string token;
-
-			//Reading the first word if it is the same of the new_rule_name then there is left recursion
-			getline(rule_stream, token, ' ');
-
-			string rest_exp = "";
-			if(!token.compare(rule_name)){
-				while(getline(rule_stream, token, ' ')){
-					rest_exp.append(token);
-				}
-				temp_result[i].add_expression(rest_exp);
+			//get values of the current set after factoring the common prefix
+			vector<string> expr_no_prefix = ph.get_set_remove_prefix(curr_set);
+			for(int j=0; j<expr_no_prefix.size(); j++){
+				temp_result[k].add_expression(expr_no_prefix[j]);
 			}
+			k++;
 		}
 	}
 

@@ -9,6 +9,7 @@
 #define LL1HANDLER_H_
 
 #include "Parser/Grammar_parser/Grammar_rule.h"
+#include "prefix_handler.h"
 #include <bits/stdc++.h>
 
 using namespace std;

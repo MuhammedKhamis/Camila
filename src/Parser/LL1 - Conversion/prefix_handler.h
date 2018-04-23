@@ -41,6 +41,24 @@ public:
 	//print the contents of all sets
 	void print_sets();
 
+	//returns number of sets
+	int get_sets_number();
+
+	//returns number of rules should be created after left factoring
+	int get_rules_number();
+
+	//retrun sets values
+	vector<set<string>> get_sets();
+
+	//get the value of str after remove prefix from it
+	//Hint: this function assumes that str has prefix of the input
+	//and it doesn't check its value
+	string get_remove_prefix(string str, string prefix);
+
+	//returns the strings of the set after removing the longest
+	//common prefix from them
+	vector<string> get_set_remove_prefix(set<string> s);
+
 };
 
 #endif /* PREFIX_HANDLER_H_ */

@@ -1,6 +1,9 @@
 /*
  * prefix_handler.cpp
  *
+ * 	prefix_handler class to represent disjoint set to group
+ * 	expressions into sets according to their common prefix
+ *
  *  Created on: Apr 23, 2018
  *      Author: Mohamed Raafat
  */
@@ -109,4 +112,41 @@ void prefix_handler::print_sets(){
 	}
 }
 
+int prefix_handler::get_sets_number(){
+	return sets.size();
+}
 
+int prefix_handler::get_rules_number(){
+	//Initialized by 1 because there is at least on rule to be created
+	int count = 1;
+	for(int i=0; i<sets.size(); i++){
+		if(sets[i].size() > 1) count++;
+	}
+	return count;
+}
+
+vector<set<string>> prefix_handler::get_sets(){
+	return sets;
+}
+
+string prefix_handler::get_remove_prefix(string str, string prefix){
+	int index_start = prefix.size();
+	string result = "";
+	for(int i=index_start; i<str.size(); i++){
+		result += str[i];
+	}
+	//if empty string put it with epsilon value "\\L"
+	if(result == "") result = "\\L";
+	return result;
+}
+
+vector<string> prefix_handler::get_set_remove_prefix(set<string> s){
+	string prefix = get_common_prefix(s);
+	vector<string> result;
+	std::set<string>::iterator it;
+	for (it = s.begin(); it != s.end(); ++it)
+	{
+		result.push_back(get_remove_prefix(*it,prefix));
+	}
+	return result;
+}

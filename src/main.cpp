@@ -40,38 +40,21 @@ int main(int argc, char** argv) {
 
    //res = ll1.eliminate_left_recursion(input);
 
-   //ll1.left_factor(rule1, &res);
+   ll1.left_factor(rule1, &res);
 
-    prefix_handler ph;
+   prefix_handler ph;
 
     ph.set_expressions(rule1.expressions);
 
     ph.generate_sets();
 
-    ph.print_sets();
+    //ph.print_sets();
 
-  /*  set<string> s;
+    //cout<<ph.get_rules_number();
 
-    s.insert("a");
-    s.insert("b");
+   // cout<<ph.get_remove_prefix("abcd","abcd");
 
-    set<string>t;
 
-    s.insert("c");
-    s.insert("d");
-
-    set<string> r = ph.join(s,t);
-    std::set<string>::iterator it;
-
-    //cout<<*it;
-
-    for (it = r.begin(); it != r.end(); ++it)
-    {
-
-    			cout<<*it<<endl;
-    }
-
-    /*
    std::set<string>::iterator it;
 
    for(int i=0; i<res.size(); i++){
@@ -86,7 +69,7 @@ int main(int argc, char** argv) {
 
 		cout<<endl;
     }
-*/
+
 	return 0;
 }
 
