@@ -96,21 +96,25 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 		vector<string> v { explode((*sub_p_it), ' ') };
 		if (v[0].at(0) == '\'') {	//check for terminals
 			print_msg("terminal: ", v[0]);
-			res[v[0]].insert(res[v[0]].end(),v.begin(), v.end());
+			res[v[0]].insert(res[v[0]].end(), v.begin(), v.end());
 		} else if (v[0] == "\\L") {
 			res["\\L"].push_back(v[0]);
 		} else {
-			for (unsigned int i = 0; i < v.size(); ++i) {
+			bool stop = false;
+			for (unsigned int i = 0; (i < v.size()) && !stop; ++i) {
 				map<string, vector<string>> temp = first_finder(v[i]);
 //				print_msg("print temp", "");
-				res.insert(temp.begin(), temp.end());
 //				print_map_vector(res);
-//				if (temp.find(eps) != temp.end() && temp.size() > 1) {
+				if (temp.find("\\L") == temp.end()) {
+					stop = true;
+				}
+//				if (temp.find("\\L") != temp.end() && temp.size() > 1) {
 //					temp.erase(eps);
 //					status = true;	//means to look for the next non-terminal
 //				} else {
 //					status = false;		//means that that is sufficient
 //				}
+				res.insert(temp.begin(), temp.end());
 			}
 //			if (status) {
 //				first_of_productions[lhs][eps].push_back(eps);
@@ -205,7 +209,7 @@ void first_follow_generator::print_firsts() {
 	print_msg("*** print firsts ***", "");
 	for (map<string, map<string, vector<string>>> ::iterator p_it = first_of_productions.begin();
 	p_it != first_of_productions.end(); ++p_it) {
-		cout << (*p_it).first << "::";
+		cout << (*p_it).first << "::\n";
 		print_map_vector((*p_it).second);
 	}
 }
