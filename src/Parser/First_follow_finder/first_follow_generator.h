@@ -18,7 +18,7 @@ using namespace std;
  * constant value for epsilon
  * we consider epsilon is referred to by eps
  */
-const string eps = "\'eps\'";
+const string eps = "\\L'";
 /**
  * this status used by some functions to take certain action
  * this action is to continue in extraction from the next non terminal or not
@@ -119,6 +119,9 @@ public:
 	void print_map_vector(map<string, vector<string>> mv);
 
 	void print_vector(vector<string> v);
+
+	void print_msg(string msg, string par);
+
 };
 
 #endif /* PARSER_FIRST_FOLLOW_FINDER_FIRST_FOLLOW_GENERATOR_H_ */

@@ -11,6 +11,8 @@
 #include <vector>
 #include "first_follow_generator.h"
 #include <iostream>
+#include <stdio.h>
+#include <string.h>
 
 using namespace std;
 
@@ -65,62 +67,66 @@ void first_follow_generator::clear_all_firsts_follows() {
 	follow_of_productions.clear();
 }
 
-void insert_into_firsts(map<string, vector<string>> res, string key,
-		string v_key, vector<string> v_values) {
-	for (unsigned int i = 0; i < v_values.size(); ++i) {
-		res[key].push_back(v_values[i]);
-	}
-}
-
+//void insert_into_firsts(map<string, vector<string>> res, string key,
+//		string v_key, vector<string> v_values) {
+//	for (unsigned int i = 0; i < v_values.size(); ++i) {
+//		res[key].push_back(v_values[i]);
+//	}
+//}
 
 // bugs:
 // it may be in returned values during recursion
 map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
-	cout<<lhs<<'\n';
+	print_msg("entered first_finder with lhs= ", lhs);
 	map<string, vector<string>> res;	//the result of this call
-	if (lhs == eps) {	//check for epsilon
-		res[eps].push_back(eps);
-	} else if (lhs.at(0) == '\'') {	//check for terminals
-		vector<string> v { explode(lhs, ' ') };
-		insert_into_firsts(res, lhs, v[0], v);
-	} else {
-		// check first if it is calculated before
-		// dynamic programming algorithm is used
-		if (!first_of_productions[lhs].empty()) {
-			return first_of_productions[lhs];
-		}
-		// if it is not calculated, calculate it !
-		for (set<string>::iterator sub_p_it = productions[lhs].begin();
-				sub_p_it != productions[lhs].end(); ++sub_p_it) {
-			cout<<"prod: "<<(*sub_p_it)<<'\n';
-			vector<string> v { explode((*sub_p_it), ' ') };
-//			print_vector(v);
-//			cout<<v.size();
-			for (unsigned int i = 0; i < v.size() && status; ++i) {
-				cout<<"\nvec: "<<v[i]<<'\n';
-				map<string, vector<string>> temp = first_finder(v[i]);
-				print_map_vector(temp);
-				if (temp.find(eps) != temp.end() && temp.size() > 1) {
-					temp.erase(eps);
-					status = true;	//means to look for the next non-terminal
-				} else {
-					status = false;		//means that that is sufficient
-				}
-				first_of_productions[lhs].insert(temp.begin(), temp.end());
-			}
-			if (status) {
-				first_of_productions[lhs][eps].push_back(eps);
-			}
-		}
+//	if (lhs == eps) {	//check for epsilon
+//		res[eps].push_back(eps);
+//	} else if (lhs.at(0) == '\'') {	//check for terminals
+////		vector<string> v { explode(lhs, ' ') };
+//		res[]
+//	} else {
+	// check first if it is calculated before
+	// dynamic programming algorithm is used
+	if (!first_of_productions[lhs].empty()) {
 		return first_of_productions[lhs];
 	}
-	map<string, vector<string>> mv;
-//	cout<<"returned map vector >>> ";
-//	print_map_vector(mv);
-	return mv;
+	// if it is not calculated, calculate it !
+	for (set<string>::iterator sub_p_it = productions[lhs].begin();
+			sub_p_it != productions[lhs].end(); ++sub_p_it) {
+		vector<string> v { explode((*sub_p_it), ' ') };
+		if (v[0].at(0) == '\'') {	//check for terminals
+			print_msg("terminal: ", v[0]);
+			res[v[0]].insert(res[v[0]].end(),v.begin(), v.end());
+		} else if (v[0] == "\\L") {
+			res["\\L"].push_back(v[0]);
+		} else {
+			for (unsigned int i = 0; i < v.size(); ++i) {
+				map<string, vector<string>> temp = first_finder(v[i]);
+//				print_msg("print temp", "");
+				res.insert(temp.begin(), temp.end());
+//				print_map_vector(res);
+//				if (temp.find(eps) != temp.end() && temp.size() > 1) {
+//					temp.erase(eps);
+//					status = true;	//means to look for the next non-terminal
+//				} else {
+//					status = false;		//means that that is sufficient
+//				}
+			}
+//			if (status) {
+//				first_of_productions[lhs][eps].push_back(eps);
+//			}
+		}
+	}
+//		return first_of_productions[lhs];
+//	}
+	print_msg("print result before return", "");
+	print_map_vector(res);
+	first_of_productions[lhs].insert(res.begin(), res.end());
+	return res;
 }
 
 void first_follow_generator::generate_first_productions() {
+	print_msg("entered generate_first_productions", "");
 	for (map<string, set<string>>::iterator p_it = productions.begin();
 			p_it != productions.end(); ++p_it) {
 		if (first_of_productions[(*p_it).first].empty()) {
@@ -173,16 +179,16 @@ void first_follow_generator::generate_first_productions() {
 //}
 
 void first_follow_generator::generator() {
-	//first reset all calculated firsts and follows
+//first reset all calculated firsts and follows
 	clear_all_firsts_follows();
-	//call generate_first_productions to generate all firsts of our list of rules
+//call generate_first_productions to generate all firsts of our list of rules
 	generate_first_productions();
 //	//call generate_follow_productions to generate all follows of our list of rules
 //	generate_follow_productions();
 }
 
 void first_follow_generator::print_productions() {
-	printf("*** productions ***");
+	print_msg("*** print productions ***", "");
 	for (map<string, set<string>>::iterator p_it = productions.begin();
 			p_it != productions.end(); ++p_it) {
 		printf("\n");
@@ -196,44 +202,37 @@ void first_follow_generator::print_productions() {
 }
 
 void first_follow_generator::print_firsts() {
-	printf("*** firsts ***");
+	print_msg("*** print firsts ***", "");
 	for (map<string, map<string, vector<string>>> ::iterator p_it = first_of_productions.begin();
 	p_it != first_of_productions.end(); ++p_it) {
-		printf("\n");
-		cout << (*p_it).first << ":: ";
-		for (map<string, vector<string>>::iterator sub_p_it = (*p_it).second.begin();
-		sub_p_it != (*p_it).second.end(); ++sub_p_it) {
-			cout << (*sub_p_it).first << ":[";
-			for (unsigned int i = 0; i < (*sub_p_it).second.size(); ++i) {
-				cout << (*sub_p_it).second[i] << " ";
-			}
-			cout<<"]  "<<endl;
-		}
+		cout << (*p_it).first << "::";
+		print_map_vector((*p_it).second);
 	}
 }
 
-void first_follow_generator::print_vector(vector<string> v){
+void first_follow_generator::print_vector(vector<string> v) {
+	cout << '[';
 	for (unsigned int i = 0; i < v.size(); ++i) {
-		cout << v[i] << " ";
+		cout << v[i] << ",";
 	}
-	printf("\n");
+	cout << "]\n";
 }
 
-void first_follow_generator::print_map_vector(map<string, vector<string>> mv){
-	for (map<string, vector<string>>::iterator sub_p_it = mv.begin();
-	sub_p_it != mv.end(); ++sub_p_it) {
-		cout << (*sub_p_it).first << ":[";
-		for (unsigned int i = 0; i < (*sub_p_it).second.size(); ++i) {
-			cout << (*sub_p_it).second[i] << " ";
-		}
-		cout<<"]  "<<endl;
+void first_follow_generator::print_map_vector(map<string, vector<string>> mv) {
+	for (map<string, vector<string>>::iterator my_mv = mv.begin();
+			my_mv != mv.end(); ++my_mv) {
+		cout << (*my_mv).first << ":";
+		print_vector((*my_mv).second);
 	}
 }
 
+void first_follow_generator::print_msg(string msg, string par) {
+	cout << "msg>> " << msg << par << endl;
+}
 
 int main() {
 	/*
-	 E -> TE’
+	 E -> eps | TE’
 	 E’ -> +TE’ | eps
 	 T -> FT’
 	 T’ -> *FT’ | eps
@@ -243,18 +242,19 @@ int main() {
 	map<string, set<string>> ms;
 	set<string> s;
 	s.clear();
+	s.insert("\\L");
 	s.insert("T E`");
 	ms["E"].insert(s.begin(), s.end());
 	s.clear();
 	s.insert("'+' T E`");
-	s.insert("eps");
+	s.insert("\\L");
 	ms["E`"].insert(s.begin(), s.end());
 	s.clear();
 	s.insert("F T`");
 	ms["T"].insert(s.begin(), s.end());
 	s.clear();
 	s.insert("'*' F T`");
-	s.insert("eps");
+	s.insert("\\L");
 	ms["T`"].insert(s.begin(), s.end());
 	s.clear();
 	s.insert("'(' E ')'");
@@ -263,6 +263,9 @@ int main() {
 	first_follow_generator ffg(ms);
 //	ffg.print_productions();
 	ffg.generate_first_productions();
+	ffg.print_msg(
+			"********** testing ************\n ******************************",
+			"");
 	ffg.print_firsts();
 
 	return 0;
