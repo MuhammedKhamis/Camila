@@ -825,6 +825,168 @@ src/Parser/Data_Structures/Follow/Follow.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Follow/Follow.cpp.s
 .PHONY : src/Parser/Data_Structures/Follow/Follow.cpp.s
 
+src/Parser/Data_Structures/Non_Terminal/element.o: src/Parser/Data_Structures/Non_Terminal/element.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.o
+
+# target to build an object file
+src/Parser/Data_Structures/Non_Terminal/element.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/element.cpp.o
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.cpp.o
+
+src/Parser/Data_Structures/Non_Terminal/element.i: src/Parser/Data_Structures/Non_Terminal/element.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Non_Terminal/element.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/element.cpp.i
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.cpp.i
+
+src/Parser/Data_Structures/Non_Terminal/element.s: src/Parser/Data_Structures/Non_Terminal/element.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Non_Terminal/element.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/element.cpp.s
+.PHONY : src/Parser/Data_Structures/Non_Terminal/element.cpp.s
+
+src/Parser/Data_Structures/Non_Terminal/line.o: src/Parser/Data_Structures/Non_Terminal/line.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.o
+
+# target to build an object file
+src/Parser/Data_Structures/Non_Terminal/line.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/line.cpp.o
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.cpp.o
+
+src/Parser/Data_Structures/Non_Terminal/line.i: src/Parser/Data_Structures/Non_Terminal/line.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Non_Terminal/line.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/line.cpp.i
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.cpp.i
+
+src/Parser/Data_Structures/Non_Terminal/line.s: src/Parser/Data_Structures/Non_Terminal/line.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Non_Terminal/line.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/line.cpp.s
+.PHONY : src/Parser/Data_Structures/Non_Terminal/line.cpp.s
+
+src/Parser/Data_Structures/Non_Terminal/non_terminal.o: src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.o
+
+# target to build an object file
+src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.o
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.o
+
+src/Parser/Data_Structures/Non_Terminal/non_terminal.i: src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.i
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.i
+
+src/Parser/Data_Structures/Non_Terminal/non_terminal.s: src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.s
+.PHONY : src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp.s
+
+src/Parser/Data_Structures/Non_Terminal/part.o: src/Parser/Data_Structures/Non_Terminal/part.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.o
+
+# target to build an object file
+src/Parser/Data_Structures/Non_Terminal/part.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/part.cpp.o
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.cpp.o
+
+src/Parser/Data_Structures/Non_Terminal/part.i: src/Parser/Data_Structures/Non_Terminal/part.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Non_Terminal/part.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/part.cpp.i
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.cpp.i
+
+src/Parser/Data_Structures/Non_Terminal/part.s: src/Parser/Data_Structures/Non_Terminal/part.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Non_Terminal/part.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal/part.cpp.s
+.PHONY : src/Parser/Data_Structures/Non_Terminal/part.cpp.s
+
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.o: src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.o
+
+# target to build an object file
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.o
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.o
+
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.i: src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.i
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.i
+
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.s: src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.s
+.PHONY : src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp.s
+
+src/Parser/Data_Structures/Parser_Group/Parser_group.o: src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.o
+
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.o
+
+# target to build an object file
+src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.o
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.o
+
+src/Parser/Data_Structures/Parser_Group/Parser_group.i: src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.i
+
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.i
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.i
+
+src/Parser/Data_Structures/Parser_Group/Parser_group.s: src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.s
+
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.s
+.PHONY : src/Parser/Data_Structures/Parser_Group/Parser_group.cpp.s
+
 src/Parser/Data_Structures/Production/Production.o: src/Parser/Data_Structures/Production/Production.cpp.o
 
 .PHONY : src/Parser/Data_Structures/Production/Production.o
@@ -851,6 +1013,33 @@ src/Parser/Data_Structures/Production/Production.s: src/Parser/Data_Structures/P
 src/Parser/Data_Structures/Production/Production.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Production/Production.cpp.s
 .PHONY : src/Parser/Data_Structures/Production/Production.cpp.s
+
+src/Parser/First_follow_finder/FF_Generator.o: src/Parser/First_follow_finder/FF_Generator.cpp.o
+
+.PHONY : src/Parser/First_follow_finder/FF_Generator.o
+
+# target to build an object file
+src/Parser/First_follow_finder/FF_Generator.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/FF_Generator.cpp.o
+.PHONY : src/Parser/First_follow_finder/FF_Generator.cpp.o
+
+src/Parser/First_follow_finder/FF_Generator.i: src/Parser/First_follow_finder/FF_Generator.cpp.i
+
+.PHONY : src/Parser/First_follow_finder/FF_Generator.i
+
+# target to preprocess a source file
+src/Parser/First_follow_finder/FF_Generator.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/FF_Generator.cpp.i
+.PHONY : src/Parser/First_follow_finder/FF_Generator.cpp.i
+
+src/Parser/First_follow_finder/FF_Generator.s: src/Parser/First_follow_finder/FF_Generator.cpp.s
+
+.PHONY : src/Parser/First_follow_finder/FF_Generator.s
+
+# target to generate assembly for a file
+src/Parser/First_follow_finder/FF_Generator.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/FF_Generator.cpp.s
+.PHONY : src/Parser/First_follow_finder/FF_Generator.cpp.s
 
 src/Parser/First_follow_finder/first_follow_generator.o: src/Parser/First_follow_finder/first_follow_generator.cpp.o
 
@@ -1182,9 +1371,30 @@ help:
 	@echo "... src/Parser/Data_Structures/Follow/Follow.o"
 	@echo "... src/Parser/Data_Structures/Follow/Follow.i"
 	@echo "... src/Parser/Data_Structures/Follow/Follow.s"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/element.o"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/element.i"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/element.s"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/line.o"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/line.i"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/line.s"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/non_terminal.o"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/non_terminal.i"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/non_terminal.s"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/part.o"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/part.i"
+	@echo "... src/Parser/Data_Structures/Non_Terminal/part.s"
+	@echo "... src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.o"
+	@echo "... src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.i"
+	@echo "... src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.s"
+	@echo "... src/Parser/Data_Structures/Parser_Group/Parser_group.o"
+	@echo "... src/Parser/Data_Structures/Parser_Group/Parser_group.i"
+	@echo "... src/Parser/Data_Structures/Parser_Group/Parser_group.s"
 	@echo "... src/Parser/Data_Structures/Production/Production.o"
 	@echo "... src/Parser/Data_Structures/Production/Production.i"
 	@echo "... src/Parser/Data_Structures/Production/Production.s"
+	@echo "... src/Parser/First_follow_finder/FF_Generator.o"
+	@echo "... src/Parser/First_follow_finder/FF_Generator.i"
+	@echo "... src/Parser/First_follow_finder/FF_Generator.s"
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.o"
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.i"
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.s"
