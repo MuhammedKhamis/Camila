@@ -690,33 +690,6 @@ src/Lexical/Rules_Parser/RulesParser.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Lexical/Rules_Parser/RulesParser.cpp.s
 .PHONY : src/Lexical/Rules_Parser/RulesParser.cpp.s
 
-src/Lexical/Scanner/Scanner.o: src/Lexical/Scanner/Scanner.cpp.o
-
-.PHONY : src/Lexical/Scanner/Scanner.o
-
-# target to build an object file
-src/Lexical/Scanner/Scanner.cpp.o:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Lexical/Scanner/Scanner.cpp.o
-.PHONY : src/Lexical/Scanner/Scanner.cpp.o
-
-src/Lexical/Scanner/Scanner.i: src/Lexical/Scanner/Scanner.cpp.i
-
-.PHONY : src/Lexical/Scanner/Scanner.i
-
-# target to preprocess a source file
-src/Lexical/Scanner/Scanner.cpp.i:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Lexical/Scanner/Scanner.cpp.i
-.PHONY : src/Lexical/Scanner/Scanner.cpp.i
-
-src/Lexical/Scanner/Scanner.s: src/Lexical/Scanner/Scanner.cpp.s
-
-.PHONY : src/Lexical/Scanner/Scanner.s
-
-# target to generate assembly for a file
-src/Lexical/Scanner/Scanner.cpp.s:
-	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Lexical/Scanner/Scanner.cpp.s
-.PHONY : src/Lexical/Scanner/Scanner.cpp.s
-
 src/Lexical/Symbol_Table/Symbol_table.o: src/Lexical/Symbol_Table/Symbol_table.cpp.o
 
 .PHONY : src/Lexical/Symbol_Table/Symbol_table.o
@@ -960,6 +933,33 @@ src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp.s
 .PHONY : src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp.s
 
+src/Parser/Parser_Controller/Parser_Controller.o: src/Parser/Parser_Controller/Parser_Controller.cpp.o
+
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.o
+
+# target to build an object file
+src/Parser/Parser_Controller/Parser_Controller.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parser_Controller/Parser_Controller.cpp.o
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.cpp.o
+
+src/Parser/Parser_Controller/Parser_Controller.i: src/Parser/Parser_Controller/Parser_Controller.cpp.i
+
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.i
+
+# target to preprocess a source file
+src/Parser/Parser_Controller/Parser_Controller.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parser_Controller/Parser_Controller.cpp.i
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.cpp.i
+
+src/Parser/Parser_Controller/Parser_Controller.s: src/Parser/Parser_Controller/Parser_Controller.cpp.s
+
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.s
+
+# target to generate assembly for a file
+src/Parser/Parser_Controller/Parser_Controller.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parser_Controller/Parser_Controller.cpp.s
+.PHONY : src/Parser/Parser_Controller/Parser_Controller.cpp.s
+
 src/Parser/Parsing_Table/Parsing_Table.o: src/Parser/Parsing_Table/Parsing_Table.cpp.o
 
 .PHONY : src/Parser/Parsing_Table/Parsing_Table.o
@@ -1013,6 +1013,33 @@ src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s: src/Parser/Parsing
 src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
 .PHONY : src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp.s
+
+src/Scanner/Scanner.o: src/Scanner/Scanner.cpp.o
+
+.PHONY : src/Scanner/Scanner.o
+
+# target to build an object file
+src/Scanner/Scanner.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Scanner/Scanner.cpp.o
+.PHONY : src/Scanner/Scanner.cpp.o
+
+src/Scanner/Scanner.i: src/Scanner/Scanner.cpp.i
+
+.PHONY : src/Scanner/Scanner.i
+
+# target to preprocess a source file
+src/Scanner/Scanner.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Scanner/Scanner.cpp.i
+.PHONY : src/Scanner/Scanner.cpp.i
+
+src/Scanner/Scanner.s: src/Scanner/Scanner.cpp.s
+
+.PHONY : src/Scanner/Scanner.s
+
+# target to generate assembly for a file
+src/Scanner/Scanner.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Scanner/Scanner.cpp.s
+.PHONY : src/Scanner/Scanner.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -1113,9 +1140,6 @@ help:
 	@echo "... src/Lexical/Rules_Parser/RulesParser.o"
 	@echo "... src/Lexical/Rules_Parser/RulesParser.i"
 	@echo "... src/Lexical/Rules_Parser/RulesParser.s"
-	@echo "... src/Lexical/Scanner/Scanner.o"
-	@echo "... src/Lexical/Scanner/Scanner.i"
-	@echo "... src/Lexical/Scanner/Scanner.s"
 	@echo "... src/Lexical/Symbol_Table/Symbol_table.o"
 	@echo "... src/Lexical/Symbol_Table/Symbol_table.i"
 	@echo "... src/Lexical/Symbol_Table/Symbol_table.s"
@@ -1143,12 +1167,18 @@ help:
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.o"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.i"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.s"
+	@echo "... src/Parser/Parser_Controller/Parser_Controller.o"
+	@echo "... src/Parser/Parser_Controller/Parser_Controller.i"
+	@echo "... src/Parser/Parser_Controller/Parser_Controller.s"
 	@echo "... src/Parser/Parsing_Table/Parsing_Table.o"
 	@echo "... src/Parser/Parsing_Table/Parsing_Table.i"
 	@echo "... src/Parser/Parsing_Table/Parsing_Table.s"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.o"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.i"
 	@echo "... src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.s"
+	@echo "... src/Scanner/Scanner.o"
+	@echo "... src/Scanner/Scanner.i"
+	@echo "... src/Scanner/Scanner.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -7,12 +7,13 @@
 //============================================================================
 
 #include <bits/stdc++.h>
-
-#include "Parser/Grammar_parser/Input_reader.h"
+#include "Scanner/Scanner.h"
+#include "Parser/Parser_Controller/Parser_Controller.h"
 
 #include "Parser/Grammar_parser/Input_parser.h"
 
 using namespace std;
+
 
 int main(int argc, char** argv) {
 
@@ -29,11 +30,6 @@ int main(int argc, char** argv) {
 	int n = v.size();
 
 	cout<<"Rules before map"<<endl<<endl;
-
-    for(int i=0; i<n; i++)
-    {
-    	cout << v[i] << '\n';
-    }
 
     cout<<"Rules After map"<<endl<<endl;
 
