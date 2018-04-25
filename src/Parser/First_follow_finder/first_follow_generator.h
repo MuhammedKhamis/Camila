@@ -42,13 +42,16 @@ map<string, map<string, vector<string>>> first_of_productions;
  */
 map<string, set<string>> follow_of_productions;
 
+
+vector<string> order_of_productions;
+
 class first_follow_generator {
 public:
 
 	/**
 	 * pass the productions through constructor
 	 */
-	first_follow_generator(map<string, set<string>> productions);
+	first_follow_generator(map<string, set<string>> productions, vector<string> order_of_prods);
 
 	/**
 	 * getter for firsts
@@ -121,6 +124,12 @@ public:
 	void print_vector(vector<string> v);
 
 	void print_msg(string msg, string par);
+
+
+	void print_set(set<string> s) ;
+
+
+	void print_map_set(map<string, set<string>> ms);
 
 };
 
