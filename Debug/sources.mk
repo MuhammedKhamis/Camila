@@ -24,8 +24,10 @@ CPP_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 src \
+src/Scanner \
 src/Parser/Parsing_Table_Generator \
 src/Parser/Parsing_Table \
+src/Parser/Parser_Controller \
 src/Parser/Non_Terminal_Package \
 src/Parser/Grammar_parser \
 src/Parser/First_follow_finder \
@@ -34,7 +36,6 @@ src/Parser/Data_Structures/Follow \
 src/Parser/Data_Structures/First_Production_Pair \
 src/Parser/Data_Structures/First \
 src/Lexical/Symbol_Table \
-src/Lexical/Scanner \
 src/Lexical/Rules_Parser \
 src/Lexical/Minimizer \
 src/Lexical/Machines \

@@ -65,16 +65,18 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 			}else {
 				//ignore spaces
 				if(token.compare(" "))
-					{
+				{
 						//Construct the expression
-						expr.append(token);
 						expr.append(" ");
-					}
+						expr.append(token);
+
+				}
 				}
 			}
 		//the last expression must be inserted
-		expr = trim(expr);
-		expressions.insert(expr);
+		string without_space="";
+		without_space.append(expr.begin()+1,expr.end());
+		expressions.insert(without_space);
 
 		//insert to map
 		result.insert(pair<string,set<string>> (rule_name,expressions));
