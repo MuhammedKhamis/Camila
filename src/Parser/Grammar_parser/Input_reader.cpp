@@ -27,14 +27,16 @@ vector<string> Input_reader::read(string path) {
         return lines;
     }
     while (getline(file, line)) {
+
         //Handling rule spanning multiple lines
         if(line[0] != '#')
         {
         	lines.back().append(" ");
             lines.back().append(line);
         }
-        else
+        else{
             lines.push_back(line);
+        }
     }
     file.close();
     return lines;

@@ -6,25 +6,32 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+
 #include <bits/stdc++.h>
 
 #include "Parser/Grammar_parser/Input_reader.h"
+#include "Parser/Grammar_parser/Input_parser.h"
+#include "Parser/First_follow_finder/first_follow_generator.h"
 
 using namespace std;
 
+
+
 int main(int argc, char** argv) {
+
+	//TESTING THE INPUT PARSER
 
 	Input_reader ir;
 
-	vector<string> v =	ir.read("../test.txt");
+	vector<string> v =	ir.read("../Parser_tests/test_1.txt");
 
-    int n = v.size();
+	Input_parser ip;
 
-    for(int i=0; i<n; i++)
-    {
-    	cout << v[i] << '\n';
-    }
+	map<string,set<string>> rules = ip.get_rules_map(v);
+
+    first_follow_generator ffg(rules);
+    ffg.generate_first_productions();
+    ffg.print_firsts();
 
 	return 0;
 }
-

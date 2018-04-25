@@ -24,7 +24,7 @@ public:
      *
      * */
 
-    Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info);
+    Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info,string &start_non_terminal);
 
     /*
      * function that generate the parsing table with knowing the non_terminals and their info
@@ -36,6 +36,7 @@ public:
 private:
 
     vector<string> non_terminals;
+    string start_non_terminal;
     vector<Non_Terminal_Info> non_terminal_info;
 
 

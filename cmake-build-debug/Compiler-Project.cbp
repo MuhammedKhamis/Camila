@@ -207,12 +207,6 @@
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/RulesParser.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Scanner/Scanner.cpp">
-			<Option target="Compiler-Project"/>
-		</Unit>
-		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Scanner/Scanner.h">
-			<Option target="Compiler-Project"/>
-		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table.cpp">
 			<Option target="Compiler-Project"/>
 		</Unit>
@@ -249,6 +243,12 @@
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Production/Production.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_parser.cpp">
 			<Option target="Compiler-Project"/>
 		</Unit>
@@ -267,6 +267,12 @@
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parser_Controller/Parser_Controller.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parser_Controller/Parser_Controller.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table/Parsing_Table.cpp">
 			<Option target="Compiler-Project"/>
 		</Unit>
@@ -277,6 +283,12 @@
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Scanner/Scanner.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Scanner/Scanner.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/main.cpp">

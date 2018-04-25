@@ -50,8 +50,8 @@ set(SOURCE_FILES
         src/Lexical/Symbol_Table/Symbol_table.h
         src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
         src/Lexical/Symbol_Table/Symbol_table_iterator.h
-        src/Lexical/Scanner/Scanner.cpp
-        src/Lexical/Scanner/Scanner.h 
+        src/Scanner/Scanner.cpp
+        src/Scanner/Scanner.h
         src/Parser/Data_Structures/Production/Production.cpp 
         src/Parser/Data_Structures/Production/Production.h 
         src/Parser/Parsing_Table/Parsing_Table.cpp 
@@ -69,6 +69,10 @@ set(SOURCE_FILES
         src/Parser/Grammar_parser/Input_parser.cpp
         src/Parser/Grammar_parser/Input_parser.h
         src/Parser/Grammar_parser/Input_reader.cpp
-        src/Parser/Grammar_parser/Input_reader.h)
+        src/Parser/Grammar_parser/Input_reader.h
+        src/Parser/Parser_Controller/Parser_Controller.cpp
+        src/Parser/Parser_Controller/Parser_Controller.h
+        src/Parser/First_follow_finder/first_follow_generator.cpp
+        src/Parser/First_follow_finder/first_follow_generator.h)
 
 add_executable(Compiler-Project ${SOURCE_FILES})
