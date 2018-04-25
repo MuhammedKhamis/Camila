@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 
     first_follow_generator ffg(rules);
     ffg.generate_first_productions();
-    ffg.print_firsts();
+    //ffg.print_firsts();
 
 	return 0;
 }

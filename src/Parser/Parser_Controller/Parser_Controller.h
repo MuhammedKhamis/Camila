@@ -9,6 +9,9 @@
 #include "../Non_Terminal_Package/Non_Terminal_Info.h"
 #include "../Parsing_Table/Parsing_Table.h"
 #include "../Parsing_Table_Generator/Parsing_Table_Generator.h"
+#include "../Grammar_parser/Input_parser.h"
+#include "../Grammar_parser/Input_reader.h"
+#include "../First_follow_finder/first_follow_generator.h"
 
 using namespace std;
 
@@ -22,12 +25,13 @@ private:
 
     // Rafaat's Part
     // take input and split it for murad
-    map<string,vector<string>> split_input(vector<string> &input_lines);
+    map<string,set<string>> split_input(string path);
 
 
     // Murad's Part
     // take the map and construct the non_terminal_info for essam
-    vector<Non_Terminal_Info> package_non_terminals(map<string,set<string>>follows, map<string, map<string, vector<string>>> firsts);
+    // Expected that the first non_terminal is the starting non_terminal.
+    vector<Non_Terminal_Info> package_non_terminals(map<string,set<string>> rules);
 
 
     // Essam's Part
