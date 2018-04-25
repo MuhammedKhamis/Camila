@@ -246,10 +246,10 @@ void first_follow_generator::print_msg(string msg, string par) {
 
 int main() {
 	/*
-	 E -> eps | TE’
-	 E’ -> +TE’ | eps
-	 T -> FT’
-	 T’ -> *FT’ | eps
+	 E -> eps | TEï¿½
+	 Eï¿½ -> +TEï¿½ | eps
+	 T -> FTï¿½
+	 Tï¿½ -> *FTï¿½ | eps
 	 F -> (E) | id
 
 	 */
