@@ -139,6 +139,8 @@ void Grammar_rule::set_rule(string input_rule){
 			}
 		}
 	}
+	string without_space="";
+	without_space.append(expr.begin(),expr.end()-1);
 	add_expression(expr);
 }
 
