@@ -47,7 +47,7 @@ int main(int argc, char** argv) {
         	set<string>:: iterator sitr;
         	for(sitr = expressions.begin(); sitr !=expressions.end(); ++sitr)
         	{
-        		cout<< *sitr << " , ";
+        		cout<< *sitr << " oo ";
         	}
         	i++;
         	cout<<endl;
