@@ -6,6 +6,9 @@
 #define LEXICAL_ANALYZER_GENERATOR_PRODUCTION_H
 
 #include <bits/stdc++.h>
+#include "../Non_Terminal/part.h"
+#include "../../../Lexical/General/functions.h"
+
 using namespace std;
 
 /*
@@ -78,6 +81,8 @@ public:
      *  get the non_terminal node value.
      * */
     string get_non_terminal();
+
+
 
 protected:
 

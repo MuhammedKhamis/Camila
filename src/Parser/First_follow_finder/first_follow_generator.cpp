@@ -16,7 +16,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD
 first_follow_generator::first_follow_generator(
 		map<string, set<string>> productions, vector<string> order_of_prods) {
 	order_of_productions.clear();
@@ -24,11 +23,6 @@ first_follow_generator::first_follow_generator(
 			order_of_prods.begin(), order_of_prods.end());
 	for (map<string, set<string>>::iterator p_it = productions.begin();
 			p_it != productions.end(); ++p_it) {
-=======
-first_follow_generator::first_follow_generator(map<string, set<string>> productions) {
-
-	for (auto p_it = productions.begin(); p_it != productions.end(); ++p_it) {
->>>>>>> bd3c2b7c87f0a0bca43387441037535f2abb7e62
 		add_to_productions((*p_it).first, (*p_it).second);
 	}
 }

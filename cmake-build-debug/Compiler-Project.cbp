@@ -237,10 +237,52 @@
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Follow/Follow.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/element.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/element.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/line.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/line.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/non_terminal.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/part.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/part.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Parser_Group/Parser_group.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Parser_Group/Parser_group.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Production/Production.cpp">
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Production/Production.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/FF_Generator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/FF_Generator.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.cpp">

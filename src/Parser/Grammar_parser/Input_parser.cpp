@@ -46,6 +46,7 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 
 		rule_name = token;
 
+
 		//Read "::=" symbol
 		getline(rule_stream, token, ' ');
 
@@ -55,12 +56,19 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 		//temp buffer to append expression tokens
 		string expr = "";
 		// Tokenizing w.r.t. space ' '
+		vector<part> parts;
+		line ln(rule_name);
 		while(getline(rule_stream, token, ' '))
 		{
+
 			//if end of expression by '|' operation push to expressions
 			if(!token.compare("|")){
 				//Add new expression to the production rule
 				expressions.insert(expr);
+				// expression complete
+				element elem(parts,rule_name);
+				ln.add_element(elem);
+				parts.clear();
 				expr = "";
 			}else {
 				//ignore spaces
@@ -70,18 +78,35 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 						expr.append(" ");
 						expr.append(token);
 
+						if(token[0] == '\''){
+							//terminal
+							string str = token.substr(1,token.size()-2);
+							part p(str,true);
+							parts.emplace_back(p);
+						}else{
+							part p(token,false);
+							parts.emplace_back(p);
+						}
+
 				}
 				}
 			}
+
 		//the last expression must be inserted
 		string without_space="";
 		without_space.append(expr.begin()+1,expr.end());
 		expressions.insert(without_space);
-
+		Non_Terminal nt(ln,rule_name,i);
+		non_terminals.emplace_back(nt);
 		//insert to map
 		result.insert(pair<string,set<string>> (rule_name,expressions));
 	}
 	return result;
+}
+
+
+vector<Non_Terminal> Input_parser::get_non_Terminals() {
+	return non_terminals;
 }
 
 string Input_parser::trim (string str){

@@ -9,6 +9,7 @@
 #define INPUTPARSER_H_
 
 #include <bits/stdc++.h>
+#include "../Data_Structures/Non_Terminal/non_terminal.h"
 
 using namespace std;
 
@@ -21,8 +22,13 @@ public:
 	//map of rule name(string) and expressions(set<string>)
 	map<string, set<string>> get_rules_map(vector<string> rules);
 
+	vector<Non_Terminal> get_non_Terminals();
+
 	//remove spaces for given string
 	string trim (string str);
+
+private:
+	vector<Non_Terminal> non_terminals;
 
 };
 
