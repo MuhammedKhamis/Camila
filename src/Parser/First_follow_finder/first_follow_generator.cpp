@@ -88,6 +88,7 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 	// check first if it is calculated before
 	// dynamic programming algorithm is used
 	if (!first_of_productions[lhs].empty()) {
+		print_msg("return at ",lhs);
 		return first_of_productions[lhs];
 	}
 	// if it is not calculated, calculate it !
@@ -102,11 +103,20 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 		} else {
 			bool stop = false;
 			for (unsigned int i = 0; (i < v.size()) && !stop; ++i) {
-				map<string, vector<string>> temp = first_finder(v[i]);
-//				print_msg("print temp", "");
-//				print_map_vector(res);
-				if (temp.find("\\L") == temp.end()) {
+				map<string, vector<string>> temp;
+				temp.clear();
+				print_msg("lhs is :::::: ",lhs);
+				print_msg("v[i] is :::::: ",v[i]);
+				temp = first_finder(v[i]);
+				print_msg(">>>>  print temp >> at lhs =", lhs);
+				print_map_vector(temp);
+				if (temp.find("\\L") == temp.end() || temp["\\L"].empty()) {
 					stop = true;
+					print_msg(">>>>  true stop at lhs =", lhs);
+				}else{
+					if(i == (v.size() - 1)){
+						temp.erase("\\L");
+					}
 				}
 //				if (temp.find("\\L") != temp.end() && temp.size() > 1) {
 //					temp.erase(eps);
@@ -250,11 +260,14 @@ int main() {
 	s.insert("T E`");
 	ms["E"].insert(s.begin(), s.end());
 	s.clear();
+	s.insert("E` T`");
+	ms["G"].insert(s.begin(), s.end());
+	s.clear();
 	s.insert("'+' T E`");
 	s.insert("\\L");
 	ms["E`"].insert(s.begin(), s.end());
 	s.clear();
-	s.insert("F T`");
+	s.insert("T` F");
 	ms["T"].insert(s.begin(), s.end());
 	s.clear();
 	s.insert("'*' F T`");
