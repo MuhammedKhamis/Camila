@@ -5,16 +5,15 @@
 #include "Parsing_Table_Generator.h"
 #include "../../Lexical/General/functions.h"
 
-Parsing_Table_Generator::Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info):
-        non_terminal_info(non_terminal_info) {}
-
+Parsing_Table_Generator::Parsing_Table_Generator(vector<Non_Terminal_Info> &non_terminal_info,string &start_non_terminal):
+        non_terminal_info(non_terminal_info), start_non_terminal(start_non_terminal) {}
 
 Parsing_Table Parsing_Table_Generator::generate_table() {
 
     unordered_map<string,unordered_map<string,Production>> table;
-
     if(non_terminal_info.size() != non_terminals.size()){
-        return table;
+         Parsing_Table p(table,start_non_terminal);
+         return p;
     }
 
     for (int i = 0; i < non_terminals.size() ; ++i) {
@@ -54,7 +53,7 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
 
     }
 
-    Parsing_Table pt(table);
+    Parsing_Table pt(table,start_non_terminal);
     return pt;
 
 }

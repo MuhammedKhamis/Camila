@@ -18,7 +18,7 @@ using namespace std;
  * constant value for epsilon
  * we consider epsilon is referred to by eps
  */
-const string eps = "\\L'";
+const string eps = "\\L";
 /**
  * this status used by some functions to take certain action
  * this action is to continue in extraction from the next non terminal or not

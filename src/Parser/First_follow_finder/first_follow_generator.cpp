@@ -244,15 +244,17 @@ void first_follow_generator::print_msg(string msg, string par) {
 	cout << "msg>> " << msg << par << endl;
 }
 
+/*
+ *
+
 int main() {
 	/*
-	 E -> eps | TE’
-	 E’ -> +TE’ | eps
-	 T -> FT’
-	 T’ -> *FT’ | eps
+	 E -> eps | TE`
+	 E` -> +TE` | eps
+	 T -> FT`
+	 T` -> *FT` | eps
 	 F -> (E) | id
 
-	 */
 	map<string, set<string>> ms;
 	set<string> s;
 	s.clear();
@@ -277,6 +279,7 @@ int main() {
 	s.insert("'(' E ')'");
 	s.insert("'id'");
 	ms["F"].insert(s.begin(), s.end());
+
 	first_follow_generator ffg(ms);
 //	ffg.print_productions();
 	ffg.generate_first_productions();
@@ -287,3 +290,4 @@ int main() {
 
 	return 0;
 }
+*/

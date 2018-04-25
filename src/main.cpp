@@ -7,24 +7,23 @@
 //============================================================================
 
 #include <bits/stdc++.h>
-
-#include "Parser/Grammar_parser/Input_reader.h"
+#include "Scanner/Scanner.h"
+#include "Parser/Parser_Controller/Parser_Controller.h"
 
 using namespace std;
 
+
 int main(int argc, char** argv) {
+/*
+     // Lexical part
+     string rules_file = "rules.txt";
+     string input_file = "test.txt";
 
-	Input_reader ir;
+    // Parser part
+    string grammer_file = "grammer.txt";
+    string output_file = "result.txt";
 
-	vector<string> v =	ir.read("../test.txt");
+*/
 
-    int n = v.size();
-
-    for(int i=0; i<n; i++)
-    {
-    	cout << v[i] << '\n';
-    }
-
-	return 0;
 }
 
