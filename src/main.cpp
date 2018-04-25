@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	vector<string> v =	ir.read("test 3.txt");
+	vector<string> v =	ir.read("../Parser_tests/test_1.txt");
 
 	Input_parser ip;
 
@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 
     first_follow_generator ffg(rules);
     ffg.generate_first_productions();
-    //ffg.print_firsts();
+    ffg.print_firsts();
 
 	return 0;
 }

@@ -201,34 +201,36 @@ void first_follow_generator::generator() {
 }
 
 void first_follow_generator::print_productions() {
-	print_msg("*** print productions ***", "");
-	for (map<string, set<string>>::iterator p_it = productions.begin();
-			p_it != productions.end(); ++p_it) {
-		printf("\n");
-		cout << (*p_it).first << "::\t";
-		for (set<string>::iterator sub_p_it =
-				productions[(*p_it).first].begin();
-				sub_p_it != productions[(*p_it).first].end(); ++sub_p_it) {
-			cout << *sub_p_it << "\t";
-		}
-	}
+//
+//	print_msg("*** print productions ***", "");
+//	for (map<string, set<string>>::iterator p_it = productions.begin();
+//			p_it != productions.end(); ++p_it) {
+//		printf("\n");
+//		cout << (*p_it).first << "::\t";
+//		for (set<string>::iterator sub_p_it =
+//				productions[(*p_it).first].begin();
+//				sub_p_it != productions[(*p_it).first].end(); ++sub_p_it) {
+//			cout << *sub_p_it << "\t";
+//		}
+//	}
+//
 }
 
 void first_follow_generator::print_firsts() {
 	print_msg("*** print firsts ***", "");
 	for (map<string, map<string, vector<string>>> ::iterator p_it = first_of_productions.begin();
 	p_it != first_of_productions.end(); ++p_it) {
-		cout << (*p_it).first << "::\n";
+		cout << "\n\nNon Terminal : " <<(*p_it).first << "::\n";
 		print_map_vector((*p_it).second);
 	}
 }
 
 void first_follow_generator::print_vector(vector<string> v) {
-	cout << '[';
-	for (unsigned int i = 0; i < v.size(); ++i) {
-		cout << v[i] << ",";
-	}
-	cout << "]\n";
+//	cout << '[';
+//	for (unsigned int i = 0; i < v.size(); ++i) {
+//		cout << v[i] << ",";
+//	}
+//	cout << "]\n";
 }
 
 void first_follow_generator::print_map_vector(map<string, vector<string>> mv) {
@@ -240,7 +242,7 @@ void first_follow_generator::print_map_vector(map<string, vector<string>> mv) {
 }
 
 void first_follow_generator::print_msg(string msg, string par) {
-	cout << "msg>> " << msg << par << endl;
+//	cout << "msg>> " << msg << par << endl;
 }
 
 //
