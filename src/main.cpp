@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	vector<string> v =	ir.read("test.txt");
+	vector<string> v =	ir.read("../test.txt");
 
 	Input_parser ip;
 
@@ -47,7 +47,7 @@ int main(int argc, char** argv) {
         	set<string>:: iterator sitr;
         	for(sitr = expressions.begin(); sitr !=expressions.end(); ++sitr)
         	{
-        		cout<<*sitr;
+        		cout<< *sitr << " , ";
         	}
         	i++;
         	cout<<endl;
