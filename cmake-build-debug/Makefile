@@ -852,6 +852,33 @@ src/Parser/Data_Structures/Production/Production.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/Production/Production.cpp.s
 .PHONY : src/Parser/Data_Structures/Production/Production.cpp.s
 
+src/Parser/First_follow_finder/first_follow_generator.o: src/Parser/First_follow_finder/first_follow_generator.cpp.o
+
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.o
+
+# target to build an object file
+src/Parser/First_follow_finder/first_follow_generator.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/first_follow_generator.cpp.o
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.cpp.o
+
+src/Parser/First_follow_finder/first_follow_generator.i: src/Parser/First_follow_finder/first_follow_generator.cpp.i
+
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.i
+
+# target to preprocess a source file
+src/Parser/First_follow_finder/first_follow_generator.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/first_follow_generator.cpp.i
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.cpp.i
+
+src/Parser/First_follow_finder/first_follow_generator.s: src/Parser/First_follow_finder/first_follow_generator.cpp.s
+
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.s
+
+# target to generate assembly for a file
+src/Parser/First_follow_finder/first_follow_generator.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/first_follow_generator.cpp.s
+.PHONY : src/Parser/First_follow_finder/first_follow_generator.cpp.s
+
 src/Parser/Grammar_parser/Input_parser.o: src/Parser/Grammar_parser/Input_parser.cpp.o
 
 .PHONY : src/Parser/Grammar_parser/Input_parser.o
@@ -1158,6 +1185,9 @@ help:
 	@echo "... src/Parser/Data_Structures/Production/Production.o"
 	@echo "... src/Parser/Data_Structures/Production/Production.i"
 	@echo "... src/Parser/Data_Structures/Production/Production.s"
+	@echo "... src/Parser/First_follow_finder/first_follow_generator.o"
+	@echo "... src/Parser/First_follow_finder/first_follow_generator.i"
+	@echo "... src/Parser/First_follow_finder/first_follow_generator.s"
 	@echo "... src/Parser/Grammar_parser/Input_parser.o"
 	@echo "... src/Parser/Grammar_parser/Input_parser.i"
 	@echo "... src/Parser/Grammar_parser/Input_parser.s"

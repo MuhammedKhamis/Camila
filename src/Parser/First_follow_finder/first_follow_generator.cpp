@@ -16,10 +16,9 @@
 
 using namespace std;
 
-first_follow_generator::first_follow_generator(
-		map<string, set<string>> productions) {
-	for (map<string, set<string>>::iterator p_it = productions.begin();
-			p_it != productions.end(); ++p_it) {
+first_follow_generator::first_follow_generator(map<string, set<string>> productions) {
+
+	for (auto p_it = productions.begin(); p_it != productions.end(); ++p_it) {
 		add_to_productions((*p_it).first, (*p_it).second);
 	}
 }
@@ -244,50 +243,48 @@ void first_follow_generator::print_msg(string msg, string par) {
 	cout << "msg>> " << msg << par << endl;
 }
 
-/*
- *
+//
+//int main() {
+//	/*
+//	 E -> eps | TE`
+//	 E` -> +TE` | eps
+//	 T -> FT`
+//	 T` -> *FT` | eps
+//	 F -> (E) | id
+//	 */
+//	map<string, set<string>> ms;
+//	set<string> s;
+//	s.clear();
+//	s.insert("\\L");
+//	s.insert("T E`");
+//	ms["E"].insert(s.begin(), s.end());
+//	s.clear();
+//	s.insert("E` T`");
+//	ms["G"].insert(s.begin(), s.end());
+//	s.clear();
+//	s.insert("'+' T E`");
+//	s.insert("\\L");
+//	ms["E`"].insert(s.begin(), s.end());
+//	s.clear();
+//	s.insert("T` F");
+//	ms["T"].insert(s.begin(), s.end());
+//	s.clear();
+//	s.insert("'*' F T`");
+//	s.insert("\\L");
+//	ms["T`"].insert(s.begin(), s.end());
+//	s.clear();
+//	s.insert("'(' E ')'");
+//	s.insert("'id'");
+//	ms["F"].insert(s.begin(), s.end());
+//
+//	first_follow_generator ffg(ms);
+////	ffg.print_productions();
+//	ffg.generate_first_productions();
+//	ffg.print_msg(
+//			"********** testing ************\n ******************************",
+//			"");
+//	ffg.print_firsts();
+//
+//	return 0;
+//}
 
-int main() {
-	/*
-	 E -> eps | TE`
-	 E` -> +TE` | eps
-	 T -> FT`
-	 T` -> *FT` | eps
-	 F -> (E) | id
-
-	map<string, set<string>> ms;
-	set<string> s;
-	s.clear();
-	s.insert("\\L");
-	s.insert("T E`");
-	ms["E"].insert(s.begin(), s.end());
-	s.clear();
-	s.insert("E` T`");
-	ms["G"].insert(s.begin(), s.end());
-	s.clear();
-	s.insert("'+' T E`");
-	s.insert("\\L");
-	ms["E`"].insert(s.begin(), s.end());
-	s.clear();
-	s.insert("T` F");
-	ms["T"].insert(s.begin(), s.end());
-	s.clear();
-	s.insert("'*' F T`");
-	s.insert("\\L");
-	ms["T`"].insert(s.begin(), s.end());
-	s.clear();
-	s.insert("'(' E ')'");
-	s.insert("'id'");
-	ms["F"].insert(s.begin(), s.end());
-
-	first_follow_generator ffg(ms);
-//	ffg.print_productions();
-	ffg.generate_first_productions();
-	ffg.print_msg(
-			"********** testing ************\n ******************************",
-			"");
-	ffg.print_firsts();
-
-	return 0;
-}
-*/

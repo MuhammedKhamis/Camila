@@ -34,8 +34,9 @@ vector<string> Input_reader::read(string path) {
         	lines.back().append(" ");
             lines.back().append(line);
         }
-        else
+        else{
             lines.push_back(line);
+        }
     }
     file.close();
     return lines;
