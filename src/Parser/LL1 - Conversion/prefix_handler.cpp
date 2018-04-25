@@ -37,7 +37,9 @@ string prefix_handler::commonPrefixUtil(string str1, string str2)
 }
 
 bool prefix_handler::has_common_prefix(string str1, string str2){
-	return str1[0] == str2[0];
+	string result = commonPrefixUtil(str1,str2);
+	if(!result.compare("")) return false;
+	return true;
 }
 
 set<string> prefix_handler::join (set<string> s1, set<string> s2){

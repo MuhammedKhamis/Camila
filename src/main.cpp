@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 
     Grammar_rule rule1,rule2,rule3;
 
-    rule1.set_rule("# A ::= a d | a | a b | a b c | b");
+    rule1.set_rule("# Arial ::= aris dom | aris | aris bom | bom bom com | bom");
 
     rule2.set_rule("# T ::= T * F | F");
 

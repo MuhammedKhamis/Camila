@@ -60,7 +60,7 @@ vector<Grammar_rule> LL1_handler::eliminate_immediate_recursion(Grammar_rule rul
 
 		string str = rule.get_non_terminal();
 
-		str.append("_new");
+		str.append("`");
 
 		contains.set_non_terminal(str);
 
@@ -199,7 +199,7 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 	for(int i=0; i<number_of_rules; i++){
 		Grammar_rule prod;
 		string name = rule.get_non_terminal();
-		string extra_name = "_new";
+		string extra_name = "`";
 		for(int j=0; j<i; j++){
 			name.append(extra_name);
 		}
