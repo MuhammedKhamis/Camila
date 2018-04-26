@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	vector<string> v =	ir.read("../Parser_tests/test_1.txt");
+	vector<string> v =	ir.read("../Parser_tests/test.txt");
 
 	Input_parser ip;
 

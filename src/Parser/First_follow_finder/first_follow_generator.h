@@ -141,6 +141,8 @@ public:
 	 */
 	void print_map_set(map<string, set<string>> ms);
 
+	void print_cycles();
+
 private:
 
 /**
