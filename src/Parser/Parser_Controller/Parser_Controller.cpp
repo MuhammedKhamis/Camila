@@ -8,7 +8,7 @@
 Parsing_Table Parser_Controller::generate_table(string path) {
 
     // Rafaat's Part
-    map<string,set<string>> rules = this->split_input(path);
+    FF_Package rules = this->split_input(path);
 
 
     // generate first and follow, Murad's Part
@@ -23,17 +23,17 @@ Parsing_Table Parser_Controller::generate_table(string path) {
 }
 
 
-map<string,set<string>> Parser_Controller::split_input(string path){
+FF_Package Parser_Controller::split_input(string path){
     Input_reader reader;
     vector<string> input_lines = reader.read(path);
     Input_parser ip;
-    map<string,set<string>> rules = ip.get_rules_map(input_lines);
+    FF_Package rules = ip.get_rules_map(input_lines);
     return rules;
 };
 
-vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(map<string,set<string>> rules){
+vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(FF_Package rules){
     // TODO by Murad
-    first_follow_generator ffg(rules);
+    //first_follow_generator ffg(rules);
     // Pack the non_terminal info for essam's part
 }
 

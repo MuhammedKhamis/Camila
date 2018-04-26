@@ -14,43 +14,16 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-/**
- * productions which we work on.
- */
-map<string, set<string>> productions;
-
-/**
- * save the order of productions
- * e.g if A->B  B->C  C->D ....etc.
- * save orders as {A, B, C...etc}
- */
-vector<string> order_of_productions;
-
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminal and the associated productions
- */
-map<string, map<string, vector<string>>> first_of_productions;
-
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminals
- */
-map<string, set<string>> follow_of_productions;
-
-=======
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 class first_follow_generator {
 public:
 
 	/**
 	 * pass the productions through constructor
 	 * parameter two is the orderer of read productions
-	 * read productions isn't keeping its order in map, so pass an order for your entered productions (ÈÇáÊÑÊíÈ :D)
+	 * read productions isn't keeping its order in map, so pass an order for your entered productions (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ :D)
 	 */
 	first_follow_generator(map<string, set<string>> productions,
-			vector<string> order_of_prods);
+						   vector<string> order_of_prods);
 
 	/**
 	 * add a new production to our list of productions
@@ -157,35 +130,18 @@ public:
 	 */
 	void print_msg(string msg, string par);
 
-<<<<<<< HEAD
 	/**
 	 * print passed set of strings
 	 */
 	void print_set(set<string> s);
-=======
-	void print_set(set<string> s) ;
 
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 
 	/**
 	 * print the passed map of string and set structue
 	 */
 	void print_map_set(map<string, set<string>> ms);
-<<<<<<< HEAD
-=======
-private:
 
-/**
- * constant value for epsilon
- * we consider epsilon is referred to by eps
- */
-	const string eps = "\\L";
-/**
- * this status used by some functions to take certain action
- * this action is to continue in extraction from the next non terminal or not
- * it's set or reset after each call of those function
- */
-	bool status = true;
+private:
 
 /**
  * productions which we work on.
@@ -193,16 +149,23 @@ private:
 	map<string, set<string>> productions;
 
 /**
+ * save the order of productions
+ * e.g if A->B  B->C  C->D ....etc.
+ * save orders as {A, B, C...etc}
+ */
+	vector<string> order_of_productions;
+
+/**
  * map all non_terminal (or maybe used as terminal) string name which used as a key
  * values are a list of all firsts terminal and the associated productions
  */
 	map<string, map<string, vector<string>>> first_of_productions;
+
 /**
  * map all non_terminal (or maybe used as terminal) string name which used as a key
  * values are a list of all firsts terminals
  */
 	map<string, set<string>> follow_of_productions;
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 
 };
 

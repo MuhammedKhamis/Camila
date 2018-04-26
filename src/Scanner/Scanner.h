@@ -24,7 +24,6 @@ class Scanner {
 
 public:
 
-    Scanner();
     void terminal_output(string& rules_file , string& input_file, string& grammer_file);
     void file_output(string& rules_file , string& input_file, string& grammer_file, string& output_file);
     void normal_scan(string& rules_file, string& input_file,string& grammer_file);

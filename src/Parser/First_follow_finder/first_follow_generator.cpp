@@ -86,7 +86,7 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 				map<string, vector<string>> temp;
 				temp.clear();
 				temp = first_finder(v[i]);
-				if (temp.find("\\L") == temp.end() || temp["\\L"].empty()) {
+				if (temp.find("\\L") == temp.end()) {
 					stop = true;
 				} else {
 					if (i == (v.size() - 1)) {

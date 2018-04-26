@@ -25,13 +25,13 @@ private:
 
     // Rafaat's Part
     // take input and split it for murad
-    map<string,set<string>> split_input(string path);
+    FF_Package split_input(string path);
 
 
     // Murad's Part
     // take the map and construct the non_terminal_info for essam
     // Expected that the first non_terminal is the starting non_terminal.
-    vector<Non_Terminal_Info> package_non_terminals(map<string,set<string>> rules);
+    vector<Non_Terminal_Info> package_non_terminals(FF_Package rules);
 
 
     // Essam's Part

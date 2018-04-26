@@ -23,15 +23,17 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	vector<string> v =	ir.read("../Parser_tests/test.txt");
+	vector<string> v =	ir.read("../Parser_tests/test_1.txt");
 
 	Input_parser ip;
 
-	map<string,set<string>> rules = ip.get_rules_map(v);
-/*
-    first_follow_generator ffg(rules);
+	FF_Package rules = ip.get_rules_map(v);
+
+
+    first_follow_generator ffg(rules.getProductions(),rules.getOrder_of_productions());
     ffg.generate_first_productions();
+    ffg.generate_follow_productions();
     ffg.print_firsts();
-*/
+    ffg.print_follows();
 	return 0;
 }
