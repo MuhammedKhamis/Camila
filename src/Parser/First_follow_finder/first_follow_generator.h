@@ -14,33 +14,8 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-/**
- * productions which we work on.
- */
-map<string, set<string>> productions;
 
-/**
- * save the order of productions
- * e.g if A->B  B->C  C->D ....etc.
- * save orders as {A, B, C...etc}
- */
-vector<string> order_of_productions;
 
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminal and the associated productions
- */
-map<string, map<string, vector<string>>> first_of_productions;
-
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminals
- */
-map<string, set<string>> follow_of_productions;
-
-=======
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 class first_follow_generator {
 public:
 
@@ -157,52 +132,46 @@ public:
 	 */
 	void print_msg(string msg, string par);
 
-<<<<<<< HEAD
 	/**
 	 * print passed set of strings
 	 */
 	void print_set(set<string> s);
-=======
-	void print_set(set<string> s) ;
-
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 
 	/**
 	 * print the passed map of string and set structue
 	 */
 	void print_map_set(map<string, set<string>> ms);
-<<<<<<< HEAD
-=======
+
+	/**
+	 * print cycles detected through finding firsts
+	 */
+	void print_cycles();
+
+
 private:
-
-/**
- * constant value for epsilon
- * we consider epsilon is referred to by eps
- */
-	const string eps = "\\L";
-/**
- * this status used by some functions to take certain action
- * this action is to continue in extraction from the next non terminal or not
- * it's set or reset after each call of those function
- */
-	bool status = true;
-
-/**
- * productions which we work on.
- */
+	/**
+	 * productions which we work on.
+	 */
 	map<string, set<string>> productions;
 
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminal and the associated productions
- */
+	/**
+	 * save the order of productions
+	 * e.g if A->B  B->C  C->D ....etc.
+	 * save orders as {A, B, C...etc}
+	 */
+	vector<string> order_of_productions;
+
+	/**
+	 * map all non_terminal (or maybe used as terminal) string name which used as a key
+	 * values are a list of all firsts terminal and the associated productions
+	 */
 	map<string, map<string, vector<string>>> first_of_productions;
-/**
- * map all non_terminal (or maybe used as terminal) string name which used as a key
- * values are a list of all firsts terminals
- */
+
+	/**
+	 * map all non_terminal (or maybe used as terminal) string name which used as a key
+	 * values are a list of all firsts terminals
+	 */
 	map<string, set<string>> follow_of_productions;
->>>>>>> d3ff2916f08fd10ac2e01f181be99c40fee53cdf
 
 };
 
