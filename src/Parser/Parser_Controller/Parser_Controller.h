@@ -12,6 +12,12 @@
 #include "../Grammar_parser/Input_parser.h"
 #include "../Grammar_parser/Input_reader.h"
 #include "../First_follow_finder/first_follow_generator.h"
+#include "../Data_Structures/First_Production_Pair/First_Production_Pair.h"
+#include "../Data_Structures/First/First.h"
+#include "../Data_Structures/Follow/Follow.h"
+#include "../Data_Structures/Production/Production.h"
+#include "../Data_Structures/First_Follow_Package/FF_Package.h"
+#include "../Non_Terminal_Package/Non_Terminal_Info.h"
 
 using namespace std;
 
@@ -32,6 +38,9 @@ private:
     // take the map and construct the non_terminal_info for essam
     // Expected that the first non_terminal is the starting non_terminal.
     vector<Non_Terminal_Info> package_non_terminals(FF_Package rules);
+
+
+    Non_Terminal_Info package_non_terminal(string non_terminal,map<string,vector<string>> firsts,set<string> follows);
 
 
     // Essam's Part

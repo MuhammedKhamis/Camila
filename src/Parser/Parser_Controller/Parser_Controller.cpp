@@ -32,9 +32,61 @@ FF_Package Parser_Controller::split_input(string path){
 };
 
 vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(FF_Package rules){
-    // TODO by Murad
-    //first_follow_generator ffg(rules);
-    // Pack the non_terminal info for essam's part
+
+    vector<Non_Terminal_Info> res;
+
+    first_follow_generator ffg(rules.getProductions(),rules.getOrder_of_productions());
+
+    ffg.generator();
+
+    map<string,map<string,vector<string>>> first_production = ffg.get_firsts();
+    map<string, set<string>> follows = ffg.get_follows();
+
+    string first_non_terminal;
+
+    // For first non_terminal
+    map<string,vector<string>> firsts = first_production[first_non_terminal];
+    set<string> curr_follows = follows[first_non_terminal];
+    Non_Terminal_Info ntf = package_non_terminal(first_non_terminal,firsts,curr_follows);
+    res.emplace_back(ntf);
+
+    // for the rest of them
+    for(auto it = first_production.begin();it != first_production.end() ; it++){
+        string non_terminal = it->first;
+        if(non_terminal == first_non_terminal){
+            continue;
+        }
+        map<string,vector<string>> firsts_loop = it->second;
+        set<string> curr_follows_loop = follows[non_terminal];
+        Non_Terminal_Info ntf_loop = package_non_terminal(non_terminal,firsts,curr_follows);
+        res.emplace_back(ntf_loop);
+    }
+    return res;
+}
+
+
+
+Non_Terminal_Info Parser_Controller::package_non_terminal(string non_terminal, map<string, vector<string>> firsts,
+                                                          set<string> follows) {
+    vector<First_Production_Pair> fpps;
+    for(auto it1 = firsts.begin() ; it1 != firsts.end() ; it1++){
+        string first = it1->first;
+        First f(first);
+
+        vector<string> production = it1->second;
+        Production p(production,non_terminal);
+
+        First_Production_Pair fpp(p,f);
+
+        fpps.emplace_back(fpp);
+    }
+    vector<Follow> fs;
+    for(auto it1 = follows.begin() ; it1 != follows.end();it1++){
+        Follow f(*it1);
+        fs.emplace_back(f);
+    }
+    Non_Terminal_Info ntf(fpps,fs,non_terminal);
+    return ntf;
 }
 
 Parsing_Table Parser_Controller::grammer_table(vector<Non_Terminal_Info> info,string start_non_terminal){
