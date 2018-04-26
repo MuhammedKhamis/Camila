@@ -38,6 +38,10 @@ map<string, set<string>> first_follow_generator::get_follows() {
 	return follow_of_productions;
 }
 
+vector<string> first_follow_generator::get_orders(){
+	return order_of_productions;
+}
+
 void first_follow_generator::add_to_productions(string lhs, set<string> prods) {
 	productions[lhs].insert(prods.begin(), prods.end());
 }
