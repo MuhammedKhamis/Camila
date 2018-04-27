@@ -35,7 +35,6 @@ public:
 
 private:
 
-    vector<string> non_terminals;
     string start_non_terminal;
     vector<Non_Terminal_Info> non_terminal_info;
 

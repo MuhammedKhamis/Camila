@@ -42,14 +42,15 @@ vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(FF_Package ru
     map<string,map<string,vector<string>>> first_production = ffg.get_firsts();
     map<string, set<string>> follows = ffg.get_follows();
 
-    string first_non_terminal;
 
+    string first_non_terminal;
+/*
     // For first non_terminal
     map<string,vector<string>> firsts = first_production[first_non_terminal];
     set<string> curr_follows = follows[first_non_terminal];
     Non_Terminal_Info ntf = package_non_terminal(first_non_terminal,firsts,curr_follows);
     res.emplace_back(ntf);
-
+*/
     // for the rest of them
     for(auto it = first_production.begin();it != first_production.end() ; it++){
         string non_terminal = it->first;
@@ -58,7 +59,7 @@ vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(FF_Package ru
         }
         map<string,vector<string>> firsts_loop = it->second;
         set<string> curr_follows_loop = follows[non_terminal];
-        Non_Terminal_Info ntf_loop = package_non_terminal(non_terminal,firsts,curr_follows);
+        Non_Terminal_Info ntf_loop = package_non_terminal(non_terminal,firsts_loop,curr_follows_loop);
         res.emplace_back(ntf_loop);
     }
     return res;

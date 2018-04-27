@@ -11,15 +11,14 @@ Parsing_Table_Generator::Parsing_Table_Generator(vector<Non_Terminal_Info> &non_
 Parsing_Table Parsing_Table_Generator::generate_table() {
 
     unordered_map<string,unordered_map<string,Production>> table;
-    if(non_terminal_info.size() != non_terminals.size()){
-         Parsing_Table p(table,start_non_terminal);
-         return p;
-    }
 
-    for (int i = 0; i < non_terminals.size() ; ++i) {
+
+    for (int i = 0; i < non_terminal_info.size() ; ++i) {
+
+        string non_terminal_val = non_terminal_info[i].get_non_terminal();
 
         // make new table entry for the non_terminal node.
-        table[non_terminals[i]] = unordered_map<string,Production>();
+        table[non_terminal_val] = unordered_map<string,Production>();
         // get the first_production_pairs pair
         vector<First_Production_Pair> fpp =  non_terminal_info[i].get_first_production_pairs();
 
@@ -32,7 +31,7 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
             // check if the one of the first is lambda then we put the follow also in the table
             put_follow = put_follow | (input==lambda);
             // put the production corresponding to its non_terminal and its input terminal
-            table[non_terminals[i]][input] = fpp[j].getProduction();
+            table[non_terminal_val][input] = fpp[j].getProduction();
         }
 
         // follows of the non_terminal node.
@@ -41,12 +40,20 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
         vector<string> lambda_production = {lambda};
         for(int j = 0 ; j < follows.size() ; ++j){
             // if we will put the follow too.
+            string follow_val = follows[i].get_value();
+            if(table[non_terminal_val].find(follow_val) != table[non_terminal_val].end()){
+                // that follow was found as first in this set then this Grammar is ambiguous
+                string msg = "This Given Grammar is ambiguous, "
+                             + follow_val + " was found as first and follow in the " + non_terminal_val + " line\n";
+                cout << msg;
+                exit(0);
+            }
             if(put_follow){
                 // put new production with lambda transition and non_terminal as current non_terminal
-                table[non_terminals[i]][follows[j].get_value()] = Production(lambda_production,non_terminals[i]);
+                table[non_terminal_val][follow_val] = Production(lambda_production,non_terminal_val);
             }else{
                 // put sync production
-                table[non_terminals[i]][follows[j].get_value()] = Production();
+                table[non_terminal_val][follow_val] = Production();
             }
         }
 

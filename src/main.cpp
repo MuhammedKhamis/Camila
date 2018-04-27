@@ -12,6 +12,7 @@
 #include "Parser/Grammar_parser/Input_reader.h"
 #include "Parser/Grammar_parser/Input_parser.h"
 #include "Parser/First_follow_finder/first_follow_generator.h"
+#include "Parser/Parser_Controller/Parser_Controller.h"
 
 using namespace std;
 
@@ -21,19 +22,45 @@ int main(int argc, char** argv) {
 
 	//TESTING THE INPUT PARSER
 
-	Input_reader ir;
 
-	vector<string> v =	ir.read("../Parser_tests/test.txt");
+    string grammer_path = "../Parser_tests/";
 
-	Input_parser ip;
+    vector<string> tests = {"test.txt","test_1.txt","test_2.txt","test_3.txt"};
 
-	FF_Package rules = ip.get_rules_map(v);
+    for(int i = 0 ; i < tests.size() ; i++){
+
+        string test_path = grammer_path + tests[i];
+
+        Input_reader ir;
+
+        vector<string> v =	ir.read(test_path);
+
+        Input_parser ip;
+
+        FF_Package rules = ip.get_rules_map(v);
+
+        first_follow_generator ffg(rules.getProductions(),rules.getOrder_of_productions());
+        ffg.generator();
+
+        ffg.print_firsts();
+        ffg.print_follows();
+        cout << "\n-------------------------------------------------\n";
+    }
+    /*
+     * Report
+     *  test : Failed, segmentation fault reported.
+     *  test_1 : Passed
+     *  test_2 : Failed, First of T doesn't have 't' as first as V has lambda in its line.
+     *  test_3 : Passed.
+     *
+     * */
+
+    /*
+	Parser_Controller parser_controller;
+
+    Parsing_Table pt = parser_controller.generate_table(grammer_path);
+    */
 
 
-    first_follow_generator ffg(rules.getProductions(),rules.getOrder_of_productions());
-    ffg.generate_first_productions();
-    ffg.generate_follow_productions();
-    ffg.print_firsts();
-    ffg.print_follows();
 	return 0;
 }
