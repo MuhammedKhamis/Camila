@@ -230,7 +230,7 @@ void first_follow_generator::generator() {
 	clear_all_firsts_follows();
 //call generate_first_productions to generate all firsts of our list of rules
 	generate_first_productions();
-//	//call generate_follow_productions to generate all follows of our list of rules
+//call generate_follow_productions to generate all follows of our list of rules
 	generate_follow_productions();
 }
 

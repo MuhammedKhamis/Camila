@@ -13,9 +13,9 @@
 #include "Parser/Grammar_parser/Input_parser.h"
 #include "Parser/First_follow_finder/first_follow_generator.h"
 #include "Parser/Parser_Controller/Parser_Controller.h"
+#include "Scanner/Scanner.h"
 
 using namespace std;
-
 
 
 int main(int argc, char** argv) {
@@ -23,8 +23,11 @@ int main(int argc, char** argv) {
 	//TESTING THE INPUT PARSER
 
 
-    string grammer_path = "../Parser_tests/";
+    string grammer_path = "../Parser_tests/test_3.txt";
+    string lexical_path = "../Lexical_Rules/rules.txt";
+    string program_path = "../Program_Tests/test_3.txt";
 
+    /*
     vector<string> tests = {"test.txt","test_1.txt","test_2.txt","test_3.txt"};
 
     for(int i = 0 ; i < tests.size() ; i++){
@@ -44,22 +47,21 @@ int main(int argc, char** argv) {
 
         ffg.print_firsts();
         ffg.print_follows();
+
         cout << "\n-------------------------------------------------\n";
     }
+    */
     /*
      * Report
-     *  test : passed
+     *  test : Still segmentation fault @Essam's PC.
      *  test_1 : Passed
      *  test_2 : passed
      *  test_3 : Passed.
      *
      * */
 
-    /*
-	Parser_Controller parser_controller;
-
-    Parsing_Table pt = parser_controller.generate_table(grammer_path);
-    */
+    Scanner scanner;
+    scanner.normal_scan(lexical_path,program_path,grammer_path);
 
 
 	return 0;
