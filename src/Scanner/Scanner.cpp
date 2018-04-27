@@ -149,6 +149,9 @@ void Scanner::add_vector_to_stack(vector<string> vec, stack<string> &s) {
 }
 
 void Scanner::add_string_to_stack(string str, stack<string> &s) {
+    if(str == lambda){
+        return;
+    }
     s.push(str);
 }
 
