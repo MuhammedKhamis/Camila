@@ -17,9 +17,9 @@ Input_parser::~Input_parser() {
 	// TODO Auto-generated destructor stub
 }
 
-map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
+FF_Package Input_parser::get_rules_map(vector<string> rules){
 	map<string, set<string>> result;
-
+	vector<string> order;
 	//for each rule(string) in
 	for(int i=0; i<rules.size(); i++){
 		//first of the result map
@@ -37,21 +37,31 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 
 		//If first token is not production rule returns
 		if(token.compare("#") ){
+
+			exit(1);
+		/*
 			map<string, set<string>> empty;
-			return  empty;
+			FF_Package ffp(empty,order);
+			return  ffp;
+		*/
 		}
+
 
 		//Reading the non_terminal (name) of the rule
 		getline(rule_stream, token, ' ');
 
 		rule_name = token;
 
+		order.emplace_back(rule_name);
 
 		//Read "::=" symbol
 		getline(rule_stream, token, ' ');
 
 		//If after production name there is no "::=" symbol means error;
-		if(token.compare("::=")) return result;
+		if(token.compare("::=")){
+			exit(1);
+			//return result;
+		}
 
 		//temp buffer to append expression tokens
 		string expr = "";
@@ -101,7 +111,8 @@ map<string, set<string>> Input_parser::get_rules_map(vector<string> rules){
 		//insert to map
 		result.insert(pair<string,set<string>> (rule_name,expressions));
 	}
-	return result;
+	FF_Package ffp(result,order);
+	return ffp;
 }
 
 

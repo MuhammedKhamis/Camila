@@ -771,6 +771,33 @@ src/Parser/Data_Structures/First/First.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First/First.cpp.s
 .PHONY : src/Parser/Data_Structures/First/First.cpp.s
 
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.o: src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.o
+
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.o
+
+# target to build an object file
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.o
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.o
+
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.i: src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.i
+
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.i
+
+# target to preprocess a source file
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.i
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.i
+
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.s: src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.s
+
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.s
+
+# target to generate assembly for a file
+src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.s
+.PHONY : src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp.s
+
 src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o: src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp.o
 
 .PHONY : src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o
@@ -1365,6 +1392,9 @@ help:
 	@echo "... src/Parser/Data_Structures/First/First.o"
 	@echo "... src/Parser/Data_Structures/First/First.i"
 	@echo "... src/Parser/Data_Structures/First/First.s"
+	@echo "... src/Parser/Data_Structures/First_Follow_Package/FF_Package.o"
+	@echo "... src/Parser/Data_Structures/First_Follow_Package/FF_Package.i"
+	@echo "... src/Parser/Data_Structures/First_Follow_Package/FF_Package.s"
 	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.o"
 	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.i"
 	@echo "... src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.s"

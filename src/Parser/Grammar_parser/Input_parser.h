@@ -10,6 +10,7 @@
 
 #include <bits/stdc++.h>
 #include "../Data_Structures/Non_Terminal/non_terminal.h"
+#include "../Data_Structures/First_Follow_Package/FF_Package.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ public:
 
 	//Take the rule as string and returns it as a
 	//map of rule name(string) and expressions(set<string>)
-	map<string, set<string>> get_rules_map(vector<string> rules);
+	FF_Package get_rules_map(vector<string> rules);
 
 	vector<Non_Terminal> get_non_Terminals();
 

@@ -14,18 +14,16 @@
 
 using namespace std;
 
-
-
 class first_follow_generator {
 public:
 
 	/**
 	 * pass the productions through constructor
 	 * parameter two is the orderer of read productions
-	 * read productions isn't keeping its order in map, so pass an order for your entered productions (ÈÇáÊÑÊíÈ :D)
+	 * read productions isn't keeping its order in map, so pass an order for your entered productions (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ :D)
 	 */
 	first_follow_generator(map<string, set<string>> productions,
-			vector<string> order_of_prods);
+						   vector<string> order_of_prods);
 
 	/**
 	 * add a new production to our list of productions
@@ -142,40 +140,38 @@ public:
 	 */
 	void print_set(set<string> s);
 
+
 	/**
 	 * print the passed map of string and set structue
 	 */
 	void print_map_set(map<string, set<string>> ms);
 
-	/**
-	 * print cycles detected through finding firsts
-	 */
 	void print_cycles();
 
-
 private:
-	/**
-	 * productions which we work on.
-	 */
+
+/**
+ * productions which we work on.
+ */
 	map<string, set<string>> productions;
 
-	/**
-	 * save the order of productions
-	 * e.g if A->B  B->C  C->D ....etc.
-	 * save orders as {A, B, C...etc}
-	 */
+/**
+ * save the order of productions
+ * e.g if A->B  B->C  C->D ....etc.
+ * save orders as {A, B, C...etc}
+ */
 	vector<string> order_of_productions;
 
-	/**
-	 * map all non_terminal (or maybe used as terminal) string name which used as a key
-	 * values are a list of all firsts terminal and the associated productions
-	 */
+/**
+ * map all non_terminal (or maybe used as terminal) string name which used as a key
+ * values are a list of all firsts terminal and the associated productions
+ */
 	map<string, map<string, vector<string>>> first_of_productions;
 
-	/**
-	 * map all non_terminal (or maybe used as terminal) string name which used as a key
-	 * values are a list of all firsts terminals
-	 */
+/**
+ * map all non_terminal (or maybe used as terminal) string name which used as a key
+ * values are a list of all firsts terminals
+ */
 	map<string, set<string>> follow_of_productions;
 
 };

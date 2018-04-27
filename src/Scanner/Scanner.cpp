@@ -5,10 +5,6 @@
 #include "Scanner.h"
 
 
-Scanner::Scanner(){
-
-}
-
 
 void Scanner::terminal_output(string& rules_file, string& input_file, string& grammer_file) {
     string output = run(rules_file,input_file,grammer_file);
