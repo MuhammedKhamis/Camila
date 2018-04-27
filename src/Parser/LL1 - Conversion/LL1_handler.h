@@ -20,12 +20,6 @@ public:
 	virtual ~LL1_handler();
 
 	/*
-	 *	Returns true if the production is LL(1)
-	 *	false otherwise
-	 */
-	bool is_ll1 (Grammar_rule g);
-
-	/*
 	 *	Convert the input production grammar rule to LL(1)
 	 *	and returns vector of the converted grammar rules
 	 */
@@ -41,7 +35,8 @@ public:
 
 	void split(Grammar_rule rule, Grammar_rule* contains, Grammar_rule* not_contains);
 
-	void left_factor(Grammar_rule rule ,vector<Grammar_rule>* result);
+	//Returns true when left factor is found and removed and false otherwise
+	bool left_factor(Grammar_rule rule ,vector<Grammar_rule>* result);
 
 	/*
 	 *	Count number of unique starting elements of all expressions of the production rule

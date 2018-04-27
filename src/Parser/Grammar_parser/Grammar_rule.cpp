@@ -82,11 +82,18 @@ void Grammar_rule::replace_with(Grammar_rule new_rule){
 
 			std::set<string>::iterator it2;
 
+			int counter = 0;
 			for (it2 = new_rule.expressions.begin(); it2 != new_rule.expressions.end(); ++it2)
 			{
 				string temp = *it2;
-				temp.append(append_expr);
-				add_expression(temp);
+				//if epsilon then ignore its concatenation
+				if(!temp.compare("\\L ")){
+					add_expression(append_expr);
+				}else{
+					//Concatenate then add to expressions
+					temp.append(append_expr);
+					add_expression(temp);
+				}
 			}
 		}
 
@@ -126,6 +133,8 @@ void Grammar_rule::set_rule(string input_rule){
 	{
 		//if end of expression by '|' operation push to expressions
 		if(!token.compare("|")){
+			string without_space="";
+			without_space.append(expr.begin(),expr.end()-1);
 			//Add new expression to the production rule
 			add_expression(expr);
 			expr = "";
@@ -144,4 +153,18 @@ void Grammar_rule::set_rule(string input_rule){
 	add_expression(expr);
 }
 
+void Grammar_rule::set_expression(set<string> expression){
+	expressions = expression;
+}
 
+void Grammar_rule::print_rule(){
+	std::set<string>::iterator it;
+
+	cout<<non_terminal<<endl;
+
+	for (it = expressions.begin(); it != expressions.end(); ++it)
+	{
+		cout<<*it<<endl;
+	}
+	cout<<endl;
+}

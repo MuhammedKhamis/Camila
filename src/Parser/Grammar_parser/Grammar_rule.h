@@ -26,6 +26,11 @@ public:
 	void set_rule(string input_rule);
 
 	/*
+	 * set the expressions of the rule
+	 */
+	void set_expression(set<string> expression);
+
+	/*
 	 * Insert new alternative expression to the production rule
 	 */
 	void add_expression(string expr);
@@ -45,6 +50,8 @@ public:
 	 *	of the production rules
 	 */
 	set<string> get_expressions();
+
+	void print_rule();
 
 	void replace_with(Grammar_rule new_rule);
 

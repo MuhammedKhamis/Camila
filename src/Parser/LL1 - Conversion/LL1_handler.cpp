@@ -17,6 +17,18 @@ LL1_handler::~LL1_handler() {
 	//  Auto-generated destructor stub
 }
 
+vector<Grammar_rule> LL1_handler::convert_to_ll1(vector<Grammar_rule> prod){
+	vector<Grammar_rule> res,input;
+	input = eliminate_left_recursion(prod);
+
+	for(int i=0; i<input.size(); i++){
+		bool factored = left_factor(input[i],&res);
+		if(!factored)
+			res.push_back(input[i]);
+		}
+	return res;
+}
+
 void LL1_handler::split(Grammar_rule rule, Grammar_rule* contains, Grammar_rule* not_contains){
 	std::set<string>::iterator it;
 	string rule_name = rule.get_non_terminal();
@@ -117,20 +129,28 @@ vector<Grammar_rule> LL1_handler::eliminate_left_recursion(vector<Grammar_rule> 
 	/** Call eliminate immediate left recursion and add them to final rules **/
 	for(int i=0; i<final_rules.size(); i++)
 	{
-		Grammar_rule curr_rule = final_rules[i];
 
+		Grammar_rule curr_rule = final_rules[i];
 
 		vector<Grammar_rule> new_rules = eliminate_immediate_recursion(curr_rule);
 
+
+
+		//Erase the rule because it will be converted after immediate left recursion elimination
+		final_rules.erase(final_rules.begin() + i);
+
 		if(new_rules.size() == 2){
-			//Erase the rule because it will be converted after immediate left recursion elimination
-			final_rules.erase(final_rules.begin() + i);
-			//to handle index shift due to erasing element
-			i--;
-			final_rules.push_back(new_rules[0]);
-			final_rules.push_back(new_rules[1]);
+			final_rules.insert(final_rules.begin()+i, new_rules[0]);
+			final_rules.insert(final_rules.begin()+i, new_rules[1]);
+			//to handle the index after insertion
+			i++;
+		}else{
+			//No left recursion --> Add the original rule
+			final_rules.insert(final_rules.begin() + i,rules[i]);
 		}
+
 	}
+
 
 	return final_rules;
 }
@@ -166,7 +186,7 @@ void LL1_handler::get_start_symbols(Grammar_rule rule, set<string>* start_symbol
 	return;
 }
 
-void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
+bool LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 
 	//Get start symbols of of each expression in the production to check left factoring
 	set<string> start_symbols;
@@ -184,8 +204,7 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 
 	//If no left factoring return vector has the input production rule indicating not left factoring
 	if(ph.get_sets_number() == rule.expressions.size()) {
-		result->push_back(rule);
-		return;
+		return false;
 	}
 
 	int number_of_rules = ph.get_rules_number();
@@ -241,6 +260,12 @@ void LL1_handler::left_factor(Grammar_rule rule, vector<Grammar_rule> *result){
 	}
 
 	for(int i=0; i<temp_result.size(); i++)
-		result->push_back(temp_result[i]);
-
+	{
+		//Nested Left factoring
+		bool Nested = left_factor(temp_result[i],result);
+		//if NO Nested left factor happened add to total result
+		if(!Nested)
+			result->push_back(temp_result[i]);
+	}
+	return true;
 }

@@ -12,6 +12,10 @@
 
 #include "Parser/Grammar_parser/Grammar_rule.h"
 
+#include "Parser/Grammar_parser/Input_reader.h"
+
+#include "Parser/Grammar_parser/Input_parser.h"
+
 #include "Parser/LL1 - Conversion/LL1_handler.h"
 
 #include "Parser/LL1 - Conversion/prefix_handler.h"
@@ -20,55 +24,29 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    Grammar_rule rule1,rule2,rule3;
 
-    rule1.set_rule("# Arial ::= aris dom | aris | aris bom | bom bom com | bom");
+	vector<Grammar_rule> res,input;
 
-    rule2.set_rule("# T ::= T * F | F");
+	vector<string> input_str;
 
-    rule3.set_rule("# F ::= id | ( E )");
+	Input_reader ir;
 
-    LL1_handler ll1;
+	input_str =	ir.read("./Parser_tests/test.txt");
 
-    vector<Grammar_rule> res,input;
+	Input_parser ip;
 
-    input.push_back(rule1);
+	input = ip.get_grammar_rules(input_str);
 
-    input.push_back(rule2);
+	LL1_handler ll1;
 
-    input.push_back(rule3);
+	res = ll1.convert_to_ll1(input);
 
-   //res = ll1.eliminate_left_recursion(input);
-
-   ll1.left_factor(rule1, &res);
-
-   prefix_handler ph;
-
-    ph.set_expressions(rule1.expressions);
-
-    ph.generate_sets();
-
-    //ph.print_sets();
-
-    //cout<<ph.get_rules_number();
-
-   // cout<<ph.get_remove_prefix("abcd","abcd");
-
-
-   std::set<string>::iterator it;
 
    for(int i=0; i<res.size(); i++){
 		Grammar_rule rule = res[i];
-		cout<<rule.get_non_terminal()<<endl;
+		rule.print_rule();
 
-    	for (it = rule.expressions.begin(); it != rule.expressions.end(); ++it)
-		{
-
-			cout<<*it<<endl;
-		}
-
-		cout<<endl;
-    }
+   }
 
 	return 0;
 }
