@@ -49,7 +49,8 @@ private:
 
     void add_string_to_stack(string str, stack<string>& s);
 
-    const string EOF_parser = "$";
+    string EOF_parser = "'$'";
+    char single_quote = '\'';
 
     Symbol_table table;
     File_Reader fr ;

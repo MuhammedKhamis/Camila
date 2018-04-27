@@ -210,7 +210,7 @@ map<string, set<string>> first_follow_generator::follow_finder() {
 
 void first_follow_generator::generate_follow_productions() {
 //add $ to S lhs
-	follow_of_productions[(*productions.begin()).first].insert("$");
+	follow_of_productions[(*productions.begin()).first].insert("'$'");
 //call for follow_finder, it sets the firsts values and return a list of pointers
 	map<string, set<string>> ptrs = follow_finder();
 	for (unsigned int i = 0; i < order_of_productions.size(); i++) {

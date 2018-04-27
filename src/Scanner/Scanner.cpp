@@ -126,7 +126,8 @@ string Scanner::scan_file(string& src_code, Machine *m,Parsing_Table pt) {
                 symbol.clear();
 
                 // Parser part
-                match_token(token,pt,parser_stack,parser_result);
+                string temp_token = single_quote + token + single_quote;
+                match_token(temp_token,pt,parser_stack,parser_result);
 
             }else{
                 i = ++last_correct_index;
@@ -138,6 +139,21 @@ string Scanner::scan_file(string& src_code, Machine *m,Parsing_Table pt) {
             current = m->get_start();
             last_correct_state = current;
         }
+    }
+    if(last_correct_state->get_priority() == valid){
+        // Token Found.
+        string token = last_correct_state->get_token();
+        output_lexical+= token;
+        output_lexical+= '\n';
+        table.add_token(last_correct_state->get_token(),symbol);
+        symbol.clear();
+
+        // Parser part
+        string temp_token = single_quote + token + single_quote;
+        match_token(temp_token,pt,parser_stack,parser_result);
+    }
+    while(!parser_stack.empty()){
+        match_token(EOF_parser,pt,parser_stack,parser_result);
     }
     return output_lexical;
 }
@@ -157,20 +173,19 @@ void Scanner::add_string_to_stack(string str, stack<string> &s) {
 
 void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,vector<string> &res_vec) {
     string top = st.top();
-    char single_quote = '\'';
-    string temp_token = single_quote + token + single_quote;
     while(pt.is_non_terminal(top)){
-        // pop the top
-        st.pop();
 
         // print state
         print_parser_state(st,res_vec);
 
+        // pop the top
+        st.pop();
+
         vector<string> production;
-        Type t = pt.get_production_type(top,temp_token);
+        Type t = pt.get_production_type(top,token);
 
         if( t == valid_node){
-            production = pt.get_production(top,temp_token);
+            production = pt.get_production(top,token);
             add_vector_to_stack(production,st);
         }else if(t == invalid_node){
             // say error : non_terminal has no production for this token not even sync one
@@ -186,7 +201,7 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
     }
     st.pop();
     // top now is terminal so we need to match it
-    if(match_token(temp_token,top)){
+    if(match_token(token,top)){
         res_vec.push_back(top);
     }else{
         // terminal != terminal
@@ -194,6 +209,7 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
         string err = "Invalid terminal ERROR: missing " + top;
         res_vec.push_back(err);
     }
+    print_parser_state(st,res_vec);
 }
 
 bool Scanner::match_token(string given_token, string production_token) {
@@ -209,13 +225,17 @@ void Scanner::print_parser_state(stack<string> st, vector<string> vec) {
 
 void Scanner::print_vector(vector<string> vec){
     for(int i = 0 ; i < vec.size(); i++){
-        cout << vec[i] << " ";
+        if( vec[i] != EOF_parser){
+            cout << vec[i] << " ";
+        }
     }
 }
 
 void Scanner::print_stack(stack<string> st) {
     while(!st.empty()){
-        cout << st.top() << " ";
+        if(st.top() != EOF_parser){
+            cout << st.top() << " ";
+        }
         st.pop();
     }
 }
