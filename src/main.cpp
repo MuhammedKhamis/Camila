@@ -17,7 +17,6 @@
 using namespace std;
 
 
-
 int main(int argc, char** argv) {
 
 	//TESTING THE INPUT PARSER
@@ -60,7 +59,6 @@ int main(int argc, char** argv) {
 
     Parsing_Table pt = parser_controller.generate_table(grammer_path);
     */
-
 
 	return 0;
 }
