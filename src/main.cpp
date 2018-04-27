@@ -42,11 +42,6 @@ int main(int argc, char** argv) {
 	res = ll1.convert_to_ll1(input);
 
 
-   for(int i=0; i<res.size(); i++){
-		Grammar_rule rule = res[i];
-		rule.print_rule();
-
-   }
 
 	return 0;
 }
