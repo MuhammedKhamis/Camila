@@ -44,6 +44,11 @@ public:
 	map<string, set<string>> get_follows();
 
 	/**
+	 * getter for orders of productions by LHS
+	 */
+	vector<string> get_orders();
+
+	/**
 	 *
 	 * input is the lhs
 	 * find the first of lhs

@@ -38,6 +38,10 @@ map<string, set<string>> first_follow_generator::get_follows() {
 	return follow_of_productions;
 }
 
+vector<string> first_follow_generator::get_orders() {
+	return order_of_productions;
+}
+
 void first_follow_generator::add_to_productions(string lhs, set<string> prods) {
 	productions[lhs].insert(prods.begin(), prods.end());
 }
@@ -94,7 +98,11 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 			for (unsigned int i = 0; (i < v.size()) && !stop; ++i) {
 				map<string, vector<string>> temp;
 				temp.clear();
-				temp = first_finder(v[i]);
+				if(v[i].at(0) == '\''){
+					temp[v[i]].insert(temp[v[i]].end(), v.begin(), v.end());
+				}else{
+					temp = first_finder(v[i]);
+				}
 				if (temp.find("\\L") == temp.end()) {
 					stop = true;
 				} else {
@@ -132,10 +140,10 @@ void first_follow_generator::generate_first_productions() {
 		}
 		//set other member of group to the same values
 		for (set<string>::iterator to = cycles[i].begin();
-						to != cycles[i].end(); ++to) {
-					first_of_productions[(*to)].insert(
-							first_of_productions[(*lhs)].begin(),
-							first_of_productions[(*lhs)].end());
+				to != cycles[i].end(); ++to) {
+			first_of_productions[(*to)].insert(
+					first_of_productions[(*lhs)].begin(),
+					first_of_productions[(*lhs)].end());
 		}
 	}
 }
@@ -144,102 +152,105 @@ void first_follow_generator::generate_first_productions() {
  * used to return the keys of a map as a set
  */
 set<string> extract_keys(map<string, vector<string>> ters) {
-set<string> res;
-for (map<string, vector<string>>::iterator ptr = ters.begin();
-		ptr != ters.end(); ++ptr) {
-	res.insert((*ptr).first);
-}
-return res;
+	set<string> res;
+	for (map<string, vector<string>>::iterator ptr = ters.begin();
+			ptr != ters.end(); ++ptr) {
+		res.insert((*ptr).first);
+	}
+	return res;
 }
 
 map<string, set<string>> first_follow_generator::follow_finder() {
-map<string, set<string>> res;
+	map<string, set<string>> res;
 //add the first at end again to check for it in the last rules
-order_of_productions.push_back(order_of_productions[0]);
-for (unsigned int forward = 1; forward < order_of_productions.size();
-		++forward) {	//go on step forward
-	for (int backward = forward; backward >= 0; --backward) {//check the existence for 'forward' in the backward rules
-		for (set<string>::iterator sub_p_it =
-				productions[order_of_productions[backward]].begin();
-				sub_p_it != productions[order_of_productions[backward]].end();
-				++sub_p_it) {	//find each sub-production (separated by |)
-			vector<string> v { explode((*sub_p_it), ' ') };
-			for (unsigned int i = 0; i < v.size(); ++i) {//check each sympol in the sub-production
-				if (((v[0].at(0) == '\'') || (v[0] == "\\L"))
-						&& (v[i] != order_of_productions[forward])) {
-					continue;
-				}
-				if (((i + 1) < v.size())) {
-					set<string> temp;
-					temp.clear();
-					if ((v[i + 1].at(0) == '\'')) {
-						temp.insert(v[i + 1]);
+	order_of_productions.push_back(order_of_productions[0]);
+	for (unsigned int forward = 1; forward < order_of_productions.size();
+			++forward) {	//go on step forward
+		for (int backward = forward; backward >= 0; --backward) {//check the existence for 'forward' in the backward rules
+			for (set<string>::iterator sub_p_it =
+					productions[order_of_productions[backward]].begin();
+					sub_p_it
+							!= productions[order_of_productions[backward]].end();
+					++sub_p_it) {	//find each sub-production (separated by |)
+				vector<string> v { explode((*sub_p_it), ' ') };
+				for (unsigned int i = 0; i < v.size(); ++i) {//check each sympol in the sub-production
+					if (((v[0].at(0) == '\'') || (v[0] == "\\L"))
+							&& (v[i] != order_of_productions[forward])) {
+						continue;
+					}
+					if (((i + 1) < v.size())) {
+						set<string> temp;
+						temp.clear();
+						if ((v[i + 1].at(0) == '\'')) {
+							temp.insert(v[i + 1]);
+						} else {
+							temp = extract_keys(first_of_productions[v[i + 1]]);
+						}
+						follow_of_productions[v[i]].insert(temp.begin(),
+								temp.end());
+						if (follow_of_productions[v[i]].find("\\L")
+								!= follow_of_productions[v[i]].end()) {	//if first(b) contains eps add follow(A)
+							follow_of_productions[v[i]].erase("\\L");
+							res[v[i]].insert(order_of_productions[backward]);
+						}
 					} else {
-						temp = extract_keys(first_of_productions[v[i + 1]]);
+						res[v[i]].insert(order_of_productions[backward]);//if A -> aB
 					}
-					follow_of_productions[v[i]].insert(temp.begin(),
-							temp.end());
-					if (follow_of_productions[v[i]].find("\\L")
-							!= follow_of_productions[v[i]].end()) {	//if first(b) contains eps add follow(A)
-						follow_of_productions[v[i]].erase("\\L");
-						res[v[i]].insert(order_of_productions[backward]);
-					}
-				} else {
-					res[v[i]].insert(order_of_productions[backward]);//if A -> aB
-				}
 
+				}
 			}
 		}
 	}
-}
-return res;
+	return res;
 }
 
 void first_follow_generator::generate_follow_productions() {
 //add $ to S lhs
-follow_of_productions[(*productions.begin()).first].insert("$");
+	follow_of_productions[(*productions.begin()).first].insert("$");
 //call for follow_finder, it sets the firsts values and return a list of pointers
-map<string, set<string>> ptrs = follow_finder();
-for (unsigned int i = 0; i < order_of_productions.size(); i++) {
-	for (set<string>::iterator ptr_it = ptrs[order_of_productions[i]].begin();
-			ptr_it != ptrs[order_of_productions[i]].end(); ++ptr_it) {
-		follow_of_productions[order_of_productions[i]].insert(
-				follow_of_productions[(*ptr_it)].begin(),
-				follow_of_productions[(*ptr_it)].end());
+	map<string, set<string>> ptrs = follow_finder();
+	for (unsigned int i = 0; i < order_of_productions.size(); i++) {
+		for (set<string>::iterator ptr_it =
+				ptrs[order_of_productions[i]].begin();
+				ptr_it != ptrs[order_of_productions[i]].end(); ++ptr_it) {
+			follow_of_productions[order_of_productions[i]].insert(
+					follow_of_productions[(*ptr_it)].begin(),
+					follow_of_productions[(*ptr_it)].end());
+		}
 	}
-}
 
 }
 
 void first_follow_generator::generator() {
 //first reset all calculated firsts and follows
-clear_all_firsts_follows();
+	clear_all_firsts_follows();
 //call generate_first_productions to generate all firsts of our list of rules
-generate_first_productions();
+	generate_first_productions();
 //	//call generate_follow_productions to generate all follows of our list of rules
-generate_follow_productions();
+	generate_follow_productions();
 }
 
 void first_follow_generator::print_productions() {
-print_msg("*** print productions ***", "");
-for (map<string, set<string>>::iterator p_it = productions.begin();
-		p_it != productions.end(); ++p_it) {
-	printf("\n");
-	cout << (*p_it).first << "::\t";
-	for (set<string>::iterator sub_p_it = productions[(*p_it).first].begin();
-			sub_p_it != productions[(*p_it).first].end(); ++sub_p_it) {
-		cout << *sub_p_it << "\t";
+	print_msg("*** print productions ***", "");
+	for (map<string, set<string>>::iterator p_it = productions.begin();
+			p_it != productions.end(); ++p_it) {
+		printf("\n");
+		cout << (*p_it).first << "::\t";
+		for (set<string>::iterator sub_p_it =
+				productions[(*p_it).first].begin();
+				sub_p_it != productions[(*p_it).first].end(); ++sub_p_it) {
+			cout << *sub_p_it << "\t";
+		}
 	}
-}
 }
 
 void first_follow_generator::print_firsts() {
-print_msg("*** print firsts ***", "");
-for (map<string, map<string, vector<string>>> ::iterator p_it = first_of_productions.begin();
-p_it != first_of_productions.end(); ++p_it) {
-	cout << (*p_it).first << "::\n";
-	print_map_vector((*p_it).second);
-}
+	print_msg("*** print firsts ***", "");
+	for (map<string, map<string, vector<string>>> ::iterator p_it = first_of_productions.begin();
+	p_it != first_of_productions.end(); ++p_it) {
+		cout << (*p_it).first << "::\n";
+		print_map_vector((*p_it).second);
+	}
 }
 
 void first_follow_generator::print_follows() {
@@ -289,45 +300,45 @@ void first_follow_generator::print_cycles() {
 }
 
 void first_follow_generator::print_msg(string msg, string par) {
-	cout << "msg>> " << msg << par << endl;
+	cout << "msg>>\n " << msg << par << endl;
 }
 
 //int main() {
 //	/*
-//	 E -> T E`
-//	 E`-> + T E` | eps | E
-//	 T -> F T`
-//	 T`-> * F T` | eps
-//	 F -> ( E ) | id | eps
+//	 # S ::= R T
+//	 # R ::= 's' U R 'b' | \L
+//	 # U ::= 'u' U | \L
+//	 # V ::= 'v' V | \L
+//	 # T ::= V 't' T | \L
 //	 */
 //	map<string, set<string>> ms;
 //	vector<string> order_of_productions;
 //	set<string> s;
 //	s.clear();
-//	s.insert("T E`");
-//	ms["E"].insert(s.begin(), s.end());
-//	order_of_productions.push_back("E");
+//	s.insert("R T");
+//	ms["S"].insert(s.begin(), s.end());
+//	order_of_productions.push_back("S");
 //	s.clear();
-//	s.insert("'+' T E`");
+//	s.insert("'s' U R 'b'");
 //	s.insert("\\L");
-//	s.insert("E");
-//	ms["E`"].insert(s.begin(), s.end());
-//	order_of_productions.push_back("E`");
+//	ms["R"].insert(s.begin(), s.end());
+//	order_of_productions.push_back("R");
 //	s.clear();
-//	s.insert("F T`");
+//	s.insert("'u' U");
+//	s.insert("\\L");
+//	ms["U"].insert(s.begin(), s.end());
+//	order_of_productions.push_back("U");
+//	s.clear();
+//	s.insert("'v' V");
+//	s.insert("\\L");
+//	ms["V"].insert(s.begin(), s.end());
+//	order_of_productions.push_back("V");
+//	s.clear();
+//	s.insert("V 't' T");
+//	s.insert("\\L");
 //	ms["T"].insert(s.begin(), s.end());
 //	order_of_productions.push_back("T");
-//	s.clear();
-//	s.insert("'*' F T`");
-//	s.insert("\\L");
-//	ms["T`"].insert(s.begin(), s.end());
-//	order_of_productions.push_back("T`");
-//	s.clear();
-//	s.insert("'(' E ')'");
-//	s.insert("'id'");
-//	s.insert("\\L");
-//	ms["F"].insert(s.begin(), s.end());
-//	order_of_productions.push_back("F");
+//
 //	first_follow_generator ffg(ms, order_of_productions);
 //	ffg.generator();
 //	ffg.print_productions();
