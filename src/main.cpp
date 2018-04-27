@@ -48,9 +48,9 @@ int main(int argc, char** argv) {
     }
     /*
      * Report
-     *  test : Failed, segmentation fault reported.
+     *  test : passed
      *  test_1 : Passed
-     *  test_2 : Failed, First of T doesn't have 't' as first as V has lambda in its line.
+     *  test_2 : passed
      *  test_3 : Passed.
      *
      * */
