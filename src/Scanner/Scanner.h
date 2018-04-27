@@ -35,7 +35,7 @@ private:
 
     void match_token(string &token, Parsing_Table &pt, stack<string> &st, vector<string> &res_vec);
 
-    void print_parser_state(stack<string> st,vector<string> vec);
+    void print_parser_state(stack<string> &st,vector<string> &vec);
 
     void print_stack(stack<string> st);
 

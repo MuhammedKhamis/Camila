@@ -173,11 +173,11 @@ void Scanner::add_string_to_stack(string str, stack<string> &s) {
 
 void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,vector<string> &res_vec) {
     string top = st.top();
+    string err;
     while(pt.is_non_terminal(top)){
 
         // print state
         print_parser_state(st,res_vec);
-
         // pop the top
         st.pop();
 
@@ -189,15 +189,16 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
             add_vector_to_stack(production,st);
         }else if(t == invalid_node){
             // say error : non_terminal has no production for this token not even sync one
-            string err = "Invalid non terminal ERROR: (illegal " + top + " )- discard " + token;
-            res_vec.push_back(err);
+             err = "Invalid non terminal ERROR: (illegal " + top + " )- discard " + token + "\n";
+            //res_vec.push_back(err);
             return;
         }else{
-            string err = "Sync ERROR: non terminal: "+ top + " has sync production with " + token;
-            res_vec.push_back(err);
+            err = "Sync ERROR: non terminal: "+ top + " has sync production with " + token + "\n";
+            //res_vec.push_back(err);
         }
-
+        cout << err;
         top = st.top();
+        err.clear();
     }
     st.pop();
     // top now is terminal so we need to match it
@@ -206,9 +207,10 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
     }else{
         // terminal != terminal
         // panic mode error recovery
-        string err = "Invalid terminal ERROR: missing " + top;
-        res_vec.push_back(err);
+        err = "Invalid terminal ERROR: missing " + top + "\n";
+        //res_vec.push_back(err);
     }
+    cout << err;
     print_parser_state(st,res_vec);
 }
 
@@ -216,7 +218,7 @@ bool Scanner::match_token(string given_token, string production_token) {
     return given_token == production_token;
 }
 
-void Scanner::print_parser_state(stack<string> st, vector<string> vec) {
+void Scanner::print_parser_state(stack<string> &st, vector<string> &vec) {
 
     print_vector(vec);
     print_stack(st);
