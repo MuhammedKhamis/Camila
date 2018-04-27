@@ -41,7 +41,7 @@ private:
 
     void print_vector(vector<string> vec);
 
-    bool match_token(string orignal_token, string current_token);
+    bool match_token(string given_token, string production_token);
 
     bool error_found(char c);
 

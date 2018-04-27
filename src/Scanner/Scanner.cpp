@@ -191,8 +191,10 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
     }
 }
 
-bool Scanner::match_token(string orignal_token, string current_token) {
-    return orignal_token == current_token;
+bool Scanner::match_token(string given_token, string production_token) {
+    char single_quote = '\'';
+    given_token = single_quote + given_token + single_quote;
+    return given_token == production_token;
 }
 
 void Scanner::print_parser_state(stack<string> st, vector<string> vec) {

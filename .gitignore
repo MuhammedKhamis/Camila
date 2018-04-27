@@ -1,3 +1,15 @@
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+Debug
+
+
 # Prerequisites
 *.d
 
@@ -30,17 +42,3 @@
 *.exe
 *.out
 *.app
-
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-/Debug/

@@ -43,14 +43,14 @@ vector<Non_Terminal_Info> Parser_Controller::package_non_terminals(FF_Package ru
     map<string, set<string>> follows = ffg.get_follows();
 
 
-    string first_non_terminal;
-/*
+    string first_non_terminal = *ffg.get_orders().begin();
+
     // For first non_terminal
     map<string,vector<string>> firsts = first_production[first_non_terminal];
     set<string> curr_follows = follows[first_non_terminal];
     Non_Terminal_Info ntf = package_non_terminal(first_non_terminal,firsts,curr_follows);
     res.emplace_back(ntf);
-*/
+
     // for the rest of them
     for(auto it = first_production.begin();it != first_production.end() ; it++){
         string non_terminal = it->first;

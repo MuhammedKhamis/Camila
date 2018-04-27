@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 project(Compiler-Project)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -73,6 +73,22 @@ set(SOURCE_FILES
         src/Parser/Parser_Controller/Parser_Controller.cpp
         src/Parser/Parser_Controller/Parser_Controller.h
         src/Parser/First_follow_finder/first_follow_generator.cpp
-        src/Parser/First_follow_finder/first_follow_generator.h src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp src/Parser/Data_Structures/Non_Terminal/non_terminal.h src/Parser/Data_Structures/Non_Terminal/part.cpp src/Parser/Data_Structures/Non_Terminal/part.h src/Parser/Data_Structures/Non_Terminal/line.cpp src/Parser/Data_Structures/Non_Terminal/line.h src/Parser/Data_Structures/Non_Terminal/element.cpp src/Parser/Data_Structures/Non_Terminal/element.h src/Parser/Data_Structures/Parser_Group/Parser_group.cpp src/Parser/Data_Structures/Parser_Group/Parser_group.h src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.h src/Parser/First_follow_finder/FF_Generator.cpp src/Parser/First_follow_finder/FF_Generator.h src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp src/Parser/Data_Structures/First_Follow_Package/FF_Package.h)
+        src/Parser/First_follow_finder/first_follow_generator.h
+        src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp
+        src/Parser/Data_Structures/Non_Terminal/non_terminal.h
+        src/Parser/Data_Structures/Non_Terminal/part.cpp
+        src/Parser/Data_Structures/Non_Terminal/part.h
+        src/Parser/Data_Structures/Non_Terminal/line.cpp
+        src/Parser/Data_Structures/Non_Terminal/line.h
+        src/Parser/Data_Structures/Non_Terminal/element.cpp
+        src/Parser/Data_Structures/Non_Terminal/element.h
+        src/Parser/Data_Structures/Parser_Group/Parser_group.cpp
+        src/Parser/Data_Structures/Parser_Group/Parser_group.h
+        src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp
+        src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.h
+        src/Parser/First_follow_finder/FF_Generator.cpp
+        src/Parser/First_follow_finder/FF_Generator.h
+        src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp
+        src/Parser/Data_Structures/First_Follow_Package/FF_Package.h)
 
 add_executable(Compiler-Project ${SOURCE_FILES})
