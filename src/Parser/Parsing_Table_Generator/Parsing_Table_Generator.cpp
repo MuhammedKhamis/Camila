@@ -40,7 +40,7 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
         vector<string> lambda_production = {lambda};
         for(int j = 0 ; j < follows.size() ; ++j){
             // if we will put the follow too.
-            string follow_val = follows[i].get_value();
+            string follow_val = follows[j].get_value();
             if(table[non_terminal_val].find(follow_val) != table[non_terminal_val].end()){
                 // that follow was found as first in this set then this Grammar is ambiguous
                 string msg = "This Given Grammar is ambiguous, "
