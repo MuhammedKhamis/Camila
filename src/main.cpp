@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	input_str =	ir.read("./Parser_tests/test_2.txt");
+	input_str =	ir.read("./Parser_tests/test.txt");
 
 	Input_parser ip;
 
