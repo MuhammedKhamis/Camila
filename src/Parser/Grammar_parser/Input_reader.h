@@ -22,6 +22,9 @@ public:
 	 *  one string
 	 */
 	std::vector<std::string> read(std::string path);
+
+private:
+	bool SkipBOM(std::istream & in);
 };
 
 #endif /* INPUTREADER_H_ */

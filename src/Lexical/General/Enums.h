@@ -13,6 +13,9 @@ enum priority{
 	valid
 };
 
+enum Type {valid_node, sync_node, invalid_node};
+
+
 
 
 #endif /* ENUMS_H_ */
