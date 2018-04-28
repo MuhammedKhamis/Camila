@@ -31,6 +31,7 @@ bool Scanner::error_found(char c) {
 }
 
 string Scanner::run(string& rules_file, string& input_file, string& grammer_file) {
+
     string output = "";
 
     // Lexical Start

@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 	//TESTING THE INPUT PARSER
 
 
-    string grammer_path = "../Parser_tests/test_3.txt";
+    string grammer_path = "../Parser_tests/test.txt";
     string lexical_path = "../Lexical_Rules/rules.txt";
     string program_path = "../Program_Tests/test_3.txt";
 
