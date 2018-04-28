@@ -8,6 +8,10 @@
 
 #include "Input_parser.h"
 
+
+
+
+
 Input_parser::Input_parser() {
 	// TODO Auto-generated constructor stub
 
@@ -15,6 +19,27 @@ Input_parser::Input_parser() {
 
 Input_parser::~Input_parser() {
 	// TODO Auto-generated destructor stub
+}
+
+
+vector<Grammar_rule> Input_parser::get_grammar_rules(vector<string> rules){
+	vector<Grammar_rule> result;
+	for(int i=0; i<rules.size(); i++){
+			Grammar_rule rule;
+			rule.set_rule(rules[i]);
+			result.push_back(rule);
+		}
+	return result;
+}
+
+vector<string> Input_parser::get_grammar_strings(vector<Grammar_rule> rules){
+	vector<string> result;
+		for(int i=0; i<rules.size(); i++){
+				string rule;
+				rule = rules[i].rule_to_string();
+				result.push_back(rule);
+			}
+		return result;
 }
 
 FF_Package Input_parser::get_rules_map(vector<string> rules){
