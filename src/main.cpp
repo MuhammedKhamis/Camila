@@ -30,7 +30,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-
+/*
 
 	vector<Grammar_rule> res,input;
 
@@ -50,6 +50,7 @@ int main(int argc, char** argv) {
 
 	vector <string> res_str = ip.get_grammar_strings(res);
 
+ */
 	//TESTING THE INPUT PARSER
 
 
@@ -93,10 +94,6 @@ int main(int argc, char** argv) {
     Scanner scanner;
     scanner.normal_scan(lexical_path,program_path,grammer_path);
 
-
-	for(int i=0; i<res_str.size(); i++){
-		cout<<res_str[i]<<endl;
-	}
 
 	return 0;
 }

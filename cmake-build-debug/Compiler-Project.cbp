@@ -297,6 +297,12 @@
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Grammar_rule.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Grammar_rule.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_parser.cpp">
 			<Option target="Compiler-Project"/>
 		</Unit>
@@ -307,6 +313,18 @@
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_reader.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/LL1_handler.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/LL1_handler.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/prefix_handler.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/prefix_handler.h">
 			<Option target="Compiler-Project"/>
 		</Unit>
 		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp">

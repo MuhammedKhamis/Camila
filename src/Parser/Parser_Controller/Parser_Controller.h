@@ -18,6 +18,9 @@
 #include "../Data_Structures/Production/Production.h"
 #include "../Data_Structures/First_Follow_Package/FF_Package.h"
 #include "../Non_Terminal_Package/Non_Terminal_Info.h"
+#include "../Grammar_parser/Grammar_rule.h"
+#include "../LL1 - Conversion/LL1_handler.h"
+
 
 using namespace std;
 

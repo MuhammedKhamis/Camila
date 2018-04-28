@@ -25,9 +25,16 @@ Parsing_Table Parser_Controller::generate_table(string path) {
 
 FF_Package Parser_Controller::split_input(string path){
     Input_reader reader;
-    vector<string> input_lines = reader.read(path);
+    vector<string> input_str = reader.read(path);
     Input_parser ip;
-    FF_Package rules = ip.get_rules_map(input_lines);
+    vector<Grammar_rule> res,input;
+    input = ip.get_grammar_rules(input_str);
+    LL1_handler ll1;
+
+    res = ll1.convert_to_ll1(input);
+
+    vector <string> res_str = ip.get_grammar_strings(res);
+    FF_Package rules = ip.get_rules_map(res_str);
     return rules;
 };
 

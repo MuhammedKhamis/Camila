@@ -1095,6 +1095,33 @@ src/Parser/First_follow_finder/first_follow_generator.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/First_follow_finder/first_follow_generator.cpp.s
 .PHONY : src/Parser/First_follow_finder/first_follow_generator.cpp.s
 
+src/Parser/Grammar_parser/Grammar_rule.o: src/Parser/Grammar_parser/Grammar_rule.cpp.o
+
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.o
+
+# target to build an object file
+src/Parser/Grammar_parser/Grammar_rule.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Grammar_parser/Grammar_rule.cpp.o
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.cpp.o
+
+src/Parser/Grammar_parser/Grammar_rule.i: src/Parser/Grammar_parser/Grammar_rule.cpp.i
+
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.i
+
+# target to preprocess a source file
+src/Parser/Grammar_parser/Grammar_rule.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Grammar_parser/Grammar_rule.cpp.i
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.cpp.i
+
+src/Parser/Grammar_parser/Grammar_rule.s: src/Parser/Grammar_parser/Grammar_rule.cpp.s
+
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.s
+
+# target to generate assembly for a file
+src/Parser/Grammar_parser/Grammar_rule.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Grammar_parser/Grammar_rule.cpp.s
+.PHONY : src/Parser/Grammar_parser/Grammar_rule.cpp.s
+
 src/Parser/Grammar_parser/Input_parser.o: src/Parser/Grammar_parser/Input_parser.cpp.o
 
 .PHONY : src/Parser/Grammar_parser/Input_parser.o
@@ -1148,6 +1175,60 @@ src/Parser/Grammar_parser/Input_reader.s: src/Parser/Grammar_parser/Input_reader
 src/Parser/Grammar_parser/Input_reader.cpp.s:
 	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/Grammar_parser/Input_reader.cpp.s
 .PHONY : src/Parser/Grammar_parser/Input_reader.cpp.s
+
+src/Parser/LL1_-_Conversion/LL1_handler.o: src/Parser/LL1_-_Conversion/LL1_handler.cpp.o
+
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.o
+
+# target to build an object file
+src/Parser/LL1_-_Conversion/LL1_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/LL1_handler.cpp.o
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.cpp.o
+
+src/Parser/LL1_-_Conversion/LL1_handler.i: src/Parser/LL1_-_Conversion/LL1_handler.cpp.i
+
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.i
+
+# target to preprocess a source file
+src/Parser/LL1_-_Conversion/LL1_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/LL1_handler.cpp.i
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.cpp.i
+
+src/Parser/LL1_-_Conversion/LL1_handler.s: src/Parser/LL1_-_Conversion/LL1_handler.cpp.s
+
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.s
+
+# target to generate assembly for a file
+src/Parser/LL1_-_Conversion/LL1_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/LL1_handler.cpp.s
+.PHONY : src/Parser/LL1_-_Conversion/LL1_handler.cpp.s
+
+src/Parser/LL1_-_Conversion/prefix_handler.o: src/Parser/LL1_-_Conversion/prefix_handler.cpp.o
+
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.o
+
+# target to build an object file
+src/Parser/LL1_-_Conversion/prefix_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/prefix_handler.cpp.o
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.cpp.o
+
+src/Parser/LL1_-_Conversion/prefix_handler.i: src/Parser/LL1_-_Conversion/prefix_handler.cpp.i
+
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.i
+
+# target to preprocess a source file
+src/Parser/LL1_-_Conversion/prefix_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/prefix_handler.cpp.i
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.cpp.i
+
+src/Parser/LL1_-_Conversion/prefix_handler.s: src/Parser/LL1_-_Conversion/prefix_handler.cpp.s
+
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.s
+
+# target to generate assembly for a file
+src/Parser/LL1_-_Conversion/prefix_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Compiler-Project.dir/build.make CMakeFiles/Compiler-Project.dir/src/Parser/LL1_-_Conversion/prefix_handler.cpp.s
+.PHONY : src/Parser/LL1_-_Conversion/prefix_handler.cpp.s
 
 src/Parser/Non_Terminal_Package/Non_Terminal_Info.o: src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp.o
 
@@ -1428,12 +1509,21 @@ help:
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.o"
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.i"
 	@echo "... src/Parser/First_follow_finder/first_follow_generator.s"
+	@echo "... src/Parser/Grammar_parser/Grammar_rule.o"
+	@echo "... src/Parser/Grammar_parser/Grammar_rule.i"
+	@echo "... src/Parser/Grammar_parser/Grammar_rule.s"
 	@echo "... src/Parser/Grammar_parser/Input_parser.o"
 	@echo "... src/Parser/Grammar_parser/Input_parser.i"
 	@echo "... src/Parser/Grammar_parser/Input_parser.s"
 	@echo "... src/Parser/Grammar_parser/Input_reader.o"
 	@echo "... src/Parser/Grammar_parser/Input_reader.i"
 	@echo "... src/Parser/Grammar_parser/Input_reader.s"
+	@echo "... src/Parser/LL1_-_Conversion/LL1_handler.o"
+	@echo "... src/Parser/LL1_-_Conversion/LL1_handler.i"
+	@echo "... src/Parser/LL1_-_Conversion/LL1_handler.s"
+	@echo "... src/Parser/LL1_-_Conversion/prefix_handler.o"
+	@echo "... src/Parser/LL1_-_Conversion/prefix_handler.i"
+	@echo "... src/Parser/LL1_-_Conversion/prefix_handler.s"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.o"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.i"
 	@echo "... src/Parser/Non_Terminal_Package/Non_Terminal_Info.s"

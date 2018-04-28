@@ -89,6 +89,12 @@ set(SOURCE_FILES
         src/Parser/First_follow_finder/FF_Generator.cpp
         src/Parser/First_follow_finder/FF_Generator.h
         src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp
-        src/Parser/Data_Structures/First_Follow_Package/FF_Package.h)
+        src/Parser/Data_Structures/First_Follow_Package/FF_Package.h
+        src/Parser/Grammar_parser/Grammar_rule.h
+        src/Parser/Grammar_parser/Grammar_rule.cpp
+        src/Parser/LL1\ -\ Conversion/LL1_handler.h
+        src/Parser/LL1\ -\ Conversion/LL1_handler.cpp
+        src/Parser/LL1\ -\ Conversion/prefix_handler.cpp
+        src/Parser/LL1\ -\ Conversion/prefix_handler.h)
 
 add_executable(Compiler-Project ${SOURCE_FILES})
