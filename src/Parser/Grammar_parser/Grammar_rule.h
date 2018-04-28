@@ -57,6 +57,10 @@ public:
 
 	void append_to_expressions(string append_part);
 
+	string rule_to_string();
+
+	string remove_epsilon(string expression);
+
 };
 
 #endif /* GRAMMAR_RULE_H_ */

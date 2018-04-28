@@ -168,3 +168,43 @@ void Grammar_rule::print_rule(){
 	}
 	cout<<endl;
 }
+
+string Grammar_rule::rule_to_string(){
+	string result = "# ";
+
+	result.append(non_terminal);
+
+	result.append(" ::= ");
+
+	std::set<string>::iterator it;
+
+	for (it = expressions.begin(); it != expressions.end(); ++it)
+	{
+		string expr = *it;
+		int n = expr.size();
+		if(expr[n-1] != ' ')
+			expr.append(" ");
+		expr = remove_epsilon(expr);
+		result.append(expr);
+		result.append("| ");
+	}
+	//trim
+	string without_space="";
+    without_space.append(result.begin(), result.end()-3);
+    result = without_space;
+    return result;
+}
+
+string Grammar_rule::remove_epsilon(string expression){
+	//contains only epsilon or doesn't contain epsilon
+	if(expression.size() <= 3) return expression;
+
+	string temp = expression;
+	std::size_t found;
+	found = temp.find("\\L");
+	//if found
+	if(found != std::string::npos){
+		temp.replace(temp.find("\\L"),3,"");
+	}
+	return temp;
+}

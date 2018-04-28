@@ -22,6 +22,9 @@ public:
 	//Convert rules taken from the input file as lines(strings) into vector
 	//of grammar_rules
 	vector<Grammar_rule> get_grammar_rules(vector<string> rules);
+
+	//Inverse of get_grammar_rules function
+	vector<string> get_grammar_strings(vector<Grammar_rule> rules);
 };
 
 #endif /* INPUTPARSER_H_ */

@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 
 	Input_reader ir;
 
-	input_str =	ir.read("./Parser_tests/test.txt");
+	input_str =	ir.read("./Parser_tests/test_2.txt");
 
 	Input_parser ip;
 
@@ -41,7 +41,11 @@ int main(int argc, char** argv) {
 
 	res = ll1.convert_to_ll1(input);
 
+	vector <string> res_str = ip.get_grammar_strings(res);
 
+	for(int i=0; i<res_str.size(); i++){
+		cout<<res_str[i]<<endl;
+	}
 
 	return 0;
 }

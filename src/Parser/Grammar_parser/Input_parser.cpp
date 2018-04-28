@@ -27,3 +27,13 @@ vector<Grammar_rule> Input_parser::get_grammar_rules(vector<string> rules){
 		}
 	return result;
 }
+
+vector<string> Input_parser::get_grammar_strings(vector<Grammar_rule> rules){
+	vector<string> result;
+		for(int i=0; i<rules.size(); i++){
+				string rule;
+				rule = rules[i].rule_to_string();
+				result.push_back(rule);
+			}
+		return result;
+}
