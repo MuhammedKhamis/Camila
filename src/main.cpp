@@ -54,11 +54,11 @@ int main(int argc, char** argv) {
 	//TESTING THE INPUT PARSER
 
 
-    string grammer_path = "../Parser_tests/test.txt";
-    string lexical_path = "../Lexical_Rules/rules.txt";
-    string program_path = "../Program_Tests/test_3.txt";
+    string grammer_path = "./Parser_tests/test_3.txt";
+    string lexical_path = "./Lexical_Rules/rules.txt";
+    string program_path = "./Program_Tests/test_3.txt";
+/*
 
-    /*
     vector<string> tests = {"test.txt","test_1.txt","test_2.txt","test_3.txt"};
 
     for(int i = 0 ; i < tests.size() ; i++){
@@ -77,11 +77,11 @@ int main(int argc, char** argv) {
         ffg.generator();
 
         ffg.print_firsts();
-        ffg.print_follows()
+        ffg.print_follows();
 
         cout << "\n-------------------------------------------------\n";
     }
-    */
+*/
     /*
      * Report
      *  test : Still segmentation fault @Essam's PC.

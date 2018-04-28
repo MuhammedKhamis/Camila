@@ -103,8 +103,10 @@ map<string, vector<string>> first_follow_generator::first_finder(string lhs) {
 				}else{
 					temp = first_finder(v[i]);
 					for (map<string, vector<string>>::iterator it = temp.begin(); it!=temp.end(); ++it) {
-						(*it).second.clear();
-						(*it).second.insert((*it).second.end(),v.begin(), v.end());
+						if((*it).first != "\\L"){
+							(*it).second.clear();
+							(*it).second.insert((*it).second.end(),v.begin(), v.end());
+						}
 					}
 				}
 				if (temp.find("\\L") == temp.end()) {
