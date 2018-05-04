@@ -34,7 +34,7 @@ FF_Package Parser_Controller::split_input(string path){
     res = ll1.convert_to_ll1(input);
 
     vector <string> res_str = ip.get_grammar_strings(res);
-    FF_Package rules = ip.get_rules_map(res_str);
+    FF_Package rules = ip.get_rules_map(input_str);
     return rules;
 };
 

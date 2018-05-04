@@ -30,34 +30,14 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-/*
-
-	vector<Grammar_rule> res,input;
-
-	vector<string> input_str;
-
-	Input_reader ir;
-
-	input_str =	ir.read("./Parser_tests/test.txt");
-
-	Input_parser ip;
-
-	input = ip.get_grammar_rules(input_str);
-
-	LL1_handler ll1;
-
-	res = ll1.convert_to_ll1(input);
-
-	vector <string> res_str = ip.get_grammar_strings(res);
-
- */
 	//TESTING THE INPUT PARSER
 
 
-    string grammer_path = "./Parser_tests/test_3.txt";
+    string grammer_path = "./phase_2/grammar_modified.txt";
     string lexical_path = "./Lexical_Rules/rules.txt";
-    string program_path = "./Program_Tests/test_3.txt";
-/*
+    string program_path = "./phase_2/test2.txt";
+
+    /*
 
     vector<string> tests = {"test.txt","test_1.txt","test_2.txt","test_3.txt"};
 

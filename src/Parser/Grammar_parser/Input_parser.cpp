@@ -62,7 +62,7 @@ FF_Package Input_parser::get_rules_map(vector<string> rules){
 
 		//If first token is not production rule returns
 		if(token.compare("#") ){
-
+			cout << "# ERROR\n";
 			exit(1);
 		/*
 			map<string, set<string>> empty;
@@ -84,6 +84,7 @@ FF_Package Input_parser::get_rules_map(vector<string> rules){
 
 		//If after production name there is no "::=" symbol means error;
 		if(token.compare("::=")){
+			cout << "::= ERROR\n";
 			exit(1);
 			//return result;
 		}

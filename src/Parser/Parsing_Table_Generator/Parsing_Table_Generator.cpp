@@ -29,7 +29,7 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
             // terminal string.
             string input = fpp[j].getFirst().get_value();
             // check if the one of the first is lambda then we put the follow also in the table
-            put_follow = put_follow | (input==lambda);
+            put_follow = put_follow | (input== "\\L");
             // put the production corresponding to its non_terminal and its input terminal
             table[non_terminal_val][input] = fpp[j].getProduction();
         }
@@ -41,19 +41,24 @@ Parsing_Table Parsing_Table_Generator::generate_table() {
         for(int j = 0 ; j < follows.size() ; ++j){
             // if we will put the follow too.
             string follow_val = follows[j].get_value();
-            if(table[non_terminal_val].find(follow_val) != table[non_terminal_val].end()){
-                // that follow was found as first in this set then this Grammar is ambiguous
-                string msg = "This Given Grammar is ambiguous, "
-                             + follow_val + " was found as first and follow in the " + non_terminal_val + " line\n";
-                cout << msg;
-                exit(0);
-            }
             if(put_follow){
+                if(table[non_terminal_val].find(follow_val) != table[non_terminal_val].end()){
+                    // that follow was found as first in this set then this Grammar is ambiguous
+                    if(follow_val == "'\\L'"){
+                        continue;
+                    }
+                    string msg = "This Given Grammar is ambiguous, "
+                                 + follow_val + " was found as first and follow in the " + non_terminal_val + " line\n";
+                    cout << msg;
+                    exit(0);
+                }
                 // put new production with lambda transition and non_terminal as current non_terminal
                 table[non_terminal_val][follow_val] = Production(lambda_production,non_terminal_val);
             }else{
                 // put sync production
-                table[non_terminal_val][follow_val] = Production();
+                if(table[non_terminal_val].find(follow_val) == table[non_terminal_val].end()){
+                    table[non_terminal_val][follow_val] = Production();
+                }
             }
         }
 

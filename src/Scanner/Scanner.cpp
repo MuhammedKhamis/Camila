@@ -173,45 +173,46 @@ void Scanner::add_string_to_stack(string str, stack<string> &s) {
 }
 
 void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,vector<string> &res_vec) {
-    string top = st.top();
     string err;
-    while(pt.is_non_terminal(top)){
+    while(!st.empty()){
+        string top = st.top();
 
         // print state
         print_parser_state(st,res_vec);
         // pop the top
         st.pop();
 
-        vector<string> production;
-        Type t = pt.get_production_type(top,token);
-
-        if( t == valid_node){
-            production = pt.get_production(top,token);
-            add_vector_to_stack(production,st);
-        }else if(t == invalid_node){
-            // say error : non_terminal has no production for this token not even sync one
-             err = "Invalid non terminal ERROR: (illegal " + top + " )- discard " + token + "\n";
-            //res_vec.push_back(err);
-            return;
+        if(!pt.is_non_terminal(top)){
+            // top now is terminal so we need to match it
+            if(match_token(token,top)){
+                res_vec.push_back(top);
+                break;
+            }else{
+                // terminal != terminal
+                // panic mode error recovery
+                err = "Invalid terminal ERROR: missing " + top + "\n";
+                //res_vec.push_back(err);
+            }
         }else{
-            err = "Sync ERROR: non terminal: "+ top + " has sync production with " + token + "\n";
-            //res_vec.push_back(err);
+            vector<string> production;
+            Type t = pt.get_production_type(top,token);
+
+            if( t == valid_node){
+                production = pt.get_production(top,token);
+                add_vector_to_stack(production,st);
+            }else if(t == invalid_node){
+                // say error : non_terminal has no production for this token not even sync one
+                 err = "Invalid non terminal ERROR: (illegal " + top + " )- discard " + token + "\n";
+                //res_vec.push_back(err);
+                return;
+            }else{
+                err = "Sync ERROR: non terminal: "+ top + " has sync production with " + token + "\n";
+                //res_vec.push_back(err);
+            }
         }
         cout << err;
-        top = st.top();
         err.clear();
     }
-    st.pop();
-    // top now is terminal so we need to match it
-    if(match_token(token,top)){
-        res_vec.push_back(top);
-    }else{
-        // terminal != terminal
-        // panic mode error recovery
-        err = "Invalid terminal ERROR: missing " + top + "\n";
-        //res_vec.push_back(err);
-    }
-    cout << err;
     print_parser_state(st,res_vec);
 }
 
