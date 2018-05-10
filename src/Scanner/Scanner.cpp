@@ -177,8 +177,6 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
     while(!st.empty()){
         string top = st.top();
 
-        // print state
-        print_parser_state(st,res_vec);
         // pop the top
         st.pop();
 
@@ -200,6 +198,8 @@ void Scanner::match_token(string &token, Parsing_Table &pt, stack<string> &st,ve
             if( t == valid_node){
                 production = pt.get_production(top,token);
                 add_vector_to_stack(production,st);
+                // print state
+                print_parser_state(st,res_vec);
             }else if(t == invalid_node){
                 // say error : non_terminal has no production for this token not even sync one
                  err = "Invalid non terminal ERROR: (illegal " + top + " )- discard " + token + "\n";
