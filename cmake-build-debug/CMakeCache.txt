@@ -194,12 +194,6 @@ Compiler-Project_BINARY_DIR:STATIC=/media/muhammed/Shared/Work/CSED19/C++/3rd-Ye
 //Value Computed by CMake
 Compiler-Project_SOURCE_DIR:STATIC=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
 
-//Value Computed by CMake
-Lexical_Analyzer_Generator_BINARY_DIR:STATIC=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug
-
-//Value Computed by CMake
-Lexical_Analyzer_Generator_SOURCE_DIR:STATIC=/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project
-
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 

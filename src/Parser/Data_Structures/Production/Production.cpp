@@ -36,9 +36,9 @@ void Production::add_part(string &part){
 }
 
 vector<string> Production::get_reversed_production() {
-    vector<string> reversed = production;
-    reverse(reversed.begin(),reversed.end());
-    return reversed;
+    vector<string> reversed_parts = production;
+    reverse(reversed_parts.begin(),reversed_parts.end());
+    return reversed_parts;
 }
 
 vector<string> Production::get_production() {
@@ -48,3 +48,6 @@ vector<string> Production::get_production() {
 string Production::get_non_terminal() {
     return non_terminal;
 }
+
+
+
