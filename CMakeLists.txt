@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
-project(Lexical_Analyzer_Generator)
+cmake_minimum_required(VERSION 3.10)
+project(Compiler-Project)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -50,7 +50,51 @@ set(SOURCE_FILES
         src/Lexical/Symbol_Table/Symbol_table.h
         src/Lexical/Symbol_Table/Symbol_table_iterator.cpp
         src/Lexical/Symbol_Table/Symbol_table_iterator.h
-        src/Lexical/Scanner/Scanner.cpp
-        src/Lexical/Scanner/Scanner.h)
+        src/Scanner/Scanner.cpp
+        src/Scanner/Scanner.h
+        src/Parser/Data_Structures/Production/Production.cpp 
+        src/Parser/Data_Structures/Production/Production.h 
+        src/Parser/Parsing_Table/Parsing_Table.cpp 
+        src/Parser/Parsing_Table/Parsing_Table.h 
+        src/Parser/Data_Structures/First/First.cpp 
+        src/Parser/Data_Structures/First/First.h 
+        src/Parser/Data_Structures/Follow/Follow.cpp 
+        src/Parser/Data_Structures/Follow/Follow.h 
+        src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp 
+        src/Parser/Non_Terminal_Package/Non_Terminal_Info.h 
+        src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp 
+        src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.h 
+        src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp 
+        src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h
+        src/Parser/Grammar_parser/Input_parser.cpp
+        src/Parser/Grammar_parser/Input_parser.h
+        src/Parser/Grammar_parser/Input_reader.cpp
+        src/Parser/Grammar_parser/Input_reader.h
+        src/Parser/Parser_Controller/Parser_Controller.cpp
+        src/Parser/Parser_Controller/Parser_Controller.h
+        src/Parser/First_follow_finder/first_follow_generator.cpp
+        src/Parser/First_follow_finder/first_follow_generator.h
+        src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp
+        src/Parser/Data_Structures/Non_Terminal/non_terminal.h
+        src/Parser/Data_Structures/Non_Terminal/part.cpp
+        src/Parser/Data_Structures/Non_Terminal/part.h
+        src/Parser/Data_Structures/Non_Terminal/line.cpp
+        src/Parser/Data_Structures/Non_Terminal/line.h
+        src/Parser/Data_Structures/Non_Terminal/element.cpp
+        src/Parser/Data_Structures/Non_Terminal/element.h
+        src/Parser/Data_Structures/Parser_Group/Parser_group.cpp
+        src/Parser/Data_Structures/Parser_Group/Parser_group.h
+        src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp
+        src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.h
+        src/Parser/First_follow_finder/FF_Generator.cpp
+        src/Parser/First_follow_finder/FF_Generator.h
+        src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp
+        src/Parser/Data_Structures/First_Follow_Package/FF_Package.h
+        src/Parser/Grammar_parser/Grammar_rule.h
+        src/Parser/Grammar_parser/Grammar_rule.cpp
+        src/Parser/LL1\ -\ Conversion/LL1_handler.h
+        src/Parser/LL1\ -\ Conversion/LL1_handler.cpp
+        src/Parser/LL1\ -\ Conversion/prefix_handler.cpp
+        src/Parser/LL1\ -\ Conversion/prefix_handler.h)
 
-add_executable(Lexical_Analyzer_Generator ${SOURCE_FILES})
+add_executable(Compiler-Project ${SOURCE_FILES})

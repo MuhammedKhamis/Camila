@@ -31,6 +31,7 @@
 *.out
 *.app
 
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
@@ -40,6 +41,8 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+
+/Debug
 
 .idea/**/workspace.xml
 .idea/**/tasks.xml

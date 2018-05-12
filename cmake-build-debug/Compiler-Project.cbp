@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Compiler-Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Compiler-Project">
+				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Compiler-Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Compiler-Project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Compiler-Project/fast">
+				<Option output="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Compiler-Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Compiler-Project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/lex.yy.c">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Bonus/scanner.c">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Builder.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Builder.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Postfix_handler.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Postfix_handler.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Subset_Builder.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Subset_Builder.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Thomson_Builder.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Builders/Thomson_Builder.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Data_Structure/Token_Saver.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Data_Structure/Token_Saver.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Files_Handler/FileReader.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Files_Handler/FileReader.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/Enums.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/functions.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/General/functions.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Edge.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Edge.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Graph.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Graph.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Node.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Graph/Node.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Machine.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Machine.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/State.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/State.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Transition_Table.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Machines/Transition_Table.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Group.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Group.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Groups.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Groups.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Minimizer.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Minimizer/Minimizer.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/FileRulesReader.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/FileRulesReader.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/Rules.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/Rules.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/RulesParser.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Rules_Parser/RulesParser.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table_iterator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Lexical/Symbol_Table/Symbol_table_iterator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First/First.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First/First.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First_Follow_Package/FF_Package.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First_Follow_Package/FF_Package.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/First_Production_Pair/First_Production_Pair.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Follow/Follow.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Follow/Follow.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/element.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/element.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/line.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/line.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/non_terminal.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/non_terminal.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/part.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal/part.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Non_Terminal_Mapper/Non_Terminal_mapper.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Parser_Group/Parser_group.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Parser_Group/Parser_group.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Production/Production.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Data_Structures/Production/Production.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/FF_Generator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/FF_Generator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/First_follow_finder/first_follow_generator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Grammar_rule.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Grammar_rule.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_parser.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_parser.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_reader.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Grammar_parser/Input_reader.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/LL1_handler.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/LL1_handler.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/prefix_handler.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/LL1 - Conversion/prefix_handler.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Non_Terminal_Package/Non_Terminal_Info.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Non_Terminal_Package/Non_Terminal_Info.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parser_Controller/Parser_Controller.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parser_Controller/Parser_Controller.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table/Parsing_Table.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table/Parsing_Table.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Parser/Parsing_Table_Generator/Parsing_Table_Generator.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Scanner/Scanner.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/Scanner/Scanner.h">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/src/main.cpp">
+			<Option target="Compiler-Project"/>
+		</Unit>
+		<Unit filename="/media/muhammed/Shared/Work/CSED19/C++/3rd-Year/Compiler-Project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
